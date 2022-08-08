@@ -1,0 +1,25 @@
+# ignore everything in the "wp-content" directory, except:
+# "plugins/elementor-master", "themes/bazarplus" directory
+plugins/*
+mu-plugins/
+themes/*
+!plugins/elementor-master/
+!themes/eson/
+
+
+# ignore node dependency directories
+node_modules/
+
+
+backups-dup-lite/
+languages/
+upgrade/
+uploads/
+.vscode/
+# ignore log files and databases
+
+index.php
+*.log
+*.sql
+*.sqlite
+db.php
