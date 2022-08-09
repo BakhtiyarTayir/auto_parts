@@ -1,0 +1,9153 @@
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes show-opts {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes show-from-left {
+
+    0%,
+    50% {
+        opacity: 0;
+        transform: translateX(-100px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes show-from-right {
+
+    0%,
+    50% {
+        opacity: 0;
+        transform: translateX(100px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes controls-animation {
+
+    0%,
+    85% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(100%)
+    }
+}
+
+@keyframes aside-filter-slide-up {
+    0% {
+        max-height: 800px
+    }
+
+    100% {
+        max-height: 0
+    }
+}
+
+@keyframes aside-filter-slide-down {
+    0% {
+        max-height: 0
+    }
+
+    100% {
+        max-height: 800px
+    }
+}
+
+.landing-pages-description a {
+    font-weight: 400 !important
+}
+
+.landing-pages-description h2 {
+    font-size: 1.8em;
+    margin: 1.8em 8px 1em
+}
+
+.landing-pages-description ul {
+    font-size: 1.4em;
+    margin: 1em 8px 1em 2em
+}
+
+.landing-pages-description ul>li {
+    font-weight: 300;
+    letter-spacing: .035em;
+    line-height: 1.7;
+    margin: 1em 0
+}
+
+.green {
+    color: #068922 !important
+}
+
+.gray {
+    color: #464646 !important
+}
+
+.black {
+    color: #111 !important
+}
+
+.white {
+    color: #fff
+}
+
+.red {
+    color: #d4252a !important
+}
+
+.orange {
+    color: #ffac00 !important
+}
+
+.red_border {
+    border-color: #d4252a !important;
+    box-shadow: #d4252a 0 0 2px
+}
+
+.pointer {
+    cursor: pointer
+}
+
+.phone-link,
+.phone-link:focus,
+.phone-link:hover {
+    color: inherit !important;
+    cursor: default;
+    font-weight: inherit;
+    text-decoration: none
+}
+
+.h2 {
+    color: #111;
+    display: block;
+    font: 600 2em/1 "Roboto", "Arial", "Helvetica", sans-serif;
+    margin: 26px 8px 16px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.h2 b,
+.h2 strong {
+    font-weight: inherit
+}
+
+.h2 a {
+    color: inherit
+}
+
+.h3 {
+    color: #111;
+    display: block;
+    font-size: 1.7em;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 16px 2%
+}
+
+.h3>b {
+    font-weight: 500
+}
+
+.simple-btn-h1-change-vehicle,
+.simple-btn {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #3761bf;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    outline: none;
+    padding: 14px 16px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.simple-btn-h1-change-vehicle:focus,
+.simple-btn:focus {
+    outline: none
+}
+
+.simple-btn-h1-change-vehicle:hover,
+.simple-btn:hover {
+    background-color: #3157ab;
+    text-decoration: none
+}
+
+.simple-btn.-actions-wishlist::before,
+.simple-btn.-actions-filter::before,
+.simple-btn.-actions-video::before,
+.simple-btn.-actions-sort::before,
+.simple-btn.-actions-next::before,
+.simple-btn.-actions-cart::before,
+.simple-btn.-actions-view::before {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 10px 12px;
+    content: "";
+    display: inline-block;
+    height: 12px;
+    margin-right: 5px;
+    vertical-align: -2px;
+    width: 10px
+}
+
+.group-buttons {
+    display: flex
+}
+
+.group-buttons.-wrap {
+    flex-wrap: wrap
+}
+
+.group-buttons.-right {
+    justify-content: flex-end
+}
+
+.group-buttons.-center {
+    justify-content: center
+}
+
+.simple-btn.-load-next::before {
+    background: url(https://cdn.carid.com/css/prod-images/de8e0c0b.svg) 0 0 no-repeat;
+    background-size: 19px auto;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    margin-right: 10px;
+    transform: translateZ(0);
+    transform-origin: 50% 50%;
+    vertical-align: middle;
+    width: 20px
+}
+
+.simple-btn.-load-next.active {
+    cursor: default;
+    opacity: .7
+}
+
+.simple-btn.-load-next.active::before {
+    animation: rotation 1s infinite linear
+}
+
+.simple-btn.-disabled {
+    background-color: #a9a9a9;
+    cursor: default
+}
+
+.simple-btn.-success {
+    background-color: #068922
+}
+
+.simple-btn.-success:hover {
+    background-color: #05711c
+}
+
+.simple-btn.-warning {
+    background-color: #ffac00
+}
+
+.simple-btn.-warning:hover {
+    background-color: #e69b00
+}
+
+.simple-btn.-danger {
+    background-color: #d4252a
+}
+
+.simple-btn.-danger:hover {
+    background-color: #be2126
+}
+
+.simple-btn.-transparent {
+    background-color: rgba(0, 0, 0, 0);
+    color: #111;
+    position: relative
+}
+
+.simple-btn.-transparent:hover {
+    background-color: rgba(0, 0, 0, .06)
+}
+
+.simple-btn.-transparent::after {
+    border: 1px solid #111;
+    border-radius: 4px;
+    box-sizing: border-box;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.simple-btn.-transparent.-disabled {
+    cursor: default;
+    opacity: .3
+}
+
+.simple-btn.-po-change-vehicle {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    font-size: 10px;
+    padding: 9px 10px;
+    position: relative
+}
+
+.simple-btn.-po-change-vehicle:hover {
+    background-color: rgba(0, 0, 0, .25)
+}
+
+.simple-btn.-po-change-vehicle::after {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.simple-btn.-actions-view::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/ca4806dc.svg);
+    background-position: 100% 75%;
+    background-size: 11px 11px;
+    content: attr(data-text);
+    height: auto;
+    padding-right: 16px;
+    width: auto
+}
+
+.simple-btn.-actions-view.-expanded::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/4813f2bb.svg);
+    content: attr(data-text-expanded)
+}
+
+.simple-btn.-actions-cart::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/bf2bf47d.svg);
+    background-position: 50% 75%;
+    background-size: 23px 22px;
+    height: 30px;
+    margin-right: 0;
+    vertical-align: 0;
+    width: 29px
+}
+
+.simple-btn.-actions-next::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/1f61c61f.svg);
+    background-size: 16px 16px;
+    height: 16px;
+    vertical-align: middle;
+    width: 16px
+}
+
+.simple-btn.-actions-sort::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/6100e271.svg)
+}
+
+.simple-btn.-actions-video::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/d5bf69a0.svg)
+}
+
+.simple-btn.-actions-filter::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/8d719e4a.svg)
+}
+
+.simple-btn.-actions-wishlist::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/c30f4d64.svg)
+}
+
+.simple-btn.-hidden-icon::before {
+    content: none
+}
+
+.simple-btn.-back-arrow::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/57b53673.svg);
+    background-position: 0 1px;
+    background-repeat: no-repeat;
+    background-size: auto 11px;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 10px
+}
+
+.simple-btn.-thin {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 0 10px;
+    text-transform: none
+}
+
+.simple-btn.-upsale {
+    bottom: 11px;
+    font-size: 1.1em;
+    line-height: 1.4;
+    padding: 7px;
+    position: absolute !important
+}
+
+.simple-btn.-large {
+    line-height: 1;
+    padding-bottom: 19px;
+    padding-top: 19px
+}
+
+.simple-btn.-small {
+    font-size: 12px;
+    padding-bottom: 9px;
+    padding-top: 9px
+}
+
+.simple-btn.-wide {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%
+}
+
+.simple-btn.-short {
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.simple-btn.-mobile-wide {
+    box-sizing: border-box;
+    display: block;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 100%
+}
+
+.simple-btn.-facebook-icon {
+    background-image: url(https://cdn.carid.com/css/prod-images/e1a94b47.svg);
+    background-position: 14px 50%;
+    background-repeat: no-repeat
+}
+
+.simple-btn.-fixed-toolbar-btn {
+    float: right;
+    font-size: 1em;
+    padding: 8px 10px
+}
+
+.simple-btn-h1-change-vehicle {
+    font-size: 12px;
+    padding-bottom: 6px;
+    padding-top: 6px
+}
+
+.simple-btn-h1-change-vehicle::after {
+    content: "Change"
+}
+
+.universal-label {
+    color: #111;
+    font-size: 1.3em;
+    list-style: none;
+    overflow: hidden
+}
+
+.universal-label.-list>.li {
+    margin: 0 3px 3px 0
+}
+
+.universal-label>.li {
+    background-color: #ffde99;
+    border-radius: 14px;
+    cursor: pointer;
+    float: left;
+    line-height: 1.3;
+    padding: 5px 32px 5px 12px;
+    position: relative
+}
+
+.universal-label>.li::after {
+    background: #ffac00 url(https://cdn.carid.com/css/prod-images/c3ae046f.svg) no-repeat 50% 50%;
+    background-size: 8px auto;
+    border-radius: 8px;
+    bottom: 0;
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px
+}
+
+.universal-label>.li:hover {
+    background-color: #ffd680
+}
+
+.universal-label>.li:focus {
+    background-color: #ffcd66
+}
+
+.universal-label>.li.-for-select {
+    background-color: #c4c9d2
+}
+
+.universal-label>.li.-for-select::after {
+    background-color: #7b889b
+}
+
+.universal-label>.li.-for-select:hover {
+    background-color: #b5bcc7
+}
+
+.universal-label>.li.-for-search-mmy {
+    padding-right: 24px
+}
+
+.universal-label>.li.-for-search-mmy>.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 8px;
+    vertical-align: middle;
+    width: 100px
+}
+
+.simple-btn-accordion-btn {
+    color: #111;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 1.18;
+    margin-bottom: 24px;
+    padding-left: 46px;
+    position: relative
+}
+
+.simple-btn-accordion-btn:hover>.inner {
+    text-decoration: none
+}
+
+.simple-btn-accordion-btn::before {
+    background-color: #3761bf;
+    border-radius: 50%;
+    color: #fff;
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: 400;
+    left: 0;
+    line-height: 28px;
+    padding: 2px 0;
+    position: absolute;
+    text-align: center;
+    top: -4px;
+    width: 32px
+}
+
+.simple-btn-accordion-btn.-opened::before {
+    content: "-"
+}
+
+.simple-btn-accordion-btn>.inner {
+    text-decoration: underline
+}
+
+.form-field-group {
+    position: relative
+}
+
+.form-field-group::before,
+.form-field-group::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+.form-field-group.-with-right-button {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.form-field-group.-with-right-button>.right-btn-holder {
+    width: 100%
+}
+
+.form-field-group.-with-right-button .simple-btn.-large {
+    padding-bottom: 20px;
+    padding-top: 20px
+}
+
+.form-field.-hidden,
+.form-field.-hidden+.form-field-bottom-label,
+.form-field-check-radio.-hidden,
+.form-field-check-radio.-hidden+.form-field-bottom-label {
+    display: none
+}
+
+.form-field {
+    background: #fff;
+    border: 1px solid #757575;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    position: relative;
+    transition: box-shadow .2s ease, border-color .2s;
+    width: 100%
+}
+
+.form-field.-error-field:not(.-focus) {
+    border-color: #d4252a;
+    box-shadow: 0 0 0 1px #d4252a
+}
+
+.form-field.-error-field:not(.-focus)>label {
+    color: #d4252a
+}
+
+.form-field.-error-field:not(.-focus).-select::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/6ef2231b.svg)
+}
+
+.form-field.-focus,
+.form-field.-error-field.-focus {
+    border-color: #3761bf;
+    box-shadow: 0 0 0 1px #3761bf
+}
+
+.form-field.-disabled {
+    background-color: #f8f8f8;
+    border-color: #a9a9a9
+}
+
+.form-field.-disabled label {
+    opacity: .5
+}
+
+.form-field.-disabled input,
+.form-field.-disabled textarea,
+.form-field.-disabled select {
+    opacity: .6
+}
+
+.form-field,
+.form-field input,
+.form-field textarea,
+.form-field select {
+    border-radius: 4px
+}
+
+.form-field>label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #757575;
+    display: block;
+    font-size: 1.3em;
+    left: 0;
+    line-height: 1.2;
+    max-width: 100%;
+    pointer-events: none;
+    position: absolute;
+    text-indent: 16px;
+    top: 18px;
+    transition: top .2s;
+    z-index: 3
+}
+
+.form-field>label>.required {
+    color: #ffac00;
+    margin-left: 4px
+}
+
+.form-field.-mark::after {
+    background-position: right center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: "";
+    height: 24px;
+    margin: auto 0;
+    padding-right: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 24px;
+    z-index: 1
+}
+
+.form-field.-mark.-button::after {
+    right: 50px
+}
+
+.form-field.-mark.-error-field>.password-show-btn {
+    right: 30px
+}
+
+.form-field.-mark.-error-field>input {
+    padding-right: 80px
+}
+
+.form-field.-mark.-error-field::after {
+    background-image: url(https://cdn.carid.com/css/prod-images/5cbc40ec.svg);
+    background-size: 24px auto
+}
+
+.form-field.-mark.-zoom>label {
+    right: 36px
+}
+
+.form-field.-mark.-zoom>input {
+    padding-right: 36px
+}
+
+.form-field.-mark.-zoom::after {
+    background-image: url(https://cdn.carid.com/css/prod-images/7112786a.svg);
+    background-size: 17px auto
+}
+
+.form-field.-mark.-preloader::after {
+    animation: preloader-rotate .7s infinite linear;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDMwIDMwIj48cGF0aCBkPSJNMTUgMzBhMTUgMTUgMCAxMTE1LTE1IDE1IDE1IDAgMDEtMTUgMTV6bTAtMjcuNzNBMTIuNzMgMTIuNzMgMCAxMDI3LjczIDE1IDEyLjc1IDEyLjc1IDAgMDAxNSAyLjI3eiIgZmlsbD0iIzFhMWExYSIgb3BhY2l0eT0iLjciLz48cGF0aCBkPSJNMjcuNzEgMTUuNDhBMTIuNzQgMTIuNzQgMCAwMTE1IDI3LjczVjMwYTE1IDE1IDAgMDAxNS0xNC41MnoiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii43Ii8+PC9zdmc+) 50% 50% no-repeat;
+    background-size: contain;
+    content: "";
+    height: 18px;
+    left: auto;
+    position: absolute;
+    top: 20px;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    width: 18px
+}
+
+.form-field.-mark.-preloader.nopreload::after {
+    content: none !important
+}
+
+.form-field.-mark.-preloader::after {
+    right: 0
+}
+
+.form-field.-placeholder {
+    background: #f0f0f0
+}
+
+.form-field.-placeholder>.placeholder {
+    color: #757575;
+    display: block;
+    font-size: 1.4em;
+    padding: 19px 0;
+    pointer-events: auto;
+    text-indent: 16px
+}
+
+.form-field.-placeholder>.input {
+    display: none
+}
+
+.form-field.-placeholder .text-btn {
+    color: #3761bf;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 8px
+}
+
+.form-field.-price-range {
+    margin: 0 1px;
+    width: 38%
+}
+
+.form-field.-price-range:first-child {
+    margin-left: 0
+}
+
+.form-field.-button {
+    padding-right: 70px
+}
+
+.form-field.-button>input {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.form-field.-copylnk {
+    position: absolute
+}
+
+.form-field.-in-row:not(.-error-field) {
+    margin-bottom: 0
+}
+
+.form-field>input,
+.form-field>textarea,
+.form-field select {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    color: #111;
+    font: 1rem "Roboto", "Arial", "Helvetica", sans-serif;
+    position: relative;
+    width: 100%
+}
+
+.form-field>input:focus,
+.form-field>textarea:focus,
+.form-field select:focus {
+    outline: none
+}
+
+.form-field>input,
+.form-field>textarea {
+    box-sizing: border-box;
+    outline: none;
+    z-index: 1
+}
+
+.form-field.-input.-focus>label,
+.form-field.-input.-not-empty>label,
+.form-field.-select>label {
+    font-size: 1.1em;
+    top: 8px
+}
+
+.form-field.-input.-focus>label+input,
+.form-field.-input.-not-empty>label+input,
+.form-field.-select>label+input {
+    padding-bottom: 8px;
+    padding-top: 26px
+}
+
+.form-field.-input {
+    overflow: hidden
+}
+
+.form-field.-input.-small>label {
+    text-indent: 12px
+}
+
+.form-field.-input.-small>input {
+    padding-left: 12px;
+    padding-right: 10px
+}
+
+.form-field.-input>input {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 50px;
+    padding: 18px 16px 17px
+}
+
+.form-field.-textarea {
+    overflow: hidden
+}
+
+.form-field.-textarea>label {
+    background: #fff;
+    box-shadow: 0 0 4px 4px #fff;
+    padding-top: 18px;
+    top: 0;
+    transition: padding-top .2s linear;
+    width: 96%
+}
+
+.form-field.-textarea.-focus>label,
+.form-field.-textarea.-not-empty>label {
+    padding-top: 7px
+}
+
+.form-field.-textarea>textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 1.6em;
+    min-height: 7.8em;
+    overflow-y: auto;
+    padding: 28px 16px 8px;
+    resize: none
+}
+
+.form-field.-textarea>textarea.-big {
+    height: 220px
+}
+
+.form-field.-select {
+    text-indent: 0
+}
+
+.form-field.-select::before {
+    background: url(https://cdn.carid.com/css/prod-images/a7716fdb.svg) 0 50% no-repeat;
+    background-size: 13px auto;
+    bottom: 0;
+    content: "";
+    cursor: pointer;
+    height: 8px;
+    margin: auto;
+    pointer-events: none;
+    position: absolute;
+    right: 17px;
+    top: 1px;
+    transition: transform .1s;
+    width: 13px;
+    z-index: 1
+}
+
+.form-field.-select::after {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 32%);
+    content: "";
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    right: 4px;
+    top: 0;
+    width: 30px
+}
+
+.form-field.-select.-disabled::after {
+    background: rgba(0, 0, 0, 0)
+}
+
+.form-field.-select.-focus::before {
+    transform: rotate(180deg)
+}
+
+.form-field.-select.-empty.-not-focus>label {
+    font-size: 1.3em;
+    top: 18px
+}
+
+.form-field.-select.-small::before,
+.form-field.-select.-short::before {
+    right: 12px
+}
+
+.product-list-qty-selector .form-field.-select.-small>label {
+    font-size: .85em;
+    top: 6px
+}
+
+.form-field.-select.-small+.form-field-error-message {
+    margin: 0;
+    text-align: left
+}
+
+.form-field.-select.-low {
+    margin-bottom: 0
+}
+
+.form-field.-select.-low::before {
+    right: 8px
+}
+
+.form-field.-select.-low::after {
+    width: 20px
+}
+
+.form-field.-select.-low>label {
+    display: none
+}
+
+.form-field.-select.-low>select {
+    height: 34px;
+    padding: 8px 25px 8px 8px
+}
+
+.form-field.-select>label {
+    top: 8px
+}
+
+.form-field.-select>label+select {
+    padding: 26px 25px 6px 16px
+}
+
+.form-field.-select>select {
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    height: 52px;
+    padding: 16px 25px 16px 16px
+}
+
+.form-field.-select>select[disabled] {
+    opacity: .6;
+    position: relative;
+    z-index: 3
+}
+
+.form-field.-select>select:focus {
+    outline: 0
+}
+
+.form-field.-with-search-button {
+    padding-right: 40px
+}
+
+.form-field.-with-search-button>.search-button {
+    background: rgba(0, 0, 0, 0) url(https://cdn.carid.com/css/prod-images/eee3264d.svg) no-repeat 50% 50%;
+    background-size: 25px auto;
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    z-index: 1
+}
+
+.checkout-input.-small-control .form-field.-select::before {
+    right: 10px
+}
+
+.form-field-check-radio {
+    margin-bottom: 20px
+}
+
+.form-field-check-radio.-checkout-checkbox-group {
+    margin-bottom: 0
+}
+
+.form-field-check-radio.-checkout {
+    margin-top: 20px;
+    min-height: 20px
+}
+
+.form-field-check-radio.-indent-account {
+    margin-bottom: 16px;
+    padding-top: 10px
+}
+
+.form-field-check-radio.-desktop-horizontal {
+    margin-bottom: 14px
+}
+
+.form-field-check-radio.-desktop-horizontal>label {
+    margin: 1px 20px 14px 0
+}
+
+.form-field-check-radio.vendor-portal {
+    display: inline-block;
+    width: 136px
+}
+
+.form-field-check-radio.vendor-portal.-column {
+    display: block;
+    width: 148px
+}
+
+.form-field-check-radio.installation-opt-service-info {
+    margin-bottom: 0;
+    padding-left: 30px
+}
+
+.form-field-check-radio.-switch .text {
+    display: block;
+    font-size: 1em;
+    padding-left: 44px;
+    position: relative
+}
+
+.form-field-check-radio.-switch .text::before {
+    background: #a9a9a9;
+    border-radius: 16px;
+    content: "";
+    height: 14px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    width: 34px
+}
+
+.form-field-check-radio.-switch .text::after {
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 0 #a9a9a9;
+    content: "";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px
+}
+
+.form-field-check-radio.-switch input:checked+.text::before {
+    background-color: #f6e4b3
+}
+
+.form-field-check-radio.-switch input:checked+.text::after {
+    background-color: #ffac00;
+    left: 14px
+}
+
+.form-field-check-radio.-switch input[disabled]+.text {
+    cursor: default
+}
+
+.form-field-check-radio.-switch input[disabled]+.text::before {
+    background-color: #f0f0f0
+}
+
+.form-field-check-radio.-switch input:checked[disabled]+.text::before {
+    background-color: #d8d8d8
+}
+
+.form-field-check-radio.-switch input:checked[disabled]+.text::after {
+    background-color: #a9a9a9
+}
+
+.form-field-check-radio+.form-field-error-message {
+    margin-left: 30px
+}
+
+.form-field-check-radio>label {
+    display: block;
+    margin-top: 10px;
+    min-height: 20px;
+    min-width: 20px;
+    position: relative
+}
+
+.form-field-check-radio>label:hover>.text,
+.form-field-check-radio>label:hover>i {
+    cursor: pointer
+}
+
+.form-field-check-radio>label:first-child {
+    margin-top: 0
+}
+
+.form-field-check-radio>label.-bold>.text {
+    font-weight: 700
+}
+
+.form-field-check-radio.-horizontal>label {
+    display: inline-block
+}
+
+.form-field-check-radio.-horizontal-center {
+    text-align: center
+}
+
+.form-field-check-radio.-horizontal-center>label {
+    display: inline-block;
+    margin: 0 0 0 20px
+}
+
+.form-field-check-radio.-horizontal-center>label:first-child {
+    margin-left: 0
+}
+
+.form-field-check-radio .text {
+    color: #111;
+    cursor: default;
+    display: inline-block;
+    font: 14px/22px "Roboto", "Arial", "Helvetica", sans-serif;
+    padding-left: 30px;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.form-field-check-radio .text.-font-fixed {
+    font-size: 13px;
+    line-height: 18px
+}
+
+.form-field-check-radio .text.-bold {
+    font-weight: 500
+}
+
+.form-field-check-radio .text>.required {
+    color: #ffac00
+}
+
+.form-field-check-radio input {
+    left: 0;
+    opacity: 0;
+    position: absolute
+}
+
+.form-field-check-radio i {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+.form-field-check-radio input[type=checkbox]+i {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/59b7dbc5.svg)
+}
+
+.form-field-check-radio input[type=checkbox]:checked+i {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/25396e61.svg)
+}
+
+.form-field-check-radio input[type=checkbox][disabled]+i {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/aef42de8.svg)
+}
+
+.form-field-check-radio input[type=checkbox]:checked[disabled]+i {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/f9cef330.svg)
+}
+
+.form-field-check-radio input[type=radio]+i {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/e7d8e410.svg)
+}
+
+.form-field-check-radio input[type=radio]:checked+i {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/1050b11b.svg);
+    cursor: default
+}
+
+.form-field-check-radio input[type=radio][disabled]+i {
+    background-image: url(https://cdn.carid.com/css/prod-images/6e2a8b81.svg)
+}
+
+.form-field-check-radio input[type=radio]:checked[disabled]+i {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/d989eaf4.svg)
+}
+
+.form-field-check-radio input[disabled]+i {
+    background-color: #f8f8f8;
+    cursor: default
+}
+
+.form-field-check-radio input[disabled]+i+.text {
+    color: #757575;
+    cursor: default;
+    opacity: .5
+}
+
+.form-field-label {
+    color: #111;
+    cursor: default;
+    display: inline-block;
+    font-size: 1.5em;
+    padding-left: 30px;
+    position: relative
+}
+
+.form-field-label:hover {
+    cursor: pointer
+}
+
+.form-field-label::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+.form-field-label.aside-filters-item {
+    padding-left: 52px
+}
+
+.form-field-label.aside-filters-item::after {
+    left: 20px;
+    top: 9px;
+    z-index: 1
+}
+
+.form-field-label.-checkbox::after {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/59b7dbc5.svg)
+}
+
+.form-field-label.-checkbox.-checked::after {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/25396e61.svg)
+}
+
+.form-field-label.-radio::after {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/e7d8e410.svg)
+}
+
+.form-field-label.-radio.-checked::after {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/1050b11b.svg);
+    cursor: default
+}
+
+.form-field-label input {
+    left: 0;
+    opacity: 0;
+    position: absolute
+}
+
+.form-field-btn {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    content: "";
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 28px
+}
+
+.form-field-btn.-question {
+    background-image: url(https://cdn.carid.com/css/prod-images/11a24932.svg)
+}
+
+.form-field-btn.-question:hover {
+    background-image: url(https://cdn.carid.com/css/prod-images/b63dcee8.svg)
+}
+
+.form-field-btn.-check-blue {
+    background-color: #3761bf;
+    background-image: url(https://cdn.carid.com/css/prod-images/0e1411e0.svg);
+    background-size: auto;
+    bottom: 0;
+    height: 28px;
+    right: 0;
+    top: auto;
+    z-index: 1
+}
+
+.form-field-btn.-text {
+    color: #a9a9a9;
+    cursor: default;
+    font-size: 1.3em;
+    right: 16px;
+    text-align: right;
+    top: 19px;
+    width: 40px
+}
+
+.form-field-error-message,
+.form-field-bottom-label {
+    display: block;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin: -6px 0 16px 16px
+}
+
+.form-field-error-message {
+    color: #d4252a
+}
+
+.form-field-error-message::first-letter {
+    text-transform: uppercase
+}
+
+.form-field-error-message.-show {
+    display: block
+}
+
+.form-field-error-message.-aside-price-range {
+    display: none;
+    letter-spacing: normal;
+    margin: 10px 0 0
+}
+
+.form-field-error-message+.form-field-bottom-label {
+    display: none
+}
+
+.form-field-bottom-label {
+    color: #757575;
+    font-size: 1.3em
+}
+
+.form-field-bottom-label.-dark {
+    color: #464646
+}
+
+.form-field-bottom-label>.link {
+    color: #3761bf;
+    cursor: pointer
+}
+
+.form-field-bottom-label>.link:hover {
+    text-decoration: underline
+}
+
+.form-field-float-group {
+    position: relative
+}
+
+.form-field-float-group::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+.form-field-float-group>.form-field {
+    width: auto
+}
+
+input:-webkit-autofill,
+select:-webkit-autofill {
+    background: rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 50px #fff;
+    empty-cells: hide;
+    position: relative
+}
+
+input[type=search]::-webkit-search-cancel-button {
+    display: none
+}
+
+.options-list-wrap {
+    height: 54px;
+    position: relative
+}
+
+.options-list {
+    background: #fff;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.options-list::before {
+    background: url(https://cdn.carid.com/css/prod-images/a7716fdb.svg) no-repeat 0 0;
+    background-size: 100% auto;
+    content: "";
+    height: 8px;
+    position: absolute;
+    right: 14px;
+    top: 23px;
+    transition: transform .1s;
+    width: 13px
+}
+
+.options-list::after {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #757575;
+    content: attr(data-placeholder);
+    font-size: 13px;
+    left: 16px;
+    position: absolute;
+    top: 18px;
+    transition: top .2s;
+    width: 70%
+}
+
+.options-list.-selected::after,
+.options-list.-active::after,
+.options-list.-open::after {
+    color: #757575;
+    font-size: 11px;
+    top: 7px
+}
+
+.options-list.disabled,
+.options-list.-disabled {
+    background-color: #f0f0f0;
+    border-color: #d8d8d8
+}
+
+.options-list.-active,
+.options-list.-open {
+    border-color: #3761bf;
+    box-shadow: 0 0 0 1px #3761bf;
+    z-index: 1000
+}
+
+.options-list.-active::before,
+.options-list.-open::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/35a6a8da.svg);
+    transform: rotate(180deg)
+}
+
+.options-list.-open:not(.-selected) {
+    padding-top: 24px
+}
+
+.options-list.-open>.options-list-value {
+    height: auto;
+    margin-right: 0;
+    padding-right: 36px;
+    white-space: pre-wrap;
+    width: auto
+}
+
+.options-list.-open>.options-list-selector {
+    animation: show-opts .3s ease;
+    display: block
+}
+
+.options-list.-with-marker::after {
+    left: 60px
+}
+
+.options-list.-with-marker .options-list-value {
+    padding-left: 60px
+}
+
+.options-list-value {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: #111;
+    display: block;
+    font-size: 1rem;
+    height: 54px;
+    line-height: 1.4;
+    max-width: 100%;
+    padding: 27px 40px 3px 16px;
+    pointer-events: none;
+    transition: margin .2s
+}
+
+.options-list-selector {
+    background: #fff;
+    background-clip: padding-box;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    display: none;
+    font-size: 1.3em;
+    list-style: none;
+    max-height: 250px;
+    max-width: 600px;
+    min-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%
+}
+
+.options-list-selector.-dropdown {
+    background: #fff;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    max-height: 20em;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.options-list-selector.-dropdown.-open {
+    border-color: #3761bf;
+    box-shadow: 0 0 0 1px #3761bf
+}
+
+.options-list-selector.-shipping-method {
+    max-height: 165px
+}
+
+.options-list-item {
+    border-top: 1px solid #d8d8d8;
+    color: #111;
+    display: flex;
+    min-height: 40px;
+    position: relative;
+    white-space: normal
+}
+
+.options-list-item:not(.-disabled):hover {
+    background: #d8d8d8;
+    color: #111
+}
+
+.options-list-item::after {
+    clear: right;
+    content: "";
+    display: block
+}
+
+.options-list-item.active,
+.options-list-item.-active {
+    background: #3761bf;
+    color: #fff
+}
+
+.options-list-item.-disabled {
+    color: #757575
+}
+
+.options-list-text {
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 12px 16px 13px 16px;
+    width: 100%
+}
+
+.options-list-text.-link {
+    color: #111;
+    text-decoration: none
+}
+
+.options-list-thumb {
+    height: 24px;
+    position: absolute;
+    top: 9px;
+    width: 36px
+}
+
+.options-list-thumb+.options-list-text {
+    display: list-item;
+    margin-left: 44px
+}
+
+.options-list-marker {
+    border-right: 1px solid #757575;
+    box-sizing: border-box;
+    height: 32px;
+    left: 0;
+    overflow: hidden;
+    padding: 0 8px;
+    position: absolute;
+    top: 10px;
+    width: 42px
+}
+
+.options-list-marker-image {
+    display: block;
+    margin: 7px auto;
+    max-width: 100%
+}
+
+.options-list-marker-text {
+    color: #464646;
+    display: block;
+    font-size: 1.4em;
+    line-height: 32px;
+    text-align: center
+}
+
+.error-message {
+    color: #d4252a;
+    display: block;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin: -10px 0 20px
+}
+
+.-price-range.error-message {
+    display: none;
+    letter-spacing: normal;
+    margin: 5px 0 10px
+}
+
+.-show.error-message {
+    display: block
+}
+
+.checkout-input .error-message {
+    font-size: 1.1em;
+    margin: 5px 0 10px
+}
+
+html.left-panel-show,
+html.head-stores-dd-show,
+html.right-panel-show,
+html.gbox_opened {
+    overflow-y: scroll
+}
+
+html.left-panel-show,
+html.left-panel-show body,
+html.left-panel-show #scrollfix,
+html.head-stores-dd-show,
+html.head-stores-dd-show body,
+html.head-stores-dd-show #scrollfix,
+html.right-panel-show,
+html.right-panel-show body,
+html.right-panel-show #scrollfix,
+html.gbox_opened,
+html.gbox_opened body,
+html.gbox_opened #scrollfix {
+    height: 100%
+}
+
+.left-panel-show #scrollfix,
+.right-panel-show #scrollfix,
+.gbox_opened #scrollfix {
+    height: 100%;
+    position: fixed;
+    top: 0
+}
+
+.left-panel-show .main-wrap,
+.right-panel-show .main-wrap,
+.gbox_opened .main-wrap {
+    height: 100%;
+    overflow: hidden
+}
+
+.left-panel-show .main-content-overlay,
+.right-panel-show .main-content-overlay {
+    height: 100%;
+    opacity: .75;
+    transition: opacity .3s ease, height 0s 0s ease
+}
+
+.right-panel-show .aside-filters-block,
+.wishlist-right-aside .aside-filters-block {
+    display: flex;
+    justify-content: space-between
+}
+
+.left-panel-show:not(.gbox_opened) .left-panel {
+    display: flex;
+    z-index: 101;
+}
+
+.left-panel-show:not(.gbox_opened) #scrollfix {
+    background: #fff;
+    left: 85%
+}
+
+.left-panel-show:not(.gbox_opened) .main-wrap {
+    background: #fff;
+    left: -85%
+}
+
+.right-panel-show:not(.gbox_opened) .right-panel,
+.right-panel-show:not(.gbox_opened) .wishlist-right-aside {
+    display: block
+}
+
+.right-panel-show:not(.gbox_opened) #scrollfix {
+    left: -320px
+}
+
+.right-panel-show:not(.gbox_opened) .main-wrap {
+    left: 320px
+}
+
+.left-panel,
+.right-panel {
+    min-height: 100%;
+    text-align: left
+}
+
+.left-panel {
+    background-color: #fff;
+    left: 0;
+    width: 85%
+}
+
+.left-panel::after {
+    animation: preloader-rotate .7s infinite linear;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDMwIDMwIj48cGF0aCBkPSJNMTUgMzBhMTUgMTUgMCAxMTE1LTE1IDE1IDE1IDAgMDEtMTUgMTV6bTAtMjcuNzNBMTIuNzMgMTIuNzMgMCAxMDI3LjczIDE1IDEyLjc1IDEyLjc1IDAgMDAxNSAyLjI3eiIgZmlsbD0iIzFhMWExYSIgb3BhY2l0eT0iLjciLz48cGF0aCBkPSJNMjcuNzEgMTUuNDhBMTIuNzQgMTIuNzQgMCAwMTE1IDI3LjczVjMwYTE1IDE1IDAgMDAxNS0xNC41MnoiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii43Ii8+PC9zdmc+) 50% 50% no-repeat;
+    background-size: contain;
+    content: "";
+    height: 30px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    width: 30px
+}
+
+.left-panel.nopreload::after {
+    content: none !important
+}
+
+.left-panel .header-left-menu-spacing-wrap {
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.left-panel .header-left-menu-spacing-wrap.-left-menu-top-spacing {
+    padding-top: 20px
+}
+
+.right-panel,
+.wishlist-right-aside {
+    background: #fff;
+    right: 0;
+    width: 320px
+}
+
+.right-panel.-show-sort-products .aside-filter,
+.wishlist-right-aside.-show-sort-products .aside-filter {
+    display: none
+}
+
+.right-panel.-show-sort-products .aside-sorting,
+.wishlist-right-aside.-show-sort-products .aside-sorting {
+    display: block
+}
+
+#scrollfix,
+.main-wrap {
+    left: 0;
+    position: relative;
+    transition: left .3s ease
+}
+
+#scrollfix {
+    background: #fff;
+    overflow: hidden
+}
+
+.wrap p {
+    font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+    font-size: 1.4em;
+    font-weight: 300;
+    letter-spacing: .035em;
+    line-height: 1.7;
+    margin: 1.5em 8px
+}
+
+.wrap p img {
+    height: auto;
+    max-width: 100%
+}
+
+.main-content-overlay {
+    background: #111;
+    display: block;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transition: opacity .3s ease, height 0s .3s ease;
+    z-index: 5;
+}
+
+.fw-normal {
+    font-weight: 400 !important
+}
+
+.fw-bold {
+    font-weight: 700 !important
+}
+
+.txt-decor-none {
+    text-decoration: none !important
+}
+
+.cursor-def {
+    cursor: default !important
+}
+
+.min-h-0 {
+    min-height: 0 !important
+}
+
+.bd0 {
+    border: 0 !important
+}
+
+.mt0 {
+    margin-top: 0 !important
+}
+
+.mb0 {
+    margin-bottom: 0 !important
+}
+
+.mr0 {
+    margin-right: 0 !important
+}
+
+.mr8 {
+    margin-right: 8px !important
+}
+
+.mr20 {
+    margin-right: 20px !important
+}
+
+.ml0 {
+    margin-left: 0 !important
+}
+
+.ml8 {
+    margin-left: 8px !important
+}
+
+.ml20 {
+    margin-left: 8px !important
+}
+
+.mb5 {
+    margin-bottom: 5px !important
+}
+
+.mb8 {
+    margin-bottom: 8px !important
+}
+
+.mb10 {
+    margin-bottom: 10px !important
+}
+
+.mb15 {
+    margin-bottom: 15px !important
+}
+
+.mb20 {
+    margin-bottom: 20px !important
+}
+
+.mb25 {
+    margin-bottom: 25px !important
+}
+
+.mt10 {
+    margin-top: 10px !important
+}
+
+.mt15 {
+    margin-top: 15px !important
+}
+
+.mt20 {
+    margin-top: 20px !important
+}
+
+.mt30 {
+    margin-top: 30px !important
+}
+
+.mt-minus-block {
+    margin-top: -16px !important;
+    min-height: 16px
+}
+
+.p0 {
+    padding: 0 !important
+}
+
+.pt0 {
+    padding-top: 0 !important
+}
+
+.pl0 {
+    padding-left: 0 !important
+}
+
+.pb0 {
+    padding-bottom: 0 !important
+}
+
+.pb10 {
+    padding-bottom: 10px !important
+}
+
+.pb20 {
+    padding-bottom: 20px !important
+}
+
+.pr0 {
+    padding-right: 0 !important
+}
+
+.inline {
+    display: inline !important
+}
+
+.inline-block {
+    display: inline-block !important
+}
+
+.width_100 {
+    width: 100%
+}
+
+.h1-change-btn-wrap {
+    padding: 0 0 1px;
+    position: relative
+}
+
+.change-vehicle-btn-h {
+    display: inline-block;
+    margin: 5px 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    vertical-align: 3px
+}
+
+.text-truncated {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.text-center {
+    text-align: center
+}
+
+.aside_filters,
+.gallery_sidebar_wrap,
+.po-select>.list,
+.wishlist-move-to>.inner,
+.wishlist-popup-menu,
+.tire-size-calculator-selector>.list,
+.main-selector>.list {
+    -webkit-overflow-scrolling: touch
+}
+
+.aside_filters::-webkit-scrollbar,
+.gallery_sidebar_wrap::-webkit-scrollbar,
+.po-select>.list::-webkit-scrollbar,
+.wishlist-move-to>.inner::-webkit-scrollbar,
+.wishlist-popup-menu::-webkit-scrollbar,
+.tire-size-calculator-selector>.list::-webkit-scrollbar,
+.main-selector>.list::-webkit-scrollbar {
+    background: #d8d8d8;
+    width: 14px
+}
+
+.aside_filters::-webkit-scrollbar-thumb,
+.gallery_sidebar_wrap::-webkit-scrollbar-thumb,
+.po-select>.list::-webkit-scrollbar-thumb,
+.wishlist-move-to>.inner::-webkit-scrollbar-thumb,
+.wishlist-popup-menu::-webkit-scrollbar-thumb,
+.tire-size-calculator-selector>.list::-webkit-scrollbar-thumb,
+.main-selector>.list::-webkit-scrollbar-thumb {
+    background: #a9a9a9;
+    border: 2px solid #d8d8d8;
+    border-radius: 4px
+}
+
+.aside_filters::-webkit-scrollbar-thumb:window-inactive,
+.gallery_sidebar_wrap::-webkit-scrollbar-thumb:window-inactive,
+.po-select>.list::-webkit-scrollbar-thumb:window-inactive,
+.wishlist-move-to>.inner::-webkit-scrollbar-thumb:window-inactive,
+.wishlist-popup-menu::-webkit-scrollbar-thumb:window-inactive,
+.tire-size-calculator-selector>.list::-webkit-scrollbar-thumb:window-inactive,
+.main-selector>.list::-webkit-scrollbar-thumb:window-inactive {
+    background: #a9a9a9
+}
+
+.x-scroll {
+    overflow-x: auto;
+    overflow-y: hidden
+}
+
+.nav-tool>.title.-arrow::after,
+.help-center-nav-btn>.text::after {
+    background: url(https://cdn.carid.com/css/prod-images/5cedcb5f.svg) 50% 50% no-repeat;
+    background-size: 12px 6px;
+    content: "";
+    height: 10px;
+    margin-top: -4px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transition: transform .3s ease .2s;
+    width: 12px
+}
+
+.nav-tool>.-arrow-red.title.-arrow::after,
+.help-center-nav-btn>.-arrow-red.text::after {
+    background-image: url(https://cdn.carid.com/css/prod-images/c5440c5d.svg)
+}
+
+.nav-tool>.title.-arrow:hover::after,
+.help-center-nav-btn>.text:hover::after {
+    transform: rotateZ(180deg)
+}
+
+.help-center-nav-btn>.text::after {
+    opacity: .6
+}
+
+.nav-tool.-icon-garage {
+    background-image: url(https://cdn.carid.com/css/prod-images/336aecbb.svg);
+    background-size: 24px 22px
+}
+
+.nav-tool.-icon-wishlist {
+    background-image: url(https://cdn.carid.com/css/prod-images/2b937211.svg);
+    background-size: 27px 23px
+}
+
+.nav-tool.-icon-cart {
+    background-image: url(https://cdn.carid.com/css/prod-images/f495cd84.svg);
+    background-size: 26px 23px
+}
+
+.nav-tool>.title.-arrow::after {
+    margin-top: -5px;
+    right: 10px
+}
+
+.header-warning {
+    background: #ffac00;
+    color: #111;
+    text-align: center
+}
+
+.header-warning>.text {
+    background: url(https://cdn.carid.com/css/prod-images/b4fd418b.svg) no-repeat 10px 40%;
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 10px 10px 10px 50px
+}
+
+.disaster-warning-msg {
+    background: #fec;
+    border: 1px solid #ffac00;
+    border-radius: 4px;
+    color: #111;
+    font-size: 14px;
+    margin: 20px 8px;
+    padding: 20px;
+    text-align: left
+}
+
+.search-nores-title {
+    color: #111;
+    font-size: 1.8em;
+    font-weight: 500;
+    margin: 0 8px
+}
+
+.search-nores-list {
+    color: #757575;
+    font-size: 1.3em;
+    line-height: 2;
+    padding: 0 5px 22px 24px
+}
+
+.search-nores-list a {
+    text-decoration: underline
+}
+
+.wishlist-remove-btn,
+.garage-remove-btn {
+    background: url(https://cdn.carid.com/css/prod-images/fbab4ced.svg) no-repeat 0 0
+}
+
+.wishlist-remove-btn.-hover,
+.garage-remove-btn.-hover {
+    background: url(https://cdn.carid.com/css/prod-images/e2ac92b1.svg) no-repeat 0 0
+}
+
+.wishlist-link-btn,
+.garage-link-btn {
+    background: url(https://cdn.carid.com/css/prod-images/9ba38441.svg) no-repeat 0 0;
+    background-size: 11px
+}
+
+.left-menu-icon {
+    cursor: pointer
+}
+
+.left-menu-icon:hover {
+    opacity: .7
+}
+
+.header-dd-hover-element:hover::after {
+    background: rgba(0, 0, 0, 0);
+    bottom: -15px;
+    content: "";
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: auto;
+    transform: translateY(0);
+    width: 100%
+}
+
+.header-dd-hover-element:hover .help-center-nav-btn>.text::after,
+.header-dd-hover-element:hover .nav-tool>.title.-arrow::after {
+    transform: rotateZ(180deg)
+}
+
+.header-dd-h.-popup {
+    right: 0;
+    top: 0
+}
+
+.count-item {
+    background-color: #d4252a;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 16px;
+    min-width: 8px;
+    padding: 0 3px;
+    position: relative;
+    text-align: center;
+    width: 16px
+}
+
+.count-item.-outline {
+    position: absolute;
+    right: 6px;
+    top: 8px
+}
+
+.count-item.-outline::after {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    bottom: -1px;
+    content: "";
+    left: -1px;
+    position: absolute;
+    right: -1px;
+    top: -1px
+}
+
+.count-item.-left-menu-garage {
+    left: 46px;
+    position: absolute;
+    top: 10px
+}
+
+.count-item.-left-menu-wishlist {
+    margin-left: 2px
+}
+
+.count-item.-inactive {
+    background: #717d90
+}
+
+.home-header-message-holder {
+    padding: 16px 8px;
+    position: relative
+}
+
+.home-header-message-holder>.message {
+    background: #fff;
+    border: solid 2px #d4252a;
+    box-sizing: border-box;
+    color: #d4252a;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    z-index: 1
+}
+
+.home-header-message-holder>.message>.icon {
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: 32px 28px;
+    display: inline-block;
+    padding: 15px 5px 15px 40px;
+    text-align: left
+}
+
+.head-stores-icon {
+    background-position: 15px 50%;
+    background-repeat: no-repeat
+}
+
+.head-stores-icon.-i1-15 {
+    background-image: url(https://cdn.carid.com/css/prod-images/3727f9be.svg)
+}
+
+.head-stores-icon.-i1-31 {
+    background-image: url(https://cdn.carid.com/css/prod-images/1c577320.svg)
+}
+
+.head-stores-icon.-i1-6 {
+    background-image: url(https://cdn.carid.com/css/prod-images/76f7f65f.svg)
+}
+
+.head-stores-icon.-i1-20 {
+    background-image: url(https://cdn.carid.com/css/prod-images/a295d67f.svg)
+}
+
+.head-stores-icon.-i5-0 {
+    background-image: url(https://cdn.carid.com/css/prod-images/3b20d0ff.svg)
+}
+
+.head-stores-icon.-i4-0 {
+    background-image: url(https://cdn.carid.com/css/prod-images/c7d1942e.svg)
+}
+
+.head-stores-icon.-i3-0 {
+    background-image: url(https://cdn.carid.com/css/prod-images/12334489.svg)
+}
+
+.head-stores-icon.-i2-0 {
+    background-image: url(https://cdn.carid.com/css/prod-images/202f8d5e.svg)
+}
+
+.head-stores-dd {
+    background: #464646;
+    box-sizing: border-box;
+    display: none;
+    height: calc(100vh - 48px);
+    left: 0;
+    overflow-y: auto;
+    padding: 8px 16px 16px;
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    z-index: 22
+}
+
+.head-stores-dd.-active {
+    display: block
+}
+
+.head-stores-dd>.items {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.head-stores-dd>.items>li {
+    display: block;
+    margin: 4px 0;
+    padding: 0
+}
+
+.head-stores-dd>.items>li>.item {
+    background-position: 6px 10px;
+    background-size: 42px 21px;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3em;
+    height: 40px;
+    line-height: 1.2;
+    padding: 12px 20px 0 66px;
+    position: relative
+}
+
+.head-stores-dd>.items>li>.item:hover {
+    text-decoration: none
+}
+
+.head-stores-dd>.items>li>.item.-hot::after {
+    background: url(https://cdn.carid.com/css/prod-images/350f555e.svg) no-repeat left top;
+    background-size: 100% auto;
+    content: "";
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 22px
+}
+
+.head-dd>.item:hover>.head-dd-main,
+.head-dd>.item:hover>.head-dd-main>.link,
+.head-dd>.item.loading>.head-dd-main,
+.head-dd>.item.loading>.head-dd-main>.link,
+.head-dd>.item.active>.head-dd-main,
+.head-dd>.item.active>.head-dd-main>.link {
+    color: #ffac00;
+    text-decoration: none
+}
+
+.head-dd>.item.active::after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #464646;
+    border-style: solid;
+    border-width: 0 4px 3px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 0;
+    left: 50%;
+    margin-left: -7px;
+    position: absolute;
+    width: 0
+}
+
+.head-dd>.item.loading>.head-dd-main::after {
+    animation: preloader-rotate .7s infinite linear;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDMwIDMwIj48cGF0aCBkPSJNMTUgMzBhMTUgMTUgMCAxMTE1LTE1IDE1IDE1IDAgMDEtMTUgMTV6bTAtMjcuNzNBMTIuNzMgMTIuNzMgMCAxMDI3LjczIDE1IDEyLjc1IDEyLjc1IDAgMDAxNSAyLjI3eiIgZmlsbD0iIzFhMWExYSIgb3BhY2l0eT0iLjciLz48cGF0aCBkPSJNMjcuNzEgMTUuNDhBMTIuNzQgMTIuNzQgMCAwMTE1IDI3LjczVjMwYTE1IDE1IDAgMDAxNS0xNC41MnoiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii43Ii8+PC9zdmc+) 50% 50% no-repeat;
+    background-size: contain;
+    content: "";
+    height: 8px;
+    left: auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    width: 8px
+}
+
+.head-dd>.item.loading>.head-dd-main.nopreload::after {
+    content: none !important
+}
+
+.head-dd>.item.loading>.head-dd-main::after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjkiIHZpZXdCb3g9IjAgMCA5IDkiPjxwYXRoIGQ9Ik00LjUgOUMyIDkgMCA3IDAgNC41UzIgMCA0LjUgMCA5IDIgOSA0LjUgNyA5IDQuNSA5em0wLTguMkMyLjQuOC44IDIuNS44IDQuNXMxLjcgMy43IDMuNyAzLjcgMy43LTEuNyAzLjctMy43UzYuNi44IDQuNS44eiIgb3BhY2l0eT0iLjciIGZpbGw9IiMxYTFhMWEiLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJNOC4yIDQuNWMwIDIuMS0xLjcgMy43LTMuNyAzLjctLjIgMC0uMyAwLS41LS4xdi44Yy4yLjEuMy4xLjUuMUM3IDkgOSA3IDkgNC41YzAtLjIgMC0uMy0uMS0uNWgtLjd2LjV6Ii8+PC9zdmc+);
+    right: -5px
+}
+
+.stars-0 {
+    background: url(https://cdn.carid.com/css/prod-images/8edac619.svg) 0 0 no-repeat;
+    background-size: auto 16px
+}
+
+.stars-1 {
+    background: url(https://cdn.carid.com/css/prod-images/b6062b8d.svg) 0 0 no-repeat;
+    background-size: auto 16px
+}
+
+.stars-2 {
+    background: url(https://cdn.carid.com/css/prod-images/2add925b.svg) 0 0 no-repeat;
+    background-size: auto 16px
+}
+
+.stars-3 {
+    background: url(https://cdn.carid.com/css/prod-images/53c8ca10.svg) 0 0 no-repeat;
+    background-size: auto 16px
+}
+
+.stars-4 {
+    background: url(https://cdn.carid.com/css/prod-images/ddc6203a.svg) 0 0 no-repeat;
+    background-size: auto 16px
+}
+
+.stars-5 {
+    background: url(https://cdn.carid.com/css/prod-images/a6c14794.svg) 0 0 no-repeat;
+    background-size: auto 16px
+}
+
+.stars-6 {
+    background: url(https://cdn.carid.com/css/prod-images/2cd5b472.svg) 0 0 no-repeat;
+    background-size: auto 16px
+}
+
+.stars-7 {
+    background: url(https://cdn.carid.com/css/prod-images/4a43c77b.svg) 0 0 no-repeat;
+    background-size: auto 16px
+}
+
+.stars-8 {
+    background: url(https://cdn.carid.com/css/prod-images/6f2498bf.svg) 0 0 no-repeat;
+    background-size: auto 16px
+}
+
+.stars-9 {
+    background: url(https://cdn.carid.com/css/prod-images/356472c4.svg) 0 0 no-repeat;
+    background-size: auto 16px
+}
+
+.stars-10 {
+    background: url(https://cdn.carid.com/css/prod-images/c8b0a096.svg) 0 0 no-repeat;
+    background-size: auto 16px
+}
+
+.prod_grd .lst_rating,
+.prod_lst .lst_rating {
+    display: block;
+    height: 16px;
+    width: 100%
+}
+
+.prod_grd .lst_sales_stats,
+.prod_lst .lst_sales_stats {
+    background: #ffac00;
+    left: 0;
+    padding: .1em .5em;
+    position: absolute;
+    top: 0;
+    z-index: 2
+}
+
+.prod_grd>li,
+.prod_grd>li>.-clone {
+    box-sizing: border-box;
+    position: relative;
+    vertical-align: top;
+    z-index: 1
+}
+
+.prod_grd .lst_a::after,
+.prod_lst .lst_a::after {
+    border: 1px solid #111;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 3.35;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    top: 96px;
+    white-space: nowrap;
+    width: 240px
+}
+
+.prod_grd .lst_a:hover::after,
+.prod_lst .lst_a:hover::after {
+    background-color: rgba(0, 0, 0, .06)
+}
+
+.prod_grd>li::after,
+.prod_lst>li::after {
+    border-bottom: 1px solid #d8d8d8;
+    bottom: 0;
+    content: "";
+    height: 0;
+    position: absolute
+}
+
+.prod_grd .lst_a::before,
+.prod_lst .lst_a::before {
+    content: "";
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 0
+}
+
+.prod_grd .lst_a::after,
+.prod_lst .lst_a::after {
+    content: "VIEW DETAILS";
+    z-index: 1
+}
+
+.prod_grd .lst_a.-hidden-button::after,
+.prod_lst .lst_a.-hidden-button::after {
+    display: none
+}
+
+.prod_grd .lst_a.-blue::after,
+.prod_lst .lst_a.-blue::after {
+    background: #3761bf;
+    border-color: #3761bf;
+    color: #fff
+}
+
+.prod_grd .lst_a.-blue:hover::after,
+.prod_lst .lst_a.-blue:hover::after {
+    background-color: #3157ab
+}
+
+.prod_grd .lst-a-name,
+.prod_lst .lst-a-name {
+    display: block
+}
+
+.prod_grd .lst_prc_no_price,
+.prod_lst .lst_prc_no_price {
+    font-size: 1.6em
+}
+
+.prod_grd .lst_rating,
+.prod_lst .lst_rating {
+    background-size: 86px auto;
+    box-sizing: border-box;
+    color: #757575;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 7px 8px 0 0;
+    padding-left: 92px;
+    padding-right: 8px;
+    text-transform: capitalize;
+    width: auto
+}
+
+.prod_grd .lst_rating>span,
+.prod_lst .lst_rating>span {
+    display: none
+}
+
+.prod_grd .lst_prc,
+.prod_grd .lst_prc_no_price,
+.prod_lst .lst_prc,
+.prod_lst .lst_prc_no_price {
+    color: #464646
+}
+
+.prod_grd .lst_prc::before,
+.prod_lst .lst_prc::before {
+    content: attr(data-price-from);
+    font-size: .53em
+}
+
+.prod_grd .lst_prc::after,
+.prod_lst .lst_prc::after {
+    content: attr(data-price-suffix);
+    font-size: .53em;
+    font-weight: 400
+}
+
+.prod_grd .lst_prc:not(.-childs)::after,
+.prod_lst .lst_prc:not(.-childs)::after {
+    content: ""
+}
+
+.prod_grd .lst-a-btn.-add-to-cart::after,
+.prod_lst .lst-a-btn.-add-to-cart::after {
+    content: "ADD TO CART"
+}
+
+.prod_grd .lst-a-btn.-notify-me::after,
+.prod_lst .lst-a-btn.-notify-me::after {
+    content: "NOTIFY ME"
+}
+
+.prod_grd .lst-info-left-part,
+.prod_grd .lst-info-right-part,
+.prod_lst .lst-info-left-part,
+.prod_lst .lst-info-right-part {
+    display: flex
+}
+
+.prod_grd .prod-sales-info,
+.prod_lst .prod-sales-info {
+    font-size: 1.3em
+}
+
+.prod_grd>li,
+.prod_grd>li>.-clone {
+    align-items: stretch;
+    flex-direction: column
+}
+
+.prod_grd>li::after,
+.prod_grd>li>.-clone::after {
+    border-bottom-width: 2px;
+    left: 0;
+    right: 0
+}
+
+.prod_grd>li>.-clone {
+    border-bottom: none;
+    display: none;
+    margin-top: 0;
+    position: absolute;
+    width: 100% !important
+}
+
+.prod_grd>li>.-clone::before {
+    bottom: -1px;
+    display: block;
+    height: auto !important;
+    padding-bottom: 0
+}
+
+.prod_grd>li>.-clone>.lst_ic_h {
+    opacity: 0
+}
+
+.prod_grd>li>.-clone .lst-a-name {
+    white-space: normal
+}
+
+.prod_grd>li>.-clone .lst-info-left-part,
+.prod_grd>li>.-clone .lst-info-right-part {
+    margin: 0 -8px;
+    padding-left: 8px;
+    padding-right: 8px
+}
+
+.prod_grd>li>.-clone .lst-info-right-part {
+    padding-bottom: 34px
+}
+
+.prod_grd>li>.-clone .lst_main {
+    background-color: #fff;
+    padding-bottom: 40px
+}
+
+.prod_grd.three_per_row .lst_prc {
+    font-size: 1.4em
+}
+
+.prod_grd.three_per_row .lst_prc.-long {
+    font-size: 1.3em
+}
+
+.prod_grd.five_per_row .lst_prc.-long {
+    font-size: 1.5em
+}
+
+.prod_grd .lst-a-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.3em;
+    line-height: 1.3
+}
+
+.prod_grd .lst-a-name.-normal-text {
+    white-space: normal
+}
+
+.prod_grd .lst_main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    padding-bottom: 24px;
+    width: 100%
+}
+
+.prod_grd .lst_main.-with-button {
+    padding-bottom: 90px
+}
+
+.prod_grd .lst_main .lst_a::after,
+.prod_grd .lst_main .lst_a.-hidden-button::after {
+    display: none
+}
+
+.prod_grd .lst_a {
+    background: url(https://cdn.carid.com/css/prod-images/0b5ea5b4.svg) no-repeat 0 0;
+    display: block;
+    margin-bottom: 8px;
+    padding-top: 1em;
+    text-align: left;
+    text-decoration: none;
+    width: 100%
+}
+
+.prod_grd .lst_a::before {
+    left: 0;
+    padding-top: 100%;
+    width: 100%
+}
+
+.prod_grd .lst_prc,
+.prod_grd .lst_prc_no_price {
+    color: #111;
+    display: block;
+    font-size: 1.6em;
+    position: relative;
+    white-space: nowrap;
+    z-index: 2
+}
+
+.prod_grd .lst_meta {
+    margin-bottom: 15px
+}
+
+.prod_grd .lst_meta.-wt {
+    display: none
+}
+
+.prod_grd .lst_rating {
+    float: none;
+    margin-right: 0;
+    padding-right: 0
+}
+
+.prod_grd .lst-a-btn {
+    bottom: 20px;
+    left: 0;
+    position: absolute;
+    width: 100%
+}
+
+.prod_grd .lst-info-left-part {
+    flex-direction: column;
+    flex-grow: 1
+}
+
+.prod_grd .lst-info-right-part {
+    align-items: flex-end;
+    flex-direction: row
+}
+
+.prod_grd .prod-lst-colors {
+    margin: 0 0 18px
+}
+
+.prod_grd .prod-lst-feature-image,
+.prod_grd .prod-lst-feature-images,
+.prod_grd .prod-lst-edit-product-button-h {
+    display: none
+}
+
+.prod_grd .pagination-h1::after {
+    display: none
+}
+
+.prod_grd .prod-sales-info {
+    margin-bottom: 6px;
+    margin-top: 4px
+}
+
+.prod_lst>li::after {
+    left: 0;
+    margin: 0;
+    right: 0
+}
+
+.prod_lst>li:first-child {
+    margin-top: 0
+}
+
+.prod_lst>li.-sp-child-list .lst_ic_h {
+    width: 50%
+}
+
+.prod_lst>li.-sp-child-list .lst-descr-text {
+    display: block;
+    line-height: 1.4;
+    margin-bottom: 5px;
+    padding-top: 5px
+}
+
+.prod_lst>li.-sp-child-list .lst-info-right-part {
+    box-sizing: border-box;
+    margin-top: 8px;
+    min-height: 52px;
+    padding-right: 120px
+}
+
+.prod_lst>li.-wt-prod-list-with-childs {
+    flex-direction: column
+}
+
+.prod_lst>li.-wt-prod-list-with-childs>.lst_ic_h {
+    margin: 0 auto;
+    width: 100%
+}
+
+.prod_lst>li.-wt-prod-list-with-childs>.lst_main {
+    margin-left: 0;
+    position: static
+}
+
+.prod_lst>li.-wt-prod-list-with-childs .lst_a::before {
+    left: 0;
+    padding-top: 100%;
+    width: 100%
+}
+
+.prod_lst>li>.-clone {
+    display: none
+}
+
+.prod_lst .lst_featured_video {
+    display: none
+}
+
+.prod_lst .lst_main.-childs {
+    padding-bottom: 0
+}
+
+.prod_lst .lst_main.-childs .lst_a.-hidden-button::after {
+    display: none
+}
+
+.prod_lst .lst_main.-childs .lst-a-btn {
+    display: block
+}
+
+.prod_lst .lst_main.-childs .lst-type-icons {
+    margin-bottom: 0
+}
+
+.prod_lst .lst_main.-childs .rebate-title {
+    margin-bottom: 0;
+    margin-top: 0
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder.-both-call-for-price>.line:first-child {
+    display: none
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder>.line {
+    margin-bottom: 8px;
+    padding-bottom: 12px
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder>.line:last-child {
+    border-bottom: 0;
+    margin-bottom: 8px;
+    padding-bottom: 0
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder>.line:last-child.-no-border {
+    border: none;
+    padding-bottom: 10px
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder>.line.-out-of-stock>.lst_prc {
+    display: none
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder>.line.-out-of-stock>.lst_features {
+    color: #757575
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder>.line.-out-of-stock>.lst_meta {
+    display: block;
+    float: right;
+    margin-top: 15px
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder>.line>.lst_prc:not(.-call-for-price) {
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 14px
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder>.line>.lst_meta {
+    display: none
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder .lst_features {
+    overflow: hidden;
+    padding-top: 0
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder .lst_features.-wt {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 4px
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder .lst_features.-wt>.lst-feature-highlight {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 4px
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder .lst_features.-wt span {
+    white-space: normal
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder .lst_features.-wt span:first-child {
+    padding-top: 0
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder .lst_features span {
+    display: block;
+    padding-left: 0;
+    position: relative
+}
+
+.prod_lst .lst_main .product-list-qty-form-holder .lst_features span::before {
+    content: none
+}
+
+.prod_lst .lst_main .wt-qty-subtotal {
+    display: none
+}
+
+.prod_lst .lst-info-left-part {
+    flex-direction: column;
+    flex-shrink: 1;
+    margin-right: 4.4776119403%;
+    min-width: 0;
+    width: 100%
+}
+
+.prod_lst .lst-info-right-part {
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100%
+}
+
+.prod_lst .lst-info-right-part.-childs {
+    margin-top: 20px
+}
+
+.prod_lst .lst_a {
+    align-self: flex-start;
+    max-width: 100%;
+    word-wrap: break-word
+}
+
+.prod_lst .lst_a::before {
+    left: -112.7659574468%;
+    padding-top: 106.3829787234%;
+    width: 106.3829787234%
+}
+
+.prod_lst .lst_a.-rebate-long::after {
+    top: 166px
+}
+
+.prod_lst .lst_a.-wt-rebate::after {
+    top: 164px
+}
+
+.prod_lst .lst_a.-wt-rebate-long::after {
+    top: 226px
+}
+
+.prod_lst .lst_a.-wt-sale::after {
+    top: 170px
+}
+
+.prod_lst .lst_a.-sale::after,
+.prod_lst .lst_a.-avail::after,
+.prod_lst .lst_a.-rebate::after {
+    top: 130px
+}
+
+.prod_lst .lst_a.-rebate-sale::after {
+    top: 162px
+}
+
+.prod_lst .lst_a.-rebate-long-sale::after {
+    top: 182px
+}
+
+.prod_lst .lst_a.-wt-rebate-sale::after {
+    top: 184px
+}
+
+.prod_lst .lst_a.-wt-rebate-long-sale::after {
+    top: 226px
+}
+
+.prod_lst .lst_a.-blue::after {
+    display: block;
+    left: 0;
+    right: auto;
+    width: 100%
+}
+
+.prod_lst .lst-a-btn.-static {
+    position: static;
+    width: auto
+}
+
+.prod_lst .lst-a-btn.-static::after {
+    content: "VIEW DETAILS"
+}
+
+.prod_lst .lst-a-name {
+    font-size: 1.3em;
+    line-height: 1.52
+}
+
+.prod_lst .lst_meta {
+    margin: 2px 0 10px;
+    overflow: hidden;
+    position: relative
+}
+
+.prod_lst .lst_meta.-wt {
+    height: 16px;
+    margin-bottom: 0;
+    margin-top: 8px
+}
+
+.prod_lst .lst_meta.-wt .prod_avail,
+.prod_lst .lst_meta.-wt .lst_id {
+    margin-bottom: 0;
+    margin-top: 0
+}
+
+.prod_lst .lst_id,
+.prod_lst .prod_avail {
+    border-left: 1px solid #757575;
+    float: left;
+    font-size: 1.3em;
+    font-weight: 300;
+    height: 15px;
+    line-height: 1.6;
+    margin: 8px 18px 0 -8px;
+    padding-left: 8px
+}
+
+.prod_lst .lst_id:last-child,
+.prod_lst .prod_avail:last-child {
+    margin-right: 0
+}
+
+.prod_lst .prod_avail {
+    color: #464646;
+    font-style: normal;
+    padding-top: 0
+}
+
+.prod_lst .prod_avail::before {
+    border-width: 3px
+}
+
+.prod_lst .prod_avail .part2 {
+    display: none
+}
+
+.prod_lst .lst-descr {
+    color: #464646;
+    font-size: 1.2em;
+    text-align: left
+}
+
+.prod_lst .lst_features {
+    display: none
+}
+
+.prod_lst .lst_features>span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    list-style: disc inside;
+    padding-left: 12px;
+    padding-top: 4px;
+    position: relative
+}
+
+.prod_lst .lst_features>span::before {
+    background-color: #464646;
+    border-radius: 50%;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 4px
+}
+
+.prod_lst .lst_prc,
+.prod_lst .lst_prc_no_price {
+    display: block;
+    font-size: 1.6em;
+    line-height: 1.3;
+    margin-top: 10px
+}
+
+.prod_lst .lst_prc.-rebate,
+.prod_lst .lst_prc_no_price.-rebate {
+    margin-top: 0
+}
+
+.prod_lst .lst-type-icons {
+    letter-spacing: -0.3em;
+    line-height: 0;
+    margin-bottom: 6px;
+    margin-top: 6px
+}
+
+.prod_lst .lst-type-icons>.ic {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    margin-left: 2.5%;
+    margin-top: 0;
+    max-width: 32px;
+    position: relative;
+    width: 18%
+}
+
+.prod_lst .lst-type-icons>.ic.-show-tooltip>.prod-tooltip {
+    display: block
+}
+
+.prod_lst .lst-type-icons>.ic:first-child {
+    margin-left: 0
+}
+
+.prod_lst .lst-type-icons>.ic::after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    width: 100%
+}
+
+.prod_lst .lst-type-icons>.ic:nth-child(1)>.prod-tooltip,
+.prod_lst .lst-type-icons>.ic:nth-child(2)>.prod-tooltip {
+    left: 0;
+    right: auto;
+    white-space: nowrap
+}
+
+.prod_lst .lst-type-icons>.ic:nth-child(1)>.prod-tooltip::after,
+.prod_lst .lst-type-icons>.ic:nth-child(2)>.prod-tooltip::after {
+    margin-left: 8px
+}
+
+.prod_lst .pagination-h1 {
+    width: auto !important
+}
+
+.prod_lst .rebate-title {
+    margin-top: 10px
+}
+
+.prod_lst .prod-sales-info {
+    margin-bottom: 4px;
+    margin-top: 4px
+}
+
+.prod_lst .prod-sales-info.-wt {
+    margin-bottom: 6px
+}
+
+.prod-tooltip {
+    bottom: 100%;
+    color: #fff;
+    display: none;
+    font-size: 1.3em;
+    font-weight: 400;
+    left: -100px;
+    letter-spacing: normal;
+    line-height: 1.2;
+    margin-bottom: 2px;
+    padding-bottom: 7px;
+    position: absolute;
+    right: -100px;
+    text-align: center;
+    z-index: 1
+}
+
+.prod-tooltip::before {
+    background: #757575;
+    content: attr(data-anchor);
+    display: inline-block;
+    padding: 5px 10px
+}
+
+.prod-tooltip::after {
+    border: 8px solid rgba(0, 0, 0, 0);
+    border-bottom: 0;
+    border-top-color: #757575;
+    bottom: 0;
+    content: "";
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 0
+}
+
+.prod-tooltip.-custom-paint {
+    left: 0;
+    margin-bottom: 1px;
+    padding-bottom: 6px;
+    text-align: left;
+    white-space: nowrap
+}
+
+.prod-tooltip.-custom-paint::before {
+    padding: 4px 10px
+}
+
+.prod-tooltip.-custom-paint::after {
+    left: 12px;
+    margin: 0
+}
+
+.prod-lst-additional-icons {
+    left: -4px;
+    position: absolute;
+    top: 16px
+}
+
+.prod-lst-recommended {
+    background: url(https://cdn.carid.com/css/prod-images/f47fb9e7.svg) no-repeat 0 0;
+    height: 13px;
+    width: 80px
+}
+
+.prod-lst-new-arrival {
+    background: url(https://cdn.carid.com/css/prod-images/45d6df18.svg) no-repeat 0 0;
+    height: 13px;
+    width: 70px
+}
+
+.prod-lst-custom-paint {
+    background: url(https://cdn.carid.com/css/prod-images/3a398f0c.svg) no-repeat 0 0;
+    height: 35px;
+    margin-top: 6px;
+    position: relative;
+    width: 35px
+}
+
+.prod-lst-oe {
+    background: url(https://cdn.carid.com/css/prod-images/6da44166.svg) no-repeat 0 0;
+    height: 13px;
+    width: 80px
+}
+
+.prod-lst-free-gift {
+    background: url(https://cdn.carid.com/css/prod-images/ac6d3599.svg) no-repeat 0 0;
+    height: 16px;
+    width: 80px
+}
+
+.prod-lst-free-gift,
+.prod-lst-recommended,
+.prod-lst-custom-paint,
+.prod-lst-new-arrival,
+.prod-lst-oe {
+    background-size: 100% 100%;
+    margin-bottom: 8px
+}
+
+.prod-lst-colors {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    max-width: 250px
+}
+
+.prod-lst-colors::after {
+    box-sizing: border-box;
+    color: #757575;
+    content: attr(data-colors-count);
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.4;
+    position: relative;
+    vertical-align: middle
+}
+
+.prod-lst-colors-item {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 30px 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 20px;
+    margin-right: 7px;
+    vertical-align: middle;
+    width: 30px
+}
+
+.prod-lst-feature-image {
+    margin-bottom: 4px;
+    margin-top: 16px
+}
+
+.prod-lst-feature-image>.item {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    display: block;
+    height: 45px;
+    max-width: 114px;
+    width: 100%
+}
+
+.prod-lst-feature-images {
+    font-size: 0;
+    margin-bottom: 20px;
+    margin-top: 0;
+    position: relative
+}
+
+.prod-lst-feature-images>.item {
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: none;
+    height: 22px;
+    margin: 6px 13px 0 0;
+    max-width: 110px;
+    width: 100%
+}
+
+.prod-lst-feature-images>.item:nth-child(-n+2) {
+    display: block
+}
+
+.prod-lst-feature-images.open>.item {
+    display: block
+}
+
+.prod-lst-feature-images.open>.btn {
+    transform: rotate(180deg)
+}
+
+.prod-lst-feature-images>.btn {
+    background: url(https://cdn.carid.com/css/prod-images/a7716fdb.svg) no-repeat 50% 50%;
+    background-size: 11px auto;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    width: 20px
+}
+
+.result_preloader {
+    height: 60px;
+    position: relative
+}
+
+.result_preloader::after {
+    animation: preloader-rotate .7s infinite linear;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDMwIDMwIj48cGF0aCBkPSJNMTUgMzBhMTUgMTUgMCAxMTE1LTE1IDE1IDE1IDAgMDEtMTUgMTV6bTAtMjcuNzNBMTIuNzMgMTIuNzMgMCAxMDI3LjczIDE1IDEyLjc1IDEyLjc1IDAgMDAxNSAyLjI3eiIgZmlsbD0iIzFhMWExYSIgb3BhY2l0eT0iLjciLz48cGF0aCBkPSJNMjcuNzEgMTUuNDhBMTIuNzQgMTIuNzQgMCAwMTE1IDI3LjczVjMwYTE1IDE1IDAgMDAxNS0xNC41MnoiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii43Ii8+PC9zdmc+) 50% 50% no-repeat;
+    background-size: contain;
+    content: "";
+    height: 30px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    width: 30px
+}
+
+.result_preloader.nopreload::after {
+    content: none !important
+}
+
+.empty-product-list-message {
+    background: url(https://cdn.carid.com/css/prod-images/6c6d3cec.svg) 50% 0 no-repeat;
+    margin-bottom: 90px;
+    margin-top: 70px;
+    padding-top: 120px;
+    text-align: center
+}
+
+.empty-product-list-message>.text {
+    color: #111;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    padding: 0 10px
+}
+
+.empty-product-list-message>.text>b {
+    display: block;
+    font-weight: 500
+}
+
+.product-list-qty-selector {
+    float: left;
+    font-size: 1.3em
+}
+
+.product-list-qty-selector>.selector {
+    border-radius: 4px;
+    display: inline-block;
+    padding-right: 12px;
+    position: relative;
+    vertical-align: middle;
+    width: 64px
+}
+
+.product-list-qty-selector>.selector .label {
+    color: #757575;
+    display: block;
+    font-size: .8em;
+    opacity: 1;
+    padding: 6px 4px;
+    z-index: 1
+}
+
+.product-list-qty-selector>.selector .select {
+    color: #111;
+    padding: 22px 16px 8px
+}
+
+.no-js .product-list-qty-selector>.selector::after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.product-list-qty-selector>.selector .select-arrow-hide {
+    background: #fff
+}
+
+.product-list-qty-selector>.selector .select-arrow-hide::before {
+    background-size: 11px auto;
+    right: 12px
+}
+
+.product-list-subtotal-price {
+    color: #464646;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 24px;
+    overflow: hidden;
+    text-align: right
+}
+
+.product-list-subtotal-price::after {
+    color: #757575;
+    content: attr(data-set-suffix);
+    font-size: .8em;
+    font-weight: 400
+}
+
+.product-list-msg {
+    border-bottom: 1px solid #d8d8d8;
+    color: #111;
+    margin: 0 1% 20px;
+    padding: 4px 0 20px
+}
+
+.product-list-msg.-icon {
+    padding-left: 60px
+}
+
+.product-list-msg.-icon.-attention {
+    background: url(https://cdn.carid.com/css/prod-images/26e87c86.svg) 0 0 no-repeat
+}
+
+.product-list-msg.-icon.-note {
+    background: url(https://cdn.carid.com/css/prod-images/53c80e37.svg) 0 0 no-repeat
+}
+
+.product-list-msg.-icon.-optional {
+    background: url(https://cdn.carid.com/css/prod-images/4bbcdfa2.svg) 0 0 no-repeat
+}
+
+.product-list-msg>.title {
+    font-size: 1.6em;
+    font-weight: 500
+}
+
+.product-list-msg>.text {
+    font-size: 1.4em;
+    font-weight: 400
+}
+
+.product-list-msg>.text>.link {
+    cursor: pointer;
+    text-decoration: underline
+}
+
+.product-list-msg>.text>.link:hover {
+    text-decoration: none
+}
+
+.prod-lst-edit-product-button-h {
+    padding-top: 20px;
+    text-align: center
+}
+
+.shifter:not(.shifter-ready),
+.shifter.enabled.-active:not(.-in-service-types) {
+    margin: 16px 0 56px 0
+}
+
+.shifter:not(.shifter-ready),
+.shifter.enabled {
+    margin: 32px 0
+}
+
+.shifter:not(.shifter-ready).-active.-ptype-shifter,
+.shifter.enabled.-active.-ptype-shifter {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 0
+}
+
+.shifter:not(.shifter-ready).-articles,
+.shifter.enabled.-articles {
+    margin-bottom: 80px !important
+}
+
+.shifter:not(.shifter-ready).-about-us,
+.shifter.enabled.-about-us {
+    margin-bottom: 32px !important
+}
+
+.shifter:not(.shifter-ready).-in-service-types,
+.shifter.enabled.-in-service-types {
+    transition: margin .5s linear
+}
+
+.shifter:not(.shifter-ready)>ul,
+.shifter.enabled>ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    will-change: scroll-position
+}
+
+.shifter:not(.shifter-ready)>ul>li,
+.shifter.enabled>ul>li {
+    flex: 0 0 auto;
+    list-style: none;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important
+}
+
+.shifter:not(.shifter-ready) ul {
+    overflow-x: auto;
+    overflow-y: hidden
+}
+
+.shifter:not(.shifter-ready) ul,
+.shifter.enabled.-active ul {
+    transform: translateZ(0)
+}
+
+.hiddenScroll .shifter:not(.shifter-ready)>ul,
+.hiddenScroll .shifter.enabled>ul {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1px 0
+}
+
+.shifter-arrow {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: none;
+    height: 33px;
+    margin-top: -16px;
+    opacity: .8;
+    position: absolute;
+    top: 50%;
+    vertical-align: middle;
+    width: 31px
+}
+
+.shifter-arrow:hover {
+    opacity: 1
+}
+
+.shifter-arrow.-inactive {
+    display: none !important
+}
+
+.shifter-arrow.-left {
+    left: -30px
+}
+
+.shifter-arrow.-right {
+    right: -30px
+}
+
+.shifter-arrow.-ptype-shifter.-left {
+    left: -8px
+}
+
+.shifter-arrow.-ptype-shifter.-right {
+    right: -8px
+}
+
+.shifter-arrow.-featured-brands.-left {
+    left: -46px
+}
+
+.shifter-arrow.-featured-brands.-right {
+    right: -46px
+}
+
+.shifter-navigation {
+    display: block;
+    font-size: 0;
+    letter-spacing: -0.3em;
+    overflow: hidden;
+    text-align: center
+}
+
+.shifter-navigation.-inactive {
+    display: none !important
+}
+
+.shifter-pagination {
+    bottom: -24px;
+    display: block;
+    margin: 0 auto;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%
+}
+
+.shifter-pagination.-inactive {
+    display: none !important
+}
+
+.shifter-pagination.-articles {
+    bottom: -24px
+}
+
+.shifter-pagination.-featured-brands {
+    bottom: -32px
+}
+
+.shifter-pagination>.dot {
+    background-clip: content-box;
+    background-color: #d8d8d8;
+    border-bottom: 4px solid rgba(0, 0, 0, 0);
+    border-top: 4px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: inline-block;
+    height: 2px;
+    margin: 0 4px;
+    overflow: hidden;
+    pointer-events: auto;
+    transition: all .3s;
+    vertical-align: middle;
+    width: 16px
+}
+
+.shifter-pagination>.dot:hover {
+    opacity: 1
+}
+
+.shifter-pagination>.dot.-active {
+    background-color: #111;
+    cursor: default;
+    width: 48px
+}
+
+.review-col-section {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.prod-review-col-write {
+    order: 2;
+    width: 100%
+}
+
+.prod-review-col-rating {
+    margin-bottom: 32px;
+    order: 1;
+    width: 100%
+}
+
+.prod-review-write-btn-h {
+    margin: 0 auto;
+    width: 200px
+}
+
+.review-section {
+    color: #757575;
+    margin: 0 .8em;
+    overflow: hidden
+}
+
+.review-col1,
+.review-col2 {
+    box-sizing: border-box
+}
+
+.review-col1:first-child,
+.review-col2:first-child {
+    padding-left: 0
+}
+
+.prod-review {
+    align-items: flex-start;
+    border-top: 1px solid #d8d8d8;
+    color: #111;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px 0;
+    padding-top: 20px
+}
+
+.prod-review:first-child {
+    border-top: 0;
+    margin-top: 0
+}
+
+.prod-review-col-head {
+    width: 100%
+}
+
+.prod-review-col-main {
+    width: 100%
+}
+
+.prod-review-head-rating {
+    background-size: auto 100%;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    font-weight: 500;
+    height: 16px;
+    line-height: 1;
+    padding: 3px 0 0 110px
+}
+
+.prod-review-title {
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 12px
+}
+
+.prod-review-prod-name {
+    color: #464646;
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin-top: 12px
+}
+
+.prod-review-message {
+    background: #f8f8f8;
+    border-radius: 4px;
+    color: #464646;
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin: 20px 0 14px;
+    padding: 12px 20px;
+    word-wrap: break-word
+}
+
+.prod_rvw {
+    border-top: 1px solid #d8d8d8;
+    clear: both;
+    overflow: hidden;
+    padding: 2em 0
+}
+
+.prod_rvw:first-child {
+    border: none
+}
+
+.prod-review-section-name {
+    font-size: 1.9em;
+    font-weight: 300;
+    margin-top: .8em
+}
+
+.prod-review-section-name.-product {
+    font-size: 2.4em
+}
+
+.prod-review-section-name>a {
+    color: #111
+}
+
+.prod-review-section-name b {
+    font-weight: 500
+}
+
+.review-h1-description {
+    color: #464646;
+    font-size: 1.3em;
+    line-height: 1;
+    margin: -12px 2% 14px
+}
+
+.prod_rvw_rt_ttl_main {
+    color: #464646;
+    font-size: 1.5em;
+    line-height: 1.8;
+    margin: 1.5em 0
+}
+
+.prod_rvw_rt_ttl_main>.rating {
+    background-size: auto 24px;
+    display: inline-block;
+    line-height: 26px;
+    padding-left: 152px
+}
+
+.prod_rvw_rt_ttl_main>img {
+    vertical-align: bottom
+}
+
+.rating-percent-star-count {
+    background-origin: content-box;
+    background-position: right 7px;
+    background-repeat: no-repeat;
+    background-size: auto 15px;
+    font-size: 1.4em;
+    font-weight: 500;
+    height: 30px;
+    line-height: 1;
+    padding-right: 60px;
+    position: relative
+}
+
+.rating-percent-star-count::after {
+    bottom: 0;
+    content: attr(data-count);
+    height: 12px;
+    margin: auto 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px
+}
+
+.rating-percent-star-count>.percent {
+    background-color: #d8d8d8;
+    height: 6px;
+    left: 0;
+    position: absolute;
+    right: 172px;
+    top: 12px
+}
+
+.rating-percent-star-count>.percent>.progress {
+    background-color: #ffac00;
+    height: 6px;
+    position: absolute
+}
+
+.prod-rvw-message {
+    background: #f0f0f0;
+    border-radius: 4px;
+    color: #464646;
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin: 20px 0 0;
+    padding: 12px 20px;
+    text-align: left;
+    word-wrap: break-word
+}
+
+.prod-rvw-cnt-ttl-descr {
+    color: #111;
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin-top: 6px
+}
+
+.prod-rvw-cnt-ttl-descr>a {
+    color: #464646
+}
+
+.prod-feedback-info {
+    align-items: center;
+    color: #464646;
+    display: flex;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 20px 0 16px;
+    position: relative
+}
+
+.prod-feedback-info::before {
+    background: #d8d8d8;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    flex: 0 0 auto;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 30px
+}
+
+.prod-feedback-info::after {
+    color: #fff;
+    content: attr(data-first-char);
+    display: block;
+    font-size: 1.0909em;
+    font-weight: 700;
+    left: 0;
+    line-height: 1;
+    margin-top: -6px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    width: 30px
+}
+
+.prod-feedback-info.-vendor::before {
+    background: url(https://cdn.carid.com/css/prod-images/0594af36.svg) #717d90 no-repeat 50%
+}
+
+.prod-feedback-info.-vendor::after {
+    content: ""
+}
+
+.prod-feedback-info.-last {
+    margin-bottom: 0
+}
+
+.prod-feedback-info.-support {
+    padding-left: 40px
+}
+
+.prod-feedback-info.-support::before,
+.prod-feedback-info.-support::after {
+    display: none
+}
+
+.prod-feedback-info.-support>i {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px
+}
+
+.prod-feedback-info-posted {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 500;
+    max-width: 86%;
+    vertical-align: middle
+}
+
+.prod-feedback-info-posted>.ymm {
+    display: block;
+    font-size: .9em;
+    font-weight: 400
+}
+
+.prod-feedback-view-more {
+    box-sizing: border-box;
+    color: #3761bf;
+    cursor: pointer;
+    display: block;
+    padding: 8px 20px;
+    width: 100%
+}
+
+.prod-feedback-view-more::before {
+    content: "show more"
+}
+
+.prod-feedback-view-more::after {
+    background: url(https://cdn.carid.com/css/prod-images/19ada3d3.svg) no-repeat 6px 4px;
+    background-size: 10px 8px;
+    content: "";
+    padding: 0 16px 0 5px
+}
+
+.prod-feedback-view-more.-expanded::before {
+    content: "show less"
+}
+
+.prod-feedback-view-more.-expanded::after {
+    background-image: url(https://cdn.carid.com/css/prod-images/593a2708.svg)
+}
+
+.prod-review-img {
+    display: block;
+    width: 100%
+}
+
+.review-url-btn {
+    margin: 0 auto 24px;
+    max-width: 316px
+}
+
+.prod-rvw-btn {
+    box-sizing: border-box;
+    margin: 10px 0 0;
+    min-width: 194px;
+    width: 100%
+}
+
+.prod-rvw-btn:last-of-type {
+    margin-right: 0
+}
+
+.rvw-avg-btn-holder {
+    font-size: 1.4em;
+    margin-right: 8px;
+    text-align: center
+}
+
+.rvw-lnk-btn {
+    display: none
+}
+
+.header-home-reviews>.h2 {
+    display: none
+}
+
+.reviews-sort-select-wrap {
+    display: inline-block;
+    vertical-align: middle;
+    width: 180px
+}
+
+.review-more-btn-holder {
+    display: block;
+    margin-bottom: 30px
+}
+
+.prod-qa-list-wrap {
+    border-top: 1px solid #d8d8d8;
+    margin-bottom: 50px
+}
+
+.prod-qa-list-wrap::before,
+.prod-qa-list-wrap::after {
+    content: none
+}
+
+.prod-qa-list-wrap>.left-column>.item,
+.prod-qa-list-wrap>.right-column>.item {
+    border-bottom: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    padding-top: 32px
+}
+
+.prod-qa-content {
+    padding-left: 30px
+}
+
+.prod-qa-content:first-child {
+    padding-left: 0
+}
+
+.prod-qa-content.-last {
+    padding-bottom: 0
+}
+
+.prod-qa-content>.title,
+.prod-qa-content>.text {
+    color: #464646
+}
+
+.prod-qa-content>.title {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 8px
+}
+
+.prod-qa-content>.title.-vendor-portal {
+    vertical-align: middle
+}
+
+.prod-qa-content>.topic {
+    font-size: 1.4em;
+    margin-bottom: 8px
+}
+
+.prod-qa-content>.topic>span {
+    font-weight: 700
+}
+
+.prod-qa-content>.link {
+    display: inline-block;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 8px
+}
+
+.prod-qa-content>.link.-vendor-portal {
+    display: block;
+    margin-bottom: 4px;
+    padding-top: 10px
+}
+
+.prod-qa-content .text {
+    font-size: 1.4em;
+    line-height: 1.6;
+    word-break: break-word
+}
+
+.prod-qa-content .text.-rejected {
+    color: #a9a9a9
+}
+
+.prod-qa-content .spoiler-button-holder.spoiler-control {
+    margin-bottom: 0;
+    margin-top: 0
+}
+
+.prod-review-thumbs-holder {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px
+}
+
+.prod-review-thumbs-holder>.thumbnail,
+.prod-review-thumbs-holder>.prod-review-expand-btn {
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    margin-right: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 90px
+}
+
+.prod-review-thumbs-holder>.thumbnail.-video,
+.prod-review-thumbs-holder>.prod-review-expand-btn.-video {
+    position: relative
+}
+
+.prod-review-thumbs-holder>.thumbnail.-video::before,
+.prod-review-thumbs-holder>.prod-review-expand-btn.-video::before {
+    background-color: rgba(0, 0, 0, .25);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.prod-review-thumbs-holder>.thumbnail.-video:hover::before,
+.prod-review-thumbs-holder>.prod-review-expand-btn.-video:hover::before {
+    background: none
+}
+
+.prod-review-thumbs-holder>.thumbnail.-video::after,
+.prod-review-thumbs-holder>.prod-review-expand-btn.-video::after {
+    background: rgba(0, 0, 0, .25) url(https://cdn.carid.com/css/prod-images/ba0da454.svg) center/cover no-repeat;
+    background-blend-mode: darken;
+    border-radius: 50%;
+    content: "";
+    height: 36px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px
+}
+
+.prod-review-thumbs-holder>.thumbnail.-video:hover::after,
+.prod-review-thumbs-holder>.prod-review-expand-btn.-video:hover::after {
+    background-blend-mode: normal
+}
+
+.prod-review-thumbs-holder>.thumbnail>img,
+.prod-review-thumbs-holder>.prod-review-expand-btn>img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%
+}
+
+.prod-review-expand-btn {
+    color: #3761bf;
+    font-size: 14px;
+    position: relative;
+    text-align: center
+}
+
+.prod-review-expand-btn::before,
+.prod-review-expand-btn::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.prod-review-expand-btn::before {
+    content: "More ("attr(data-attr) ")";
+    left: 0;
+    right: 0;
+    white-space: nowrap
+}
+
+.prod-review-expand-btn.-expanded::before {
+    content: "Less"
+}
+
+.prod-review-expand-btn::after {
+    background: url(https://cdn.carid.com/css/prod-images/19ada3d3.svg) center no-repeat;
+    content: "";
+    height: 13px;
+    right: 0;
+    width: 13px
+}
+
+.prod-review-expand-btn.-expanded::after {
+    background-image: url(https://cdn.carid.com/css/prod-images/593a2708.svg)
+}
+
+.f-footer {
+    clear: both;
+    padding-top: 40px
+}
+
+.f-footer.-no-indent {
+    padding-top: 0
+}
+
+.f-strip {
+    background-color: #022344;
+    padding: 24px 0
+}
+
+.f-strip-wrap {
+    display: flex;
+    justify-content: space-around
+}
+
+.f-strip-cont {
+    background: url(https://cdn.carid.com/css/prod-images/9b545ce1.svg) no-repeat center top;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.5;
+    max-width: 33.333%;
+    padding-top: 54px;
+    text-align: center
+}
+
+.f-strip-cont.-account {
+    background-image: url(https://cdn.carid.com/css/prod-images/9d18ed7a.svg)
+}
+
+.f-strip-cont.-track-order {
+    background-image: url(https://cdn.carid.com/css/prod-images/1a6c1b5a.svg)
+}
+
+.f-info {
+    background-color: #f8f8f8;
+    overflow: hidden;
+    padding: 18px 0
+}
+
+.f-info-col {
+    box-sizing: border-box;
+    padding: 0 24px;
+    position: relative
+}
+
+.f-info-col:first-child {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1
+}
+
+.f-title {
+    color: #111;
+    display: block;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 2.9;
+    text-transform: uppercase
+}
+
+.f-subscribe-h {
+    max-width: 320px;
+    padding-bottom: 12px
+}
+
+.f-list {
+    column-width: 130px
+}
+
+.f-list>a,
+.f-list>span {
+    color: #111;
+    font-size: 1.3em;
+    line-height: 2.539
+}
+
+.f-list>a::after,
+.f-list>span::after {
+    content: "";
+    display: block
+}
+
+.f-text {
+    padding-bottom: 10px;
+}
+
+.f-contact {
+    color: #111;
+    display: block;
+    font-size: 1.3em;
+    line-height: 1.54;
+    padding-bottom: 20px;
+    padding-left: 34px;
+    position: relative
+}
+
+.f-contact::before {
+    content: "";
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px
+}
+
+.f-contact:first-child {
+    margin-top: 8px
+}
+
+.f-contact.-address::before {
+    background: url(../images/a9e28bcc.svg) no-repeat 0 4px
+}
+
+.f-contact.-phone::before {
+    background: url(../images/47822c32.svg) no-repeat 0 4px
+}
+
+.f-contact.-phone a,
+.f-contact.-phone>span {
+    color: inherit
+}
+
+.f-contact.-live-chat::before {
+    background: url(../images/48ff5e81.svg) no-repeat 0 2px
+}
+
+.f-contact.-live-chat>.btn {
+    border: 1px solid #111;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: .9em;
+    padding: 4px 16px;
+    transition: all .1s
+}
+
+.f-contact.-live-chat>.btn:hover {
+    background-color: rgba(0, 0, 0, .06)
+}
+
+.f-contact.-email::before {
+    background: url(../images/762c123d.svg) no-repeat 0 0
+}
+
+.f-contact.-inspiration {
+    display: inline-block;
+    line-height: 2.2;
+    margin-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 46px
+}
+
+.f-contact.-inspiration::before {
+    background: url(https://cdn.carid.com/css/prod-images/8f4dc384.svg) no-repeat 0 0;
+    width: 32px
+}
+
+.pub-block {
+    position: relative;
+    text-align: center
+}
+
+.pub-block.-f-pub {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-align: left
+}
+
+.pub-block>.icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid #d8d8d8;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    height: 40px;
+    margin-bottom: 4px;
+    margin-right: 8px;
+    overflow: hidden;
+    text-indent: -99em;
+    vertical-align: middle;
+    width: 40px
+}
+
+.pub-block>.icon:last-child {
+    margin-right: 0
+}
+
+.no-touch .pub-block>.icon:hover {
+    background-color: #757575;
+    border: 1px solid rgba(0, 0, 0, 0)
+}
+
+.pub-block>.icon.-icon-fb {
+    background-image: url(../images/39a0b39b.svg)
+}
+
+.no-touch .pub-block>.icon.-icon-fb:hover {
+    background-image: url(../images/e1a94b47.svg)
+}
+
+.pub-block>.icon.-icon-tw {
+    background-image: url(../images/c531260a.svg)
+}
+
+.no-touch .pub-block>.icon.-icon-tw:hover {
+    background-image: url(../images/30883f72.svg)
+}
+
+.pub-block>.icon.-icon-yt {
+    background-image: url(../images/99caba38.svg)
+}
+
+.no-touch .pub-block>.icon.-icon-yt:hover {
+    background-image: url(../images/507943e9.svg)
+}
+
+.pub-block>.icon.-icon-pin {
+    background-image: url(../images/ae0287e1.svg)
+}
+
+.no-touch .pub-block>.icon.-icon-pin:hover {
+    background-image: url(../images/7075b6e8.svg)
+}
+
+.pub-block>.icon.-icon-in {
+    background-image: url(../images/7231a7c9.svg)
+}
+
+.no-touch .pub-block>.icon.-icon-in:hover {
+    background-image: url(../images/ff260096.svg)
+}
+
+.f-logos-wrap {
+    box-sizing: border-box;
+    padding: 0 24px 180px;
+    position: relative
+}
+
+.f-logos-wrap.-no-gallery {
+    padding-bottom: 136px
+}
+
+.f-logos-list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 300px
+}
+
+.f-logos-list-item {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 1rem;
+    margin: 12px;
+    overflow: hidden;
+    text-indent: -99em;
+    width: 100px
+}
+
+.f-logos-list-item.-bbb {
+    background-image: url(https://cdn.carid.com/css/prod-images/769acf98.svg);
+    height: 84px
+}
+
+.f-logos-list-item.-stella {
+    background-image: url(https://cdn.carid.com/css/prod-images/884d3249.svg);
+    height: 33px
+}
+
+.f-logos-list-item.-north {
+    background-image: url(https://cdn.carid.com/css/prod-images/840366b6.svg);
+    height: 56px
+}
+
+.f-other {
+    background: #f0f0f0;
+    font-size: 100%;
+    overflow: hidden;
+    padding: 24px 0
+}
+
+.f-copyright {
+    color: #464646;
+    font-size: 1.2em;
+    padding: 0 8px;
+    text-align: center
+}
+
+.f-links {
+    display: none;
+    padding: 0 8px
+}
+
+.footer-toggle-header {
+    display: block;
+    position: relative
+}
+
+.footer-toggle-header.enabled {
+    cursor: pointer;
+    padding-right: 45px
+}
+
+.footer-toggle-header.enabled::after {
+    background: url(https://cdn.carid.com/css/prod-images/ca4806dc.svg) no-repeat 0 0;
+    content: "";
+    height: 6px;
+    margin-top: -3px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 10px
+}
+
+.footer-toggle-header.enabled.active::after {
+    content: "";
+    transform: rotateZ(180deg)
+}
+
+.footer-toggle-header.enabled.active+.footer-toggle-content {
+    display: block
+}
+
+.footer-toggle-header.enabled+.footer-toggle-content {
+    display: none
+}
+
+.footer-toggle-content {
+    padding: 8px 0 32px
+}
+
+.recommended-contacts-item>.title,
+.recommended-contacts>.recommended-contacts-title {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1.33;
+    margin-bottom: 20px
+}
+
+.recommended-contacts {
+    padding: 58px 20px;
+    text-align: center
+}
+
+.recommended-contacts.-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0
+}
+
+.recommended-contacts>.recommended-contacts-title {
+    margin-bottom: 90px
+}
+
+.recommended-contacts-item {
+    margin-bottom: 100px;
+    padding-top: 60px;
+    position: relative
+}
+
+.recommended-contacts-item::before {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    content: "";
+    height: 56px;
+    left: 50%;
+    margin-left: -23px;
+    position: absolute;
+    top: 10px;
+    width: 56px
+}
+
+.recommended-contacts-item.-call::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/2eaf7141.svg);
+    top: 0
+}
+
+.recommended-contacts-item.-chat::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/b71982a7.svg)
+}
+
+.recommended-contacts-item.-horizontal {
+    margin: 0 6% 26px;
+    padding-right: 0;
+    width: auto
+}
+
+.recommended-contacts-item.-horizontal:last-child {
+    margin-bottom: 0
+}
+
+.recommended-contacts-item.-horizontal>.title {
+    margin-bottom: 16px
+}
+
+.recommended-contacts-item>.title {
+    font-size: 1.8em;
+    margin-bottom: 18px
+}
+
+.recommended-contacts-item.-chat.-horizontal>.title {
+    margin-bottom: 10px
+}
+
+.recommended-contacts-item>.content {
+    color: #757575;
+    font-size: 1.6em
+}
+
+.recommended-contacts-item>.content>.phone-link::after {
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.recommended-contacts-popup {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 32px;
+    text-align: center;
+    width: 100%
+}
+
+.recommended-contacts-popup>.title {
+    font-size: 2em;
+    margin-bottom: 36px
+}
+
+._mb18 {
+    margin-bottom: 18px !important
+}
+
+._mb30 {
+    margin-bottom: 15px !important
+}
+
+.modal-simple {
+    background: #fff;
+    box-sizing: border-box;
+    color: #111;
+    padding: 30px;
+    text-align: center
+}
+
+.modal-simple>.main {
+    font-size: 2em;
+    line-height: 1.2;
+    margin: 16px 0 36px
+}
+
+.modal-simple>.btn-group {
+    display: flex;
+    justify-content: space-between
+}
+
+.modal-simple-btn-holder {
+    width: 48%
+}
+
+.wishlist-popup-columns>.col,
+.modal-wrap .footer,
+.modal-wrap .main,
+.modal-wrap>.header {
+    box-sizing: border-box;
+    font-size: 1em;
+    line-height: 1;
+    padding-left: 2em;
+    padding-right: 2em
+}
+
+.modal-wrap {
+    background: #fff
+}
+
+.modal-wrap.-text-align-left {
+    text-align: left
+}
+
+.modal-wrap::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+.modal-wrap>.header {
+    padding-bottom: 1em;
+    padding-top: 3em;
+    text-align: left
+}
+
+.modal-wrap>.header .-simple>.header {
+    padding-top: 3.5em
+}
+
+.modal-wrap .main {
+    margin-bottom: 2em;
+    padding-top: 3em
+}
+
+.modal-wrap .main.-simple {
+    padding-top: 1.5em
+}
+
+.modal-wrap .main.-simple>.modal-text:last-child {
+    margin-bottom: 0
+}
+
+.modal-wrap .main.-short-holder {
+    max-width: 640px
+}
+
+.modal-wrap .main.-pb0 {
+    padding-bottom: 0
+}
+
+.modal-wrap .main>.header {
+    padding-top: 5px
+}
+
+.modal-wrap .main>.header:first-child {
+    padding-top: 0
+}
+
+.modal-wrap .main .extra-top-margin {
+    margin-top: 2em
+}
+
+.modal-wrap .main::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+.modal-wrap .footer {
+    font-size: 100%;
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em
+}
+
+.modal-wrap .footer.-items-3>.button-holder,
+.modal-wrap .footer.-items-4>.button-holder {
+    margin: 0 auto 15px;
+    max-width: none
+}
+
+.modal-wrap .footer.-tires-popup-align {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left
+}
+
+.modal-wrap .footer.-short-holder {
+    justify-content: space-between;
+    max-width: 640px
+}
+
+.modal-wrap .footer.-indent-top {
+    margin-top: 40px
+}
+
+.modal-wrap .footer.-border {
+    border-top: 1px solid #d8d8d8;
+    margin: 2em;
+    padding: 2em 0 0
+}
+
+.modal-wrap .footer.-border.-from-mobile-large {
+    border-top-width: 0
+}
+
+.modal-wrap .footer>.button-holder {
+    margin-bottom: 16px;
+    width: 100%
+}
+
+.modal-wrap .footer>.button-holder.-width-auto {
+    max-width: none;
+    width: auto
+}
+
+.modal-title {
+    color: #111;
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 1.2
+}
+
+.modal-title.-wl-bulk {
+    background: url(https://cdn.carid.com/css/prod-images/48d6df7e.svg) no-repeat 100% 50%
+}
+
+.modal-title.-wl-add {
+    background: url(https://cdn.carid.com/css/prod-images/08a8f6ce.svg) no-repeat 100% 50%
+}
+
+.modal-title.-wl-create {
+    background: url(https://cdn.carid.com/css/prod-images/8352498f.svg) no-repeat 100% 50%
+}
+
+.modal-title.-wl-alert {
+    background: url(https://cdn.carid.com/css/prod-images/b9d6732e.svg) no-repeat left 50%;
+    min-height: 35px;
+    padding-left: 74px;
+    padding-top: 12px
+}
+
+.modal-title.-warning {
+    background: url(https://cdn.carid.com/css/prod-images/f4b059e4.svg) no-repeat left 50%;
+    background-size: auto 100%;
+    min-height: 35px;
+    padding-left: 74px;
+    padding-top: 12px
+}
+
+.modal-title>.substring {
+    color: #a9a9a9;
+    font-size: .6em;
+    font-weight: 500;
+    line-height: 1.85;
+    text-transform: none
+}
+
+.modal-title>.substring>.link {
+    color: #0883d4;
+    cursor: pointer;
+    text-decoration: underline
+}
+
+.modal-title>.substring>.link:hover {
+    text-decoration: none
+}
+
+.modal-title>.substring>.size {
+    color: #111
+}
+
+.modal-info-msg>.title>.holder,
+.modal-subtitle {
+    color: #111;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.3
+}
+
+.modal-info-msg>.title>.-color-red.holder,
+.-color-red.modal-subtitle {
+    color: #d4252a
+}
+
+.modal-info-msg>.title>.-big.holder,
+.-big.modal-subtitle {
+    font-size: 2.2em
+}
+
+.modal-info-msg>.title>.holder>.small,
+.modal-subtitle>.small {
+    color: #a9a9a9;
+    display: block;
+    font-size: .61em;
+    font-weight: 400
+}
+
+.modal-list.-numeric-a>.li,
+.modal-warning,
+.modal-text {
+    color: #111;
+    font-size: 1.3em;
+    line-height: 1.3;
+    margin-bottom: 18px
+}
+
+.modal-list.-numeric-a>.-color-dark.li,
+.-color-dark.modal-warning,
+.-color-dark.modal-text {
+    color: #111
+}
+
+.modal-list.-numeric-a>.-size-big.li,
+.-size-big.modal-warning,
+.-size-big.modal-text {
+    font-size: 1.4em
+}
+
+.modal-list.-numeric-a>.-size-big.li strong,
+.-size-big.modal-warning strong,
+.-size-big.modal-text strong {
+    font-size: 1.3em;
+    font-weight: 500
+}
+
+.modal-list.-numeric-a>.-marker.li::before,
+.-marker.modal-warning::before,
+.-marker.modal-text::before {
+    border-color: #fff;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    content: "";
+    font-size: 0;
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+    vertical-align: middle
+}
+
+.modal-warning {
+    background-color: #d4252a;
+    color: #fff;
+    padding: 15px
+}
+
+.modal-text-green {
+    color: #068922
+}
+
+.modal-validate-alert>.title>.holder,
+.modal-text-alert {
+    color: #d4252a;
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.2
+}
+
+.modal-list.-wishlist>.li {
+    word-break: break-all
+}
+
+.modal-list.-numeric-a>.li {
+    list-style: upper-alpha outside;
+    margin-left: 18px;
+    padding: 0
+}
+
+.modal-list>.li {
+    color: #a9a9a9;
+    font-size: 1.3em;
+    line-height: 1.1;
+    list-style: disc inside;
+    padding-top: .667em
+}
+
+.modal-list>.li.-normal {
+    color: #757575;
+    font-size: 1.3em;
+    line-height: 1.3
+}
+
+.modal-list>.li>.title {
+    color: #111
+}
+
+.modal-img-h-right {
+    margin: 20px 0;
+    text-align: center
+}
+
+.modal-hr {
+    border-bottom: 1px solid #d8d8d8;
+    height: 0;
+    margin: 1.5em 0;
+    width: 100%
+}
+
+.modal-link {
+    cursor: pointer;
+    font-size: 1.3em;
+    text-decoration: underline
+}
+
+.modal-link:hover {
+    text-decoration: none
+}
+
+.modal-link.-green {
+    color: #068922
+}
+
+.modal-footer-alert {
+    background: url(https://cdn.carid.com/css/prod-images/b9d6732e.svg) no-repeat 50% 0;
+    background-size: 23px;
+    box-sizing: border-box;
+    color: #464646;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.67;
+    margin-bottom: 20px;
+    padding-top: 40px
+}
+
+.modal-footer-alert.-wide {
+    width: 100%
+}
+
+.modal-word-break {
+    word-break: break-all
+}
+
+.modal-checkbox-input-h {
+    display: block;
+    margin-bottom: 15px;
+    overflow: hidden
+}
+
+.modal-text-input-error {
+    color: #d4252a;
+    font-size: 1.2em;
+    line-height: 1.4
+}
+
+.modal-form-item {
+    margin-bottom: 8px;
+    position: relative
+}
+
+.modal-add-wishlist-btn-h {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    float: right;
+    margin: 0 0 0 5px;
+    min-width: auto;
+    width: 70px
+}
+
+.modal-info-msg {
+    margin-bottom: 2.2em;
+    overflow: hidden
+}
+
+.modal-info-msg.-error {
+    background: url(https://cdn.carid.com/css/prod-images/b9d6732e.svg) no-repeat 0 0;
+    background-size: 28px 24px;
+    color: #111;
+    min-height: 24px;
+    padding: 4px 0 0 40px
+}
+
+.modal-info-msg>.title {
+    line-height: 40px;
+    padding-top: 3.5em;
+    text-align: left
+}
+
+.modal-info-msg>.title.-pt {
+    padding-top: 6px
+}
+
+.modal-info-msg>.title>.holder {
+    display: inline-block;
+    line-height: 1.2
+}
+
+.modal-info-msg:first-child>.title {
+    padding-top: 1em
+}
+
+.modal-hr+.modal-info-msg>.title {
+    padding-top: 0
+}
+
+.modal-info-msg>.detailed {
+    padding-left: 72px
+}
+
+.modal-info-msg .big {
+    font-size: 30px;
+    line-height: 1.3
+}
+
+.modal-validate-alert {
+    margin-top: 5px
+}
+
+.modal-validate-alert>.title {
+    background: url(https://cdn.carid.com/css/prod-images/64a7e4fa.svg) no-repeat 0 0;
+    background-size: 13px;
+    padding-left: 20px;
+    vertical-align: baseline
+}
+
+.modal-validate-alert>.title>.holder {
+    line-height: 1.3
+}
+
+.wishlist-popup-columns {
+    background: #fff;
+    display: table;
+    padding-top: 2em;
+    table-layout: fixed;
+    vertical-align: top;
+    width: 100%
+}
+
+.wishlist-popup-columns>.col {
+    border-left: 1px solid #d8d8d8;
+    display: block;
+    padding-bottom: 1em;
+    vertical-align: top
+}
+
+.wishlist-popup-columns>.col:first-child {
+    border-left: none
+}
+
+.self-service-control-h.-col-4 {
+    float: left;
+    margin-left: 1.3%;
+    width: 24%
+}
+
+.self-service-control-h.-col-4:first-child {
+    margin-left: 0
+}
+
+.self-service-control-h>.modal-text {
+    display: block;
+    margin-bottom: 7px
+}
+
+.self-service-control-h>.upload-file-status {
+    font-size: 1.5em;
+    margin-left: 0
+}
+
+.self-service-control-h .placeholder {
+    color: #a9a9a9;
+    font-family: "Roboto", "Arial", "Helvetica", sans-serif
+}
+
+.delivery-location-popup {
+    background: #fff;
+    border-radius: 4px;
+    color: #111;
+    padding: 32px;
+    position: relative
+}
+
+.delivery-location-popup-loader {
+    background-color: rgba(255, 255, 255, .5);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1
+}
+
+.delivery-location-popup-loader::after {
+    animation: preloader-rotate .7s infinite linear;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDMwIDMwIj48cGF0aCBkPSJNMTUgMzBhMTUgMTUgMCAxMTE1LTE1IDE1IDE1IDAgMDEtMTUgMTV6bTAtMjcuNzNBMTIuNzMgMTIuNzMgMCAxMDI3LjczIDE1IDEyLjc1IDEyLjc1IDAgMDAxNSAyLjI3eiIgZmlsbD0iIzFhMWExYSIgb3BhY2l0eT0iLjciLz48cGF0aCBkPSJNMjcuNzEgMTUuNDhBMTIuNzQgMTIuNzQgMCAwMTE1IDI3LjczVjMwYTE1IDE1IDAgMDAxNS0xNC41MnoiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii43Ii8+PC9zdmc+) 50% 50% no-repeat;
+    background-size: contain;
+    content: "";
+    height: 30px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    width: 30px
+}
+
+.delivery-location-popup-loader.nopreload::after {
+    content: none !important
+}
+
+.delivery-location-popup-zip {
+    margin-bottom: 12px
+}
+
+.expand-countries-list {
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    position: relative;
+    width: 30px
+}
+
+.expand-countries-list.-expanded {
+    margin-bottom: 12px
+}
+
+.expand-countries-list.-expanded::before {
+    transform: rotate(180deg)
+}
+
+.expand-countries-list::before {
+    background: #f0f0f0 url(https://cdn.carid.com/css/prod-images/a7716fdb.svg) 50% 50% no-repeat;
+    background-size: 12px auto;
+    border-radius: 50%;
+    content: "";
+    height: 22px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    width: 22px
+}
+
+.modal-shipment-separator {
+    float: left;
+    font-size: 1.4em;
+    margin: 6px 8px 0 0
+}
+
+.modal-file {
+    overflow: hidden;
+    position: relative
+}
+
+.modal-file>input[type=file] {
+    font-size: 100px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0
+}
+
+.universal-accordion.enabled {
+    margin: 0 2%;
+    position: relative
+}
+
+.universal-accordion.enabled.-opened>.accordion-button {
+    background-image: url(https://cdn.carid.com/css/prod-images/73a5882b.svg)
+}
+
+.universal-accordion.enabled.-opened>.accordion-holder>.content {
+    position: static;
+    width: auto
+}
+
+.universal-accordion.enabled.-opened .articles-list-block-link {
+    display: block
+}
+
+.universal-accordion.enabled>.accordion-holder {
+    border-bottom: 1px solid #d8d8d8;
+    overflow: hidden;
+    position: relative
+}
+
+.universal-accordion.enabled>.accordion-holder>.header {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    height: 22px;
+    margin-right: 45px;
+    padding: 22px 10px 22px 4px
+}
+
+.universal-accordion.enabled>.accordion-holder>.content {
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%
+}
+
+.universal-accordion.enabled>.accordion-button {
+    background-size: 12px 12px;
+    display: block;
+    height: 40px;
+    padding: 12px;
+    width: 20px
+}
+
+.universal-accordion.enabled .h2 {
+    color: #111;
+    font-size: 1.8em;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-transform: inherit
+}
+
+.universal-accordion.enabled .h2.-small {
+    font-size: 1.8em
+}
+
+.universal-accordion.enabled .articles-list-block-link {
+    display: none
+}
+
+.universal-accordion.enabled .shifter:not(.shifter-ready).-active,
+.universal-accordion.enabled .shifter.enabled.-active {
+    margin-bottom: 32px;
+    margin-top: 0
+}
+
+.universal-accordion .universal-tabs {
+    margin-top: -20px
+}
+
+.accordion-button {
+    background: url(https://cdn.carid.com/css/prod-images/4882c2a6.svg) 50% 50% no-repeat;
+    background-size: 14px 14px;
+    color: #a9a9a9;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 1
+}
+
+.related-list {
+    font-size: 1.4em;
+    list-style-type: square;
+    padding: 12px 12px 12px 30px
+}
+
+.related-list>.item {
+    padding: 4px 0
+}
+
+.tab-list {
+    border-left: 8px solid #fff;
+    border-right: 8px solid #fff;
+    box-sizing: border-box;
+    display: flex;
+    overflow-x: auto
+}
+
+.tab-list>.item {
+    border-left: 2px solid #fff;
+    list-style: none;
+    width: 100%
+}
+
+.tab-list>.item:first-child {
+    border-left: 0
+}
+
+.tab-list>.item>.text {
+    background: #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+    color: #111;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 16px 8px 14px;
+    text-align: center
+}
+
+.tab-list>.item>.text:hover {
+    border-bottom-color: #d8d8d8
+}
+
+.tab-list>.item>.text.-selected {
+    border-bottom-color: #ffac00;
+    cursor: default
+}
+
+.tab-content-item {
+    display: none
+}
+
+.tab-content-item.-selected {
+    display: block
+}
+
+.links-map-table {
+    margin: 8px 0;
+    width: 100%
+}
+
+.links-map-table-body {
+    display: inline
+}
+
+.links-map-table-row {
+    display: inline
+}
+
+.links-map-table-cell {
+    display: inline-block;
+    font-size: 1.4em;
+    padding: 8px 8px 16px
+}
+
+.text-height-overflow {
+    margin-top: 16px;
+    overflow: hidden;
+    position: relative
+}
+
+.text-height-overflow>p:first-child {
+    margin-top: 0
+}
+
+.text-height-overflow-hidden {
+    left: 0;
+    position: absolute;
+    top: 100%
+}
+
+.text-height-overflow-hidden.-expanded {
+    position: static
+}
+
+.spoiler-block {
+    position: relative
+}
+
+.spoiler-block.-expanded {
+    max-height: none !important
+}
+
+.spoiler-block.-active {
+    overflow: hidden
+}
+
+.spoiler-block.-active.-gradient-fade::after {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 80%, #fff 100%);
+    bottom: 0;
+    content: "";
+    height: 20px;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0
+}
+
+.spoiler-block.-active.-expanded.-gradient-fade::after {
+    display: none
+}
+
+.spoiler-block.-active+.spoiler-control {
+    display: block
+}
+
+.spoiler-block.-active.-expanded .subcats1-item {
+    order: 999 !important
+}
+
+.spoiler-button-holder {
+    margin-left: auto;
+    margin-right: auto;
+    width: 164px
+}
+
+.spoiler-button-holder.spoiler-control {
+    margin-bottom: 30px;
+    margin-top: 20px
+}
+
+.spoiler-button-holder.-text-overflow-expand {
+    margin-bottom: 50px;
+    margin-top: 12px
+}
+
+.spoiler-button-holder.-service-type {
+    margin: 0 1% 30px;
+    width: 98%
+}
+
+.spoiler-control {
+    display: none
+}
+
+.spoiler-control.-link {
+    color: #3761bf;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: .4em;
+    padding: 16px 0
+}
+
+.spoiler-control.-link.-arrow-left::after,
+.spoiler-control.-link.-arrow-right::after {
+    background-image: url(https://cdn.carid.com/css/prod-images/03a05b5c.svg)
+}
+
+.spoiler-control.-link.-arrow-left.-expanded::after,
+.spoiler-control.-link.-arrow-right.-expanded::after {
+    background-image: url(https://cdn.carid.com/css/prod-images/2257d8c7.svg)
+}
+
+.spoiler-control.-link.-arrow-left::after {
+    padding-left: 14px
+}
+
+.spoiler-control.-link.-arrow-right::after {
+    padding-right: 14px
+}
+
+.prod_avail {
+    color: #464646;
+    font-size: 1.3em;
+    line-height: 1.5;
+    padding-top: 12px
+}
+
+.-same-day-timer-active.prod_avail {
+    position: relative
+}
+
+.-same-day-timer-active.prod_avail .prod-stock-status {
+    position: relative
+}
+
+.-same-day-timer-active.prod_avail .prod-stock-status::after {
+    content: "";
+    display: block
+}
+
+.-same-day-timer-active.prod_avail .prod-stock-status.-indent-bottom::after {
+    margin-bottom: 20px
+}
+
+.-same-day-timer-active.prod_avail i {
+    display: none
+}
+
+.prod_avail::before {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    content: "";
+    font-size: 0;
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+    vertical-align: middle
+}
+
+.-green.prod_avail::before {
+    border-color: #068922
+}
+
+.-red.prod_avail::before {
+    border-color: #d4252a
+}
+
+.-orange.prod_avail::before {
+    border-color: #ffac00
+}
+
+.prod-same-day-time>span:not(.ships-today) {
+    display: block
+}
+
+.prod-same-day-time>span>b {
+    display: inline-block;
+    font-weight: 500
+}
+
+.prod-same-day-time>.ships-today {
+    font-weight: 500
+}
+
+.prod-actions .prod_avail .prod-same-day-time {
+    display: block;
+    margin-top: 20px
+}
+
+.prod-actions .prod_avail .prod-same-day-time>.ships-today {
+    display: block;
+    padding-left: 45px
+}
+
+.prod-actions .prod_avail .prod-same-day-time>.same-day-timer {
+    padding-left: 45px;
+    position: relative
+}
+
+.prod-actions .prod_avail .prod-same-day-time>.same-day-timer::after {
+    background-image: url(https://cdn.carid.com/css/prod-images/bdcf54b6.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    content: "";
+    height: 34px;
+    left: 0;
+    position: absolute;
+    top: -18px;
+    width: 34px
+}
+
+.prod-actions .prod_avail.-same-day-timer-active.-with-deliver-text>.prod-same-day-time {
+    margin-top: 0
+}
+
+.prod-actions .prod_avail.-same-day-timer-active.-with-deliver-text .delivery-text {
+    display: block;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-left: 45px
+}
+
+.prod-actions .prod_avail.-same-day-timer-active.-with-deliver-text .-indent-bottom+.delivery-text {
+    display: inline
+}
+
+.prod_inventory {
+    color: #464646;
+    font-size: 1.1em;
+    font-style: normal;
+    line-height: normal;
+    padding: 2px 0 4px 12px
+}
+
+.prod-delivery-block .ships-today {
+    display: none
+}
+
+.delivery-input::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+.delivery-input .option_text {
+    float: left;
+    margin-right: 5px
+}
+
+.delivery-input .prod-same-day-time {
+    clear: left;
+    display: block;
+    float: left;
+    margin-right: 5px
+}
+
+.delivery-input .summary-delta {
+    float: left;
+    font-weight: 500
+}
+
+.prod-rebate {
+    color: #464646;
+    font-size: 1.3em;
+    line-height: 1.5
+}
+
+.prod-rebate.-cart {
+    font-size: 1em
+}
+
+.prod-rebate.-indent {
+    margin-bottom: 10px
+}
+
+.prod-rebate.-margin-bottom {
+    margin-bottom: 14px
+}
+
+.prod-rebate.-no-padding {
+    padding: 0
+}
+
+.prod-rebate.-padding-bottom {
+    padding-bottom: 10px
+}
+
+.rebate-title {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 4px;
+    padding-left: 18px;
+    position: relative
+}
+
+.rebate-title::before {
+    background: url(https://cdn.carid.com/css/prod-images/1eeabcfe.svg) no-repeat;
+    content: "";
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    width: 12px
+}
+
+.rebate-title.-inline {
+    display: inline-block
+}
+
+.rebate-description {
+    display: block
+}
+
+.rebate-description.-inline {
+    display: inline
+}
+
+.prod-sales-info {
+    font-size: 1.05em;
+    line-height: 1.2;
+    margin-bottom: 6px
+}
+
+.prod-sales-info.-stagger {
+    margin-bottom: 0;
+    margin-left: 60px
+}
+
+.prod-sales-info.-po {
+    margin-bottom: 2px;
+    margin-top: 9px
+}
+
+.prod-sales-info>.original-price {
+    color: #757575;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    text-decoration: line-through
+}
+
+.prod-sales-info>.today-price {
+    background-color: #d4252a;
+    border-radius: 16px;
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    padding: 3px 9px;
+    text-transform: uppercase
+}
+
+.prod-sales-info>.today-price.-po {
+    padding-left: 11px;
+    padding-right: 11px
+}
+
+.prod-progress-bar-with-timer {
+    margin-top: 8px
+}
+
+.prod-progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    height: 8px;
+    margin-top: 8px;
+    position: relative;
+    width: 235px
+}
+
+.prod-progress-bar-complete {
+    background-color: #ffac00;
+    border-radius: 4px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+.wishlist-add {
+    background: url(https://cdn.carid.com/css/prod-images/92ce4814.svg) no-repeat 50% 50% rgba(0, 0, 0, 0);
+    background-size: 28px 22px;
+    bottom: 2.7em;
+    cursor: pointer;
+    display: inline-block;
+    height: 4.5em;
+    position: absolute;
+    right: 14.5em;
+    text-align: center;
+    width: 4.5em;
+    z-index: 2
+}
+
+.wishlist-add:hover {
+    background-image: url(https://cdn.carid.com/css/prod-images/f6cf71ab.svg)
+}
+
+.wishlist-add.-added,
+.wishlist-add.-added:hover {
+    background-image: url(https://cdn.carid.com/css/prod-images/c4506f15.svg)
+}
+
+.wishlist-add>.badge {
+    color: #fff;
+    display: none;
+    font-size: 10px;
+    font-weight: 700;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.wishlist-prod-name {
+    color: #111;
+    display: inline-block;
+    font-size: 1.4em;
+    line-height: 1.5
+}
+
+.wishlist-prod-name.-unavailable {
+    color: #757575
+}
+
+.wishlist-prod-name.-popup {
+    display: block;
+    margin-bottom: 1em
+}
+
+.wishlist-prod-name.-popup>.namepart {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.wishlist-prod-name>.namepart {
+    display: block
+}
+
+.wishlist-prod-note {
+    font-size: 1.3em;
+    height: 78px;
+    line-height: 1.462;
+    padding: 0;
+    position: relative;
+    word-wrap: break-word
+}
+
+.wishlist-prod-note::before {
+    padding-right: 5px
+}
+
+.wishlist-prod-note::before,
+.wishlist-prod-note.-nonempty::after {
+    content: url(https://cdn.carid.com/css/prod-images/f2abdad8.svg);
+    display: inline-block;
+    width: 14px
+}
+
+.wishlist-prod-note.-nonempty::before {
+    display: none
+}
+
+.wishlist-prod-note.-nonempty::after {
+    padding-left: 3px
+}
+
+.wishlist-popup-price {
+    font-size: 1.6em;
+    font-weight: 500;
+    margin-bottom: 1.438em
+}
+
+.wishlist-popup-price>.addl {
+    font-size: .75em
+}
+
+.wishlist-popup-ic {
+    display: block;
+    margin: 0 auto 1.5em;
+    max-width: 268px;
+    width: 80%
+}
+
+.wishlist-popup-ic>.ic {
+    display: block;
+    width: 100%
+}
+
+.wishlist-popup-menu {
+    border-bottom: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    height: auto;
+    margin-bottom: 3em;
+    max-height: 15.8em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: .5em
+}
+
+.wishlist-popup-tooltip {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/25396e61.svg);
+    display: inline-block;
+    vertical-align: baseline
+}
+
+.wishlist-create-toggle {
+    position: relative;
+    width: 100%
+}
+
+.wishlist-create-toggle.-visible>.title {
+    background-image: url(https://cdn.carid.com/css/prod-images/afb7bd60.svg)
+}
+
+.wishlist-create-toggle.-visible>.title::after {
+    content: attr(data-visible)
+}
+
+.wishlist-create-toggle.-visible>.input {
+    display: block
+}
+
+.wishlist-create-toggle.-visible>.button {
+    display: none
+}
+
+.wishlist-create-toggle.-focus>.title::after {
+    content: attr(data-focus)
+}
+
+.wishlist-create-toggle>.title {
+    background: url(https://cdn.carid.com/css/prod-images/a33b4a71.svg) no-repeat 0 0;
+    color: #757575;
+    cursor: pointer;
+    font-size: 1.5em;
+    height: 100%;
+    margin-bottom: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%
+}
+
+.wishlist-create-toggle>.title::after {
+    content: attr(data-hidden);
+    line-height: 22px;
+    padding-left: 33px
+}
+
+.wishlist-create-toggle>.input {
+    display: none
+}
+
+.wishlist-editor-holder {
+    margin-bottom: 30px;
+    margin-top: -10px
+}
+
+.wishlist-editor-holder .form-field-bottom-label {
+    color: #a9a9a9;
+    margin-top: 4px;
+    position: absolute
+}
+
+.wishlist-editor-holder .form-field.-textarea {
+    margin-bottom: 0
+}
+
+.wishlist-editor-holder .form-field.-textarea>textarea {
+    min-height: 5.2em
+}
+
+.wishlist-head-menu {
+    list-style: none;
+    margin-bottom: 1.2em;
+    overflow: hidden
+}
+
+.wishlist-head-menu.-left-panel {
+    margin-bottom: 29px
+}
+
+.wishlist-head-menu>.item {
+    margin-bottom: 1.9em;
+    overflow: hidden;
+    position: relative;
+    text-align: right
+}
+
+.wishlist-head-menu>.item.-left-panel {
+    margin: 0;
+    padding: 16px 20px
+}
+
+.wishlist-head-menu>.item.-left-panel::after {
+    border-bottom: 1px solid #f0f0f0;
+    bottom: 0;
+    content: "";
+    left: 20px;
+    position: absolute;
+    right: 20px
+}
+
+.wishlist-head-menu>.item>.link {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #111;
+    float: left;
+    font-size: 1.4em;
+    padding-right: 10px;
+    text-align: left;
+    width: 70%
+}
+
+.wishlist-head-menu>.item>.link::after {
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.wishlist-head-menu>.item>.link>span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.wishlist-head-menu>.item>span {
+    color: #111;
+    font-size: 1.4em;
+    font-weight: 300;
+    white-space: nowrap
+}
+
+.account-antibot-style.-paragraph {
+    font: 1.3em/1.24 "Roboto", "Arial", "Helvetica", sans-serif;
+    margin: 0 0 12px
+}
+
+.account-antibot-style.-link {
+    display: inline-block;
+    font: 1em/1.24 "Roboto", "Arial", "Helvetica", sans-serif;
+    margin-bottom: 8px
+}
+
+.account-antibot-style.-input {
+    border-radius: 4px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%
+}
+
+.main-selector-wrap {
+    height: 52px
+}
+
+.main-selector {
+    background: #fff;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #464646;
+    cursor: pointer;
+    flex: 1;
+    min-height: 52px;
+    position: absolute;
+    text-align: left;
+    width: 100%
+}
+
+.main-selector::before {
+    background: url(https://cdn.carid.com/css/prod-images/a7716fdb.svg) no-repeat 0 50%;
+    background-size: 100% auto;
+    content: "";
+    height: 52px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    transition: transform .1s;
+    width: 13px
+}
+
+.main-selector::after {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #464646;
+    content: attr(data-placeholder);
+    font-size: 13px;
+    left: 20px;
+    line-height: 1;
+    position: absolute;
+    right: 30px;
+    text-transform: uppercase;
+    top: 19.5px;
+    transition: top .1s;
+    white-space: nowrap
+}
+
+.main-selector.-big {
+    min-height: 48px
+}
+
+.main-selector.-big::before {
+    height: 48px
+}
+
+.main-selector.-big::after {
+    top: 17.5px
+}
+
+.main-selector.-big>.list {
+    margin: 48px 10px 10px
+}
+
+.main-selector.-open {
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 2px #3761bf;
+    z-index: 1000
+}
+
+.main-selector.-open::before {
+    background-image: url(https://cdn.carid.com/css/prod-images/35a6a8da.svg);
+    transform: rotate(180deg)
+}
+
+.main-selector.-open>.list {
+    display: block
+}
+
+.main-selector.-open::after,
+.main-selector.-selected::after {
+    color: #757575;
+    font-size: 10px;
+    top: 13px
+}
+
+.main-selector.-with-marker>.value {
+    padding-left: 60px
+}
+
+.main-selector.-with-marker::after {
+    left: 60px
+}
+
+.main-selector.-disabled {
+    background-color: #f0f0f0;
+    cursor: default
+}
+
+.main-selector.-error {
+    border-color: #d4252a;
+    box-shadow: #d4252a 0 0 0 1px
+}
+
+.main-selector.-no-border {
+    border: none
+}
+
+.main-selector>.value {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: #111;
+    display: block;
+    font-size: 14px;
+    height: 16px;
+    left: 0;
+    line-height: 1;
+    padding-left: 20px;
+    padding-right: 30px;
+    position: absolute;
+    top: 27px;
+    width: 92%
+}
+
+.main-selector>.marker {
+    border-right: 1px solid #757575;
+    box-sizing: border-box;
+    color: #464646;
+    font-size: 1.4em;
+    height: 26px;
+    left: 0;
+    line-height: 26px;
+    padding: 0 17px;
+    position: absolute;
+    top: 13px;
+    width: 42px
+}
+
+.main-selector>.list {
+    animation: show-opts .3s ease;
+    background: #fff;
+    box-sizing: border-box;
+    display: none;
+    list-style: none;
+    margin: 52px 10px 10px;
+    max-height: 250px;
+    overflow-x: hidden;
+    position: relative;
+    text-align: left;
+    z-index: 9999
+}
+
+.main-selector>.list>li {
+    background: #fff;
+    border-top: 1px solid #d8d8d8;
+    color: #464646;
+    cursor: default;
+    font-size: 1.4em;
+    line-height: 1.6em;
+    margin: 0 -2px;
+    min-height: 20px;
+    padding: 10px;
+    position: relative;
+    text-transform: uppercase
+}
+
+.main-selector>.list>li:hover,
+.main-selector>.list>li:hover>a {
+    background: #d8d8d8
+}
+
+.main-selector>.list>li.-active,
+.main-selector>.list>li.-active>a {
+    background: #3761bf;
+    color: #fff
+}
+
+.main-selector>.list>li>a {
+    color: #464646;
+    cursor: default;
+    display: block;
+    margin: -10px;
+    padding: 10px;
+    text-decoration: none
+}
+
+.ptype-grid.-col-7 {
+    margin-bottom: 0
+}
+
+.ptype-grid.-col-7>.li {
+    margin: 8px .65% 20px;
+    max-width: 168px;
+    width: 31.8333%
+}
+
+.ptype-grid.-col-7>.li>.lazy-loading {
+    background: #d8d8d8;
+    display: block;
+    padding-top: 50%;
+    width: 70%
+}
+
+.ptype-grid.-col-7>.li>.ptype-grid-img {
+    top: 0;
+    width: 70px
+}
+
+.ptype-grid.-col-7>.li>.ptype-grid-a {
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.4;
+    padding-bottom: 0;
+    padding-top: 84px;
+    text-transform: uppercase
+}
+
+.ptype-grid.-col-7>.li>.ptype-grid-a:hover {
+    text-decoration: underline
+}
+
+.ptype-grid.-col-7>.li>.ptype-grid-a::before {
+    height: 100%
+}
+
+.ptype-grid.-small {
+    font-size: 1em;
+    margin: 8px 0 3.2em
+}
+
+.ptype-grid.-small>.li {
+    list-style: none;
+    margin: 1%;
+    padding-bottom: 12px;
+    width: 48%
+}
+
+.ptype-grid.-small>.li>.ptype-grid-a {
+    font-size: 1.4em;
+    padding-top: 74%
+}
+
+.ptype-grid.-small>.li>.ptype-grid-img {
+    top: 8%;
+    width: 82%
+}
+
+.ptype-lst-nav>.item.-btn-more,
+.ptype-lst-nav>.item.-btn-less,
+.ptype-lst-nav.-more>.item.-btn-more,
+.ptype-lst-nav.-more>.item.-btn-less,
+.ptype-lst-nav.-fixed.-more>.item.-btn-more,
+.ptype-lst-nav.-fixed.-more>.item.-btn-less {
+    background: url(https://cdn.carid.com/css/prod-images/0af98ff0.svg) no-repeat 50% 40%;
+    box-sizing: border-box;
+    color: #757575;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.33;
+    padding-top: 45px;
+    text-align: center
+}
+
+.ptype-lst-nav-h.-fixed {
+    background-color: #fff;
+    border-bottom: 2px solid #d8d8d8;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.ptype-lst-nav:not(.-fixed)>.item.-btn-more,
+.ptype-lst-nav:not(.-fixed)>.item.-btn-less {
+    display: none
+}
+
+.ptype-lst-nav.-fixed {
+    position: relative;
+    transform: none
+}
+
+.ptype-lst-nav.-fixed.-fixed-mobile-open {
+    height: auto;
+    width: 100%
+}
+
+.ptype-lst-nav.-fixed.-more>.item.-btn-more {
+    background-color: #fff
+}
+
+.ptype-lst-nav.-fixed>.item {
+    margin: 0
+}
+
+.ptype-lst-nav.-fixed>.item.-btn-more {
+    background-color: #fff;
+    border-bottom: 2px solid #d8d8d8
+}
+
+.ptype-lst-nav.-fixed>.item>.link {
+    line-height: 1.538em;
+    padding-bottom: 0
+}
+
+.ptype-lst-nav.-more>.item.-btn-more,
+.ptype-lst-nav.-more>.item.-btn-less {
+    background-color: #f0f0f0
+}
+
+.ptype-lst-nav>.item.-btn-more {
+    background-color: #f0f0f0;
+    left: auto !important;
+    min-height: 65px;
+    position: absolute;
+    right: 50%;
+    top: 0
+}
+
+.ptype-lst-nav>.item.-btn-less::after {
+    content: "Less"
+}
+
+.ptype-lst-nav>.item.-btn-more::after {
+    content: "More"
+}
+
+.ptype-lst-nav.-fixed-mobile-open {
+    height: auto;
+    width: 100%
+}
+
+.ptype-lst-nav.-fixed-mobile-open>.item {
+    left: 0 !important;
+    transition: left 0s;
+    width: 20%
+}
+
+@media only screen and (min-width:421px) {
+    .h3 {
+        margin: 32px 8px
+    }
+
+    .simple-btn.-mobile-wide {
+        display: inline-block;
+        padding-left: 32px;
+        padding-right: 32px;
+        width: auto
+    }
+
+    .form-field>input,
+    .form-field>textarea,
+    .form-field select {
+        font-size: 15px
+    }
+
+    .options-list-selector {
+        width: auto
+    }
+
+    .left-panel-show:not(.gbox_opened) #scrollfix {
+        left: 320px
+    }
+
+    .left-panel-show:not(.gbox_opened) .main-wrap {
+        left: -320px
+    }
+
+    .left-panel {
+        width: 320px
+    }
+
+    .mt-minus-block {
+        margin-top: -32px !important;
+        min-height: 32px
+    }
+
+    .width_20 {
+        width: 20%
+    }
+
+    .width_33 {
+        width: 33.3333%
+    }
+
+    .width_50 {
+        width: 50%
+    }
+
+    .float-left-not-ms {
+        float: left
+    }
+
+    .prod_grd .lst_rating,
+    .prod_lst .lst_rating {
+        background-size: 92px auto;
+        padding-left: 100px
+    }
+
+    .prod_grd .lst_prc:not(.-childs)::after,
+    .prod_lst .lst_prc:not(.-childs)::after {
+        content: attr(data-price-suffix)
+    }
+
+    .prod_grd .lst-a-name {
+        font-size: 1.6em;
+        line-height: 1.6
+    }
+
+    .prod_grd .lst_a {
+        padding-top: 1.2em
+    }
+
+    .prod_grd .lst_prc,
+    .prod_grd .lst_prc_no_price {
+        font-size: 1.8em;
+        padding-top: 2px
+    }
+
+    .prod_lst .lst_featured_video {
+        background: url(https://cdn.carid.com/css/prod-images/696b545b.svg) no-repeat;
+        background-size: contain;
+        clear: both;
+        display: block;
+        height: 51px;
+        margin: 16px auto 0;
+        overflow: hidden;
+        position: relative;
+        text-indent: -99em;
+        width: 46px;
+        z-index: 1
+    }
+
+    .prod_lst .lst_main {
+        margin-left: 3%
+    }
+
+    .prod_lst .lst_main .product-list-qty-form-holder>.line:last-child {
+        border-bottom: 1px solid #d8d8d8;
+        padding-bottom: 20px
+    }
+
+    .prod_lst .lst_main .product-list-qty-form-holder>.line>.lst_prc:not(.-call-for-price) {
+        margin-top: 0
+    }
+
+    .prod_lst .lst_main .product-list-qty-form-holder .lst_features.-wt {
+        font-size: 1.3em;
+        padding-top: 0
+    }
+
+    .prod_lst .lst_main .product-list-qty-form-holder .lst_features.-wt span:first-child {
+        padding-top: 4px
+    }
+
+    .prod_lst .lst_main .wt-qty-subtotal {
+        display: block
+    }
+
+    .prod_lst .lst-a-name {
+        line-height: 1.4
+    }
+
+    .prod_lst .lst_meta.-wt {
+        margin-top: 0
+    }
+
+    .prod_lst .lst_id,
+    .prod_lst .prod_avail {
+        font-size: 1.2em
+    }
+
+    .prod_lst .lst-descr {
+        font-size: 1.3em
+    }
+
+    .prod_lst .lst_prc,
+    .prod_lst .lst_prc_no_price {
+        line-height: 2;
+        margin-top: 0
+    }
+
+    .prod_lst .rebate-title {
+        margin-top: 0
+    }
+
+    .prod_lst .prod-sales-info {
+        margin-bottom: 0
+    }
+
+    .prod-lst-recommended {
+        height: 17px;
+        width: 106px
+    }
+
+    .prod-lst-new-arrival {
+        height: 17px;
+        width: 92px
+    }
+
+    .prod-lst-custom-paint {
+        height: 40px;
+        width: 40px
+    }
+
+    .prod-lst-oe {
+        height: 17px;
+        width: 106px
+    }
+
+    .prod-lst-free-gift {
+        height: 22px;
+        width: 106px
+    }
+
+    .prod-lst-colors {
+        margin-bottom: 18px;
+        margin-top: 18px
+    }
+
+    .prod-lst-colors-item {
+        background-size: 36px 100%;
+        height: 24px;
+        width: 36px
+    }
+
+    .prod-lst-feature-image>.item {
+        height: 68px;
+        max-width: 100%
+    }
+
+    .prod-lst-feature-images>.item {
+        height: 36px;
+        margin-top: 10px;
+        max-width: 180px
+    }
+
+    .product-list-subtotal-price {
+        font-size: 1.6em
+    }
+
+    .prod-feedback-info-posted {
+        max-width: none
+    }
+
+    .prod-rvw-btn {
+        margin-right: 10px;
+        width: auto
+    }
+
+    .header-home-reviews>.h2 {
+        display: block;
+        margin-top: 100px
+    }
+
+    .pub-block>.icon {
+        margin-bottom: 8px
+    }
+
+    .modal-wrap .main>.button-holder {
+        display: inline-block;
+        margin-bottom: 10px
+    }
+
+    .modal-wrap .footer {
+        display: flex;
+        flex-direction: row-reverse
+    }
+
+    .modal-wrap .footer>.button-holder:first-child {
+        margin-left: 2%
+    }
+
+    .modal-wrap .footer>.button-holder {
+        max-width: 215px;
+        width: 49%
+    }
+
+    .modal-wrap .footer>.button-holder.-half-width {
+        max-width: none;
+        width: 48%
+    }
+
+    .modal-img-h-right {
+        float: right;
+        margin-left: 20px
+    }
+
+    .wishlist-popup-columns>.col {
+        display: table-cell;
+        padding-bottom: 3em;
+        width: 50%
+    }
+
+    .text-height-overflow {
+        margin-top: 32px
+    }
+
+    .spoiler-control.-link {
+        margin-bottom: 1em;
+        padding: 0
+    }
+
+    .rebate-title::before {
+        top: 4px
+    }
+
+    .wishlist-popup-ic {
+        margin: 0 0 1.9em;
+        width: 100%
+    }
+
+    .wishlist-popup-menu {
+        height: 26.3em;
+        max-height: none
+    }
+
+    .wishlist-editor-holder {
+        margin-bottom: 0
+    }
+}
+
+@media only screen and (min-width:421px)and (max-width:1023.98px) {
+
+    .landing-pages-description>a,
+    .landing-pages-description .text-height-overflow>a {
+        margin: 0 !important;
+        max-width: 48%
+    }
+
+    .landing-pages-description>a>img,
+    .landing-pages-description .text-height-overflow>a>img {
+        height: auto !important;
+        margin: 32px 1% !important;
+        max-width: 98%;
+        width: auto !important
+    }
+
+    .prod_grd.three_per_row .lst_prc {
+        font-size: 1.5em
+    }
+
+    .prod_grd.three_per_row .lst_prc.-long {
+        font-size: 1.4em
+    }
+
+    .prod_lst>li {
+        margin-top: 20px;
+        padding-bottom: 22px
+    }
+
+    .prod_lst>li.-sp-child-list .lst-info-right-part {
+        padding-right: 140px
+    }
+
+    .prod_lst .lst-a-name {
+        font-size: 1.5em
+    }
+
+    .prod_lst .lst_prc,
+    .prod_lst .lst_prc_no_price {
+        font-size: 2em
+    }
+
+    .prod_lst .prod-sales-info {
+        margin-top: 8px
+    }
+
+    .prod-lst-feature-image {
+        margin-bottom: 20px
+    }
+
+    .wishlist-prod-name {
+        font-size: 1.5em
+    }
+}
+
+@media only screen and (min-width:421px)and (max-width:1280.98px) {
+    .prod_lst .lst-type-icons {
+        margin-bottom: 16px;
+        margin-top: 16px
+    }
+
+    .shifter:not(.shifter-ready).-articles,
+    .shifter.enabled.-articles {
+        margin-bottom: 120px !important
+    }
+}
+
+@media only screen and (min-width:421px)and (max-width:740.98px) {
+    .simple-btn.-fixed-toolbar-btn {
+        padding-left: 28px;
+        padding-right: 28px
+    }
+
+    .prod_grd>li,
+    .prod_grd.three_per_row>li,
+    .prod_grd.five_per_row>li {
+        margin: 0 1.5% 18px;
+        width: 47%
+    }
+
+    .prod_lst>li.-wt-prod-list-with-childs>.lst_ic_h {
+        width: 50%
+    }
+
+    .prod_lst>li.-wt-prod-list-with-childs .lst_a::before {
+        padding-top: 50%
+    }
+
+    .prod_lst .lst_ic_h {
+        width: 44%
+    }
+
+    .prod_lst .lst_a::before {
+        left: -88.679245283%;
+        padding-top: 83.0188679245%;
+        width: 83.0188679245%
+    }
+
+    .modal-wrap .footer.-items-3,
+    .modal-wrap .footer.-items-4 {
+        display: block
+    }
+
+    .modal-wrap .footer.-items-3>.button-holder:first-child,
+    .modal-wrap .footer.-items-4>.button-holder:first-child {
+        margin: 0 auto 16px
+    }
+
+    .modal-wrap .footer.-items-3>.button-holder,
+    .modal-wrap .footer.-items-4>.button-holder {
+        width: 60%
+    }
+
+    .modal-wrap .footer>.button-holder.-half-width {
+        margin-left: 0
+    }
+
+    .ptype-grid.-small>.li {
+        width: 31.33%
+    }
+
+    .ptype-lst-nav.-fixed-mobile-open>.item {
+        width: 14.28%
+    }
+}
+
+@media only screen and (min-width:741px) {
+    .landing-pages-description h2 {
+        font-size: 2.1em
+    }
+
+    .landing-pages-description ul {
+        margin-left: 3em
+    }
+
+    .h3 {
+        font-size: 1.8em
+    }
+
+    .simple-btn {
+        padding: 14px 32px
+    }
+
+    .simple-btn.-upsale {
+        min-width: 90px;
+        right: 14px
+    }
+
+    .simple-btn.-fixed-toolbar-btn {
+        padding-bottom: 12px;
+        padding-top: 12px
+    }
+
+    .simple-btn-h1-change-vehicle {
+        padding-bottom: 9px;
+        padding-top: 9px
+    }
+
+    .simple-btn-h1-change-vehicle::after {
+        content: "Change Vehicle"
+    }
+
+    .simple-btn-h1-change-vehicle.-change-size::after {
+        content: "Change Size"
+    }
+
+    .universal-label>.li.-for-search-mmy {
+        padding-right: 32px;
+        width: auto
+    }
+
+    .universal-label>.li.-for-search-mmy>.truncate {
+        margin-right: 0;
+        width: auto
+    }
+
+    .simple-btn-accordion-btn {
+        font-size: 2em;
+        line-height: 24px
+    }
+
+    .form-field-group.-with-right-button {
+        flex-wrap: nowrap
+    }
+
+    .form-field-group.-with-right-button>.form-field {
+        flex-shrink: 1
+    }
+
+    .form-field-group.-with-right-button>.form-field.-error-field {
+        margin-bottom: 32px
+    }
+
+    .form-field-group.-with-right-button .form-field-error-message {
+        bottom: 16px;
+        left: 0;
+        margin-bottom: 0;
+        order: 3;
+        position: absolute
+    }
+
+    .form-field-group.-with-right-button>.right-btn-holder {
+        flex-shrink: 0;
+        margin-left: 10px;
+        width: 170px
+    }
+
+    .form-field.-copylnk {
+        position: relative;
+        width: auto
+    }
+
+    .form-field.-input.-big.-mark::after {
+        background-size: 24px auto;
+        height: 24px;
+        right: 24px;
+        width: 24px
+    }
+
+    .form-field.-input.-big>label {
+        font-size: 1.5em;
+        text-indent: 24px;
+        transition: all .3s
+    }
+
+    .form-field.-input.-big>label+input {
+        padding-top: 32px
+    }
+
+    .form-field.-input.-big.-empty.-not-focus>label {
+        font-size: 2.4em;
+        top: 22px
+    }
+
+    .form-field.-input.-big>input {
+        font-size: 2.4em;
+        height: 74px;
+        padding-left: 24px;
+        padding-top: 22px
+    }
+
+    .form-field-check-radio.-checkout-checkbox-group {
+        margin-bottom: 32px
+    }
+
+    .options-list-value {
+        font-size: 15px
+    }
+
+    .options-list-selector {
+        max-height: 333px
+    }
+
+    .checkout-input .error-message {
+        font-size: 1.2em
+    }
+
+    .right-panel-show:not(.gbox_opened) #scrollfix {
+        left: -380px
+    }
+
+    .right-panel-show:not(.gbox_opened) .main-wrap {
+        left: 380px
+    }
+
+    .right-panel,
+    .wishlist-right-aside {
+        width: 380px
+    }
+
+    .main-content-overlay {
+        z-index: 100
+    }
+
+    .h1-change-btn-wrap {
+        margin: 0;
+        padding: 0 200px 0 0
+    }
+
+    .change-vehicle-btn-h {
+        margin-bottom: 0;
+        margin-top: -1.42em;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        vertical-align: unset
+    }
+
+    .header-dd-hover-element:hover .header-dd-h {
+        display: block;
+        top: 56px
+    }
+
+    .header-dd-hover-element:hover .header-dd-h.-category {
+        top: 38px
+    }
+
+    .header-dd-hover-element:hover .header-dd-h.-category::before,
+    .header-dd-hover-element:hover .header-dd-h.-category::after {
+        left: 74%
+    }
+
+    .header-dd-hover-element:hover .header-dd-h.-wishlist::before,
+    .header-dd-hover-element:hover .header-dd-h.-wishlist::after {
+        left: 79%
+    }
+
+    .header-dd-hover-element:hover .header-dd-h.-cart::before,
+    .header-dd-hover-element:hover .header-dd-h.-cart::after {
+        left: 94%
+    }
+
+    .header-dd-hover-element:hover .header-dd-h.-help-center {
+        top: 24px
+    }
+
+    .header-dd-hover-element:hover .header-dd-h.-help-center::before,
+    .header-dd-hover-element:hover .header-dd-h.-help-center::after {
+        left: 84%
+    }
+
+    .header-dd-h {
+        position: relative;
+        display: none
+    }
+
+    .header-dd-h::before,
+    .header-dd-h::after {
+        content: "";
+        display: block;
+        position: absolute
+    }
+
+    .header-dd-h::after {
+        z-index: 2
+    }
+
+    .header-dd-h::before,
+    .header-dd-h::after {
+        left: 50%;
+        top: -13px
+    }
+
+    .header-dd-h::before {
+        border: 12px solid rgba(0, 0, 0, 0);
+        margin-left: -12px;
+        border-bottom: 12px solid #d8d8d8;
+        border-top: 0;
+        margin-top: 1px
+    }
+
+    .header-dd-h::after {
+        border: 10px solid rgba(0, 0, 0, 0);
+        margin-left: -10px;
+        border-bottom: 10px solid #fff;
+        border-top: 0;
+        margin-top: 3px
+    }
+
+    .prod_grd .lst_meta {
+        margin-bottom: 20px
+    }
+
+    .prod_grd .prod-sales-info {
+        margin-bottom: 0
+    }
+
+    .prod_lst>li.-sp-child-list .lst_a::after {
+        display: block;
+        z-index: 1
+    }
+
+    .prod_lst>li.-sp-child-list>.lst_main {
+        margin-left: 3%
+    }
+
+    .prod_lst>li.-wt-prod-list-with-childs {
+        flex-direction: row
+    }
+
+    .prod_lst>li.-wt-prod-list-with-childs>.lst_main {
+        margin-left: 3%;
+        position: relative
+    }
+
+    .prod_lst .lst_rating {
+        float: left
+    }
+
+    .prod_lst .lst_id {
+        color: #757575;
+        display: block;
+        line-height: 15px
+    }
+
+    .prod_lst .lst_id.-with-fitment-type::before {
+        background: #717d90;
+        border-radius: 4px;
+        color: #fff;
+        content: attr(data-fit-type);
+        display: block;
+        float: left;
+        font-size: .8em;
+        font-weight: 300;
+        margin-right: 8px;
+        padding: 0 10px;
+        text-transform: uppercase
+    }
+
+    .prod_lst .lst_id.-with-fitment-type::after {
+        border-left: 1px solid #757575;
+        content: "";
+        float: left;
+        height: 100%;
+        margin: 0 8px 0 0
+    }
+
+    .prod_lst .lst_id.-with-fitment-type.-custom::before {
+        background: #ffac00
+    }
+
+    .prod_lst .lst_id.-with-fitment-type.-universal::before {
+        background: #a9a9a9
+    }
+
+    .prod_lst .lst_id.-with-fitment-type.-vehicle::before {
+        background: #717d90
+    }
+
+    .prod_lst .lst_features {
+        color: #464646;
+        display: block
+    }
+
+    .prod_lst .lst-type-icons>.ic {
+        margin-left: 18px
+    }
+
+    .prod_lst .lst-type-icons>.ic:nth-child(1)>.prod-tooltip,
+    .prod_lst .lst-type-icons>.ic:nth-child(2)>.prod-tooltip {
+        left: -100px;
+        right: -100px;
+        white-space: normal
+    }
+
+    .prod_lst .lst-type-icons>.ic:nth-child(1)>.prod-tooltip::after,
+    .prod_lst .lst-type-icons>.ic:nth-child(2)>.prod-tooltip::after {
+        margin-left: auto
+    }
+
+    .prod-lst-feature-images>.item,
+    .prod-lst-feature-images>.item:nth-child(-n+2) {
+        display: inline-block
+    }
+
+    .prod-lst-feature-images.open>.item {
+        display: inline-block
+    }
+
+    .prod-lst-feature-images>.btn {
+        background: none;
+        display: none
+    }
+
+    .empty-product-list-message>.text {
+        font-size: 1.8em
+    }
+
+    .product-list-msg {
+        margin-bottom: 45px;
+        padding-bottom: 30px
+    }
+
+    .shifter-navigation.-about-us {
+        display: none
+    }
+
+    .shifter-pagination>.dot {
+        margin: 0 5px
+    }
+
+    .review-col-section {
+        align-items: flex-start;
+        flex-wrap: nowrap
+    }
+
+    .prod-review-col-write {
+        margin-top: 44px;
+        order: 1
+    }
+
+    .prod-review-col-rating {
+        flex: 0 0 auto;
+        margin-bottom: 0;
+        order: 2
+    }
+
+    .prod-review-write-btn-h {
+        margin-right: 0
+    }
+
+    .prod-review-write-btn-h.-center {
+        margin-right: auto
+    }
+
+    .review-col1,
+    .review-col2 {
+        float: left
+    }
+
+    .review-col1 {
+        width: 31%
+    }
+
+    .review-col2 {
+        padding-left: 3em;
+        width: 69%
+    }
+
+    .prod-review-head-rating {
+        font-size: 1.3em;
+        height: 20px;
+        margin-top: 4px;
+        order: 3;
+        padding: 5px 0 0 135px;
+        width: 100%
+    }
+
+    .prod-review-prod-name {
+        margin-top: 4px;
+        order: 2
+    }
+
+    .prod-review-section-name.-extra-margin {
+        margin-top: 16px
+    }
+
+    .prod-review-section-name.-product {
+        margin-top: 0
+    }
+
+    .review-h1-description {
+        margin: -34px 8px 38px
+    }
+
+    .prod-rvw-message {
+        font-size: 1.4em;
+        margin: 25px 0 10px;
+        padding: 20px 24px
+    }
+
+    .prod-feedback-info {
+        margin: 10px 0 32px
+    }
+
+    .prod-feedback-info.-reviews {
+        margin-bottom: 0
+    }
+
+    .rvw-avg-btn-holder {
+        margin-top: -20px
+    }
+
+    .rvw-lnk-btn {
+        background: url(https://cdn.carid.com/css/prod-images/0fed367f.svg) no-repeat 100% 50%;
+        background-size: 4px 8px;
+        color: #757575;
+        display: inline-block;
+        font-size: 1.4em;
+        padding-right: 12px
+    }
+
+    .rvw-lnk-btn.-smaller-size {
+        font-size: 1em
+    }
+
+    .rvw-lnk-btn.-rvw-page {
+        color: #464646;
+        float: right;
+        margin: -54px 8px 0 0
+    }
+
+    .prod-qa-list-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+    .prod-qa-list-wrap>.left-column,
+    .prod-qa-list-wrap>.right-column {
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: column;
+        width: 45%
+    }
+
+    .prod-qa-content {
+        padding-bottom: 40px
+    }
+
+    .prod-review-thumbs-holder>.thumbnail,
+    .prod-review-thumbs-holder>.prod-review-expand-btn {
+        height: 75px;
+        margin-right: 10px;
+        width: 110px
+    }
+
+    .prod-review-expand-btn {
+        font-size: 16px
+    }
+
+    .f-strip-cont::after {
+        color: #d8d8d8;
+        content: attr(data-descr);
+        display: block;
+        font-weight: 300
+    }
+
+    .f-info-col:first-child {
+        position: static
+    }
+
+    .f-title {
+        font-size: 1.8em;
+        line-height: 1.2;
+        padding-bottom: 24px
+    }
+
+    .f-subscribe-h {
+        padding-bottom: 40px
+    }
+
+    .f-list {
+        column-width: auto
+    }
+
+    .pub-block {
+        text-align: inherit
+    }
+
+    .pub-block.-f-pub {
+        margin-bottom: 0;
+        margin-top: 0
+    }
+
+    .f-logos-wrap {
+        padding-bottom: 0
+    }
+
+    .f-logos-wrap.-no-gallery {
+        padding-bottom: 0
+    }
+
+    .f-other {
+        padding: 32px 0
+    }
+
+    .f-copyright {
+        float: left
+    }
+
+    .f-links {
+        display: block;
+        float: right
+    }
+
+    .f-links>a,
+    .f-links>span {
+        color: #464646;
+        font-size: 1.2em;
+        margin-left: 10px
+    }
+
+    .footer-toggle-header {
+        border: 0
+    }
+
+    .footer-toggle-content {
+        padding: 0
+    }
+
+    .recommended-contacts-popup>.title {
+        font-size: 3em
+    }
+
+    ._mb30 {
+        margin-bottom: 30px !important
+    }
+
+    .modal-wrap {
+        min-width: 640px
+    }
+
+    .modal-wrap.-simple {
+        min-width: 400px
+    }
+
+    .modal-wrap .footer.-items-3,
+    .modal-wrap .footer.-items-4 {
+        display: flex;
+        flex-direction: row-reverse
+    }
+
+    .modal-wrap .footer.-items-3>.button-holder,
+    .modal-wrap .footer.-items-4>.button-holder {
+        margin: 0 0 15px 2%
+    }
+
+    .modal-wrap .footer.-items-3>.button-holder {
+        width: 30%
+    }
+
+    .modal-wrap .footer.-border.-from-mobile-large {
+        border-top-width: 1px
+    }
+
+    .modal-wrap .footer>.button-holder.-half-width {
+        margin-left: 4%
+    }
+
+    .modal-info-msg>.title>.holder,
+    .modal-subtitle {
+        font-size: 2em
+    }
+
+    .modal-info-msg>.title>.-big.holder,
+    .-big.modal-subtitle {
+        font-size: 3em
+    }
+
+    .modal-list>.li {
+        font-size: 1.5em
+    }
+
+    .modal-hr {
+        margin: 4em 0
+    }
+
+    .modal-hr.-small {
+        margin: 3em 0
+    }
+
+    .modal-footer-alert:not(.-wide) {
+        margin-right: 3%;
+        vertical-align: middle;
+        width: 47%
+    }
+
+    .modal-add-wishlist-btn-h {
+        width: 90px
+    }
+
+    .delivery-location-popup-zip {
+        margin-bottom: 0
+    }
+
+    .universal-accordion.enabled {
+        margin: 56px 8px
+    }
+
+    .accordion-button {
+        background-size: auto
+    }
+
+    .links-map-table-body {
+        display: table-row-group
+    }
+
+    .links-map-table-row {
+        display: table-row
+    }
+
+    .links-map-table-cell {
+        display: table-cell
+    }
+
+    .spoiler-button-holder.-service-type {
+        margin-left: auto;
+        margin-right: auto;
+        width: 28%
+    }
+
+    .rebate-title {
+        margin-bottom: 0
+    }
+
+    .prod-sales-info>.today-price {
+        font-size: 12px;
+        padding-left: 18px;
+        padding-right: 18px
+    }
+
+    .main-selector.-big {
+        min-height: 62px
+    }
+
+    .main-selector.-big::before {
+        height: 62px
+    }
+
+    .main-selector.-big::after {
+        top: 25px
+    }
+
+    .main-selector.-big.-open::after,
+    .main-selector.-big.-selected::after {
+        top: 15px
+    }
+
+    .main-selector.-big>.value {
+        font-size: 17px;
+        top: 30px
+    }
+
+    .main-selector.-big>.marker {
+        top: 18px
+    }
+
+    .main-selector.-big>.list {
+        margin: 62px 10px 10px
+    }
+
+    .ptype-grid.-small {
+        margin-top: 0
+    }
+
+    .ptype-lst-nav>.item.-btn-more,
+    .ptype-lst-nav>.item.-btn-less {
+        display: none
+    }
+
+    .ptype-lst-nav.-fixed-mobile-open>.item {
+        width: 11.11%
+    }
+}
+
+@media only screen and (min-width:741px)and (max-width:1023.98px) {
+    .h2 {
+        font-size: 2.4em;
+        margin: 40px 8px 32px
+    }
+
+    .simple-btn.-fixed-toolbar-btn {
+        font-size: 1.2em;
+        padding-left: 11px;
+        padding-right: 11px
+    }
+
+    .nav-tool.-icon-account {
+        background-image: url(https://cdn.carid.com/css/prod-images/c2c06405.svg);
+        background-size: 24px auto
+    }
+
+    .header-dd-hover-element:hover .header-dd-h.-header::before,
+    .header-dd-hover-element:hover .header-dd-h.-header::after {
+        left: 71%
+    }
+
+    .prod_grd>li,
+    .prod_grd.three_per_row>li,
+    .prod_grd.five_per_row>li {
+        margin: 0 1% 18px;
+        width: 31.33%
+    }
+
+    .prod_lst>li.-sp-child-list .lst_ic_h {
+        width: 40%
+    }
+
+    .prod_lst>li.-sp-child-list .lst-info-right-part {
+        min-height: 62px
+    }
+
+    .prod_lst>li.-wt-prod-list-with-childs>.lst_ic_h {
+        width: 40%
+    }
+
+    .prod_lst>li.-wt-prod-list-with-childs .lst_a::before {
+        left: -75.4385964912%;
+        padding-top: 70.1754385965%;
+        width: 70.1754385965%
+    }
+
+    .prod_lst .lst_ic_h {
+        width: 40%
+    }
+
+    .prod_lst .lst_main {
+        padding-bottom: 70px
+    }
+
+    .prod_lst .lst_main:not(.-childs) .simple-btn {
+        width: 100%
+    }
+
+    .prod_lst .lst-info-right-part {
+        margin-top: 10px
+    }
+
+    .prod_lst .lst_a::before {
+        left: -75.4385964912%;
+        padding-top: 70.1754385965%;
+        width: 70.1754385965%
+    }
+
+    .prod_lst .lst_a::after {
+        width: 100%
+    }
+
+    .prod_lst .lst_features {
+        margin: 2px 0 8px
+    }
+
+    .prod-review-col-rating {
+        margin-left: 40px;
+        width: 300px
+    }
+
+    .prod_rvw {
+        padding: 4em 0 3em
+    }
+
+    .prod_rvw:first-child {
+        padding-top: 2.6em
+    }
+
+    .f-info {
+        padding-top: 52px
+    }
+
+    .f-contact.-inspiration {
+        margin-top: 32px;
+        padding-bottom: 24px
+    }
+
+    .f-logos-wrap {
+        bottom: 72px;
+        position: absolute;
+        right: 0;
+        width: 50%
+    }
+
+    .f-logos-wrap.-no-gallery {
+        bottom: 0
+    }
+
+    .f-copyright {
+        padding: 0 24px
+    }
+
+    .f-links {
+        padding: 0 24px
+    }
+
+    .footer-mobile-table {
+        box-sizing: border-box;
+        display: table;
+        width: 100%
+    }
+
+    .footer-mobile-table>.f-info-col {
+        display: table-cell;
+        width: 22.1%
+    }
+
+    .footer-mobile-table>.f-info-col:first-child {
+        display: table-footer-group
+    }
+
+    .footer-mobile-table>.f-info-col:first-child>.holder {
+        padding-left: inherit;
+        padding-top: 56px;
+        width: 128%
+    }
+
+    .universal-accordion.enabled .h2 {
+        font-size: 2em
+    }
+
+    .ptype-grid.-col-7>.li {
+        width: 23%
+    }
+
+    .ptype-grid.-col-7>.li>.lazy-loading {
+        padding-top: 46%;
+        width: 60%
+    }
+
+    .ptype-grid.-col-7>.li>.ptype-grid-a {
+        font-size: 1.3em
+    }
+
+    .ptype-grid.-small>.li {
+        width: 18%
+    }
+}
+
+@media only screen and (min-width:741px)and (max-width:1280.98px) {
+    .prod_lst>li.-sp-child-list .lst_a::after {
+        width: 120px
+    }
+
+    .prod_lst .lst_main:not(.-childs) .simple-btn {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        top: auto
+    }
+
+    .prod_lst .lst_a::after {
+        bottom: 0;
+        top: auto !important
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .h2 {
+        font-size: 3em;
+        margin: 48px 8px 40px
+    }
+
+    .universal-label {
+        font-size: 1.4em
+    }
+
+    .form-field-label.aside-filters-item {
+        padding-left: 34px
+    }
+
+    .form-field-label.aside-filters-item::after {
+        left: 0;
+        top: 1px
+    }
+
+    .wrap p img {
+        max-width: none
+    }
+
+    .nav-tool.-icon-garage {
+        background-position: 0 50%
+    }
+
+    .header-warning>.text {
+        background-position: 0 19px;
+        font-size: 1.5em;
+        padding: 24px 0 24px 48px
+    }
+
+    .disaster-warning-msg {
+        font-size: 15px;
+        margin: 32px 8px 24px;
+        padding: 32px
+    }
+
+    .count-item.-nav-tool-garage {
+        left: 14px;
+        right: auto
+    }
+
+    .prod_grd>li,
+    .prod_grd>li>.-clone {
+        border: 8px solid rgba(0, 0, 0, 0)
+    }
+
+    .no-touch .prod_grd>li:hover,
+    .no-touch .prod_grd>li>.-clone:hover {
+        z-index: 2
+    }
+
+    .no-touch .prod_grd>li:hover::before,
+    .no-touch .prod_grd>li>.-clone:hover::before {
+        border: 1px solid #d8d8d8;
+        bottom: -7px;
+        content: "";
+        left: -7px;
+        padding: 7px;
+        position: absolute;
+        right: -7px;
+        top: -7px;
+        z-index: -1
+    }
+
+    .prod_grd .lst_a::after,
+    .prod_lst .lst_a::after {
+        display: block
+    }
+
+    .prod_grd .lst_a.-hidden-button::after,
+    .prod_lst .lst_a.-hidden-button::after {
+        display: block
+    }
+
+    .prod_grd .lst_rating>span,
+    .prod_lst .lst_rating>span {
+        display: inline
+    }
+
+    .prod_grd .lst-a-btn.-add-to-cart.-desktop-hide,
+    .prod_lst .lst-a-btn.-add-to-cart.-desktop-hide {
+        display: none !important
+    }
+
+    .prod_grd>li,
+    .prod_grd>li>.-clone {
+        border: 8px solid #fff;
+        width: 25%
+    }
+
+    .prod_grd>li.-already-cloned:hover {
+        border: none;
+        z-index: 2
+    }
+
+    .prod_grd>li.-already-cloned:hover::before,
+    .prod_grd>li.-already-cloned:hover::after {
+        content: none
+    }
+
+    .prod_grd>li.-already-cloned:hover>.prod-lst-additional-icons {
+        display: none
+    }
+
+    .prod_grd>li.-already-cloned:hover>.lst_main {
+        opacity: 0
+    }
+
+    .prod_grd>li.-already-cloned:hover>.lst_ic_h {
+        border: 8px solid rgba(0, 0, 0, 0);
+        box-sizing: border-box
+    }
+
+    .prod_grd>li.-already-cloned:hover>.-clone {
+        display: block
+    }
+
+    .prod_grd>li.-already-cloned:hover .lst_a::after {
+        bottom: 8px;
+        display: block;
+        left: 0;
+        right: 0;
+        top: auto;
+        width: auto
+    }
+
+    .prod_grd>li.-already-cloned:hover .lst-a-btn {
+        bottom: 10px;
+        display: block;
+        position: absolute;
+        width: 100%
+    }
+
+    .prod_grd.three_per_row>li {
+        width: 33.3%
+    }
+
+    .prod_grd.five_per_row>li {
+        width: 20%
+    }
+
+    .prod_grd>li,
+    .prod_grd.three_per_row>li,
+    .prod_grd.five_per_row>li {
+        margin: -8px 0 8px
+    }
+
+    .prod_grd .lst_main.-with-button {
+        padding-bottom: 24px
+    }
+
+    .prod_grd .lst-a-btn {
+        display: none
+    }
+
+    .prod_lst>li {
+        margin-top: 24px
+    }
+
+    .prod_lst>li.-sp-child-list .lst_ic_h {
+        width: 30%
+    }
+
+    .prod_lst>li.-sp-child-list .lst-info-right-part {
+        margin-top: 0;
+        min-height: 0;
+        padding-right: 0
+    }
+
+    .prod_lst>li.-wt-prod-list-with-childs>.lst_ic_h {
+        width: 30%
+    }
+
+    .prod_lst>li.-wt-prod-list-with-childs .lst_a::before {
+        left: -49.2537313433%;
+        padding-top: 44.776119403%;
+        width: 44.776119403%
+    }
+
+    .prod_lst .lst_ic_h {
+        width: 30%
+    }
+
+    .prod_lst .lst_main {
+        flex-direction: row
+    }
+
+    .prod_lst .lst_main .product-list-qty-form-holder>.line {
+        border-bottom: 1px solid #d8d8d8;
+        margin-bottom: 6px;
+        padding-bottom: 20px
+    }
+
+    .prod_lst .lst_main .product-list-qty-form-holder>.line.-out-of-stock>.lst_prc {
+        display: block
+    }
+
+    .prod_lst .lst_main .product-list-qty-form-holder>.line.-out-of-stock>.lst_meta {
+        float: none;
+        margin-bottom: 12px;
+        margin-top: 0
+    }
+
+    .prod_lst .lst_main .product-list-qty-form-holder>.line>.lst_prc:not(.-call-for-price) {
+        float: none
+    }
+
+    .prod_lst .lst-info-right-part.-childs {
+        margin-top: 0
+    }
+
+    .prod_lst .lst_a::before {
+        left: -49.2537313433%;
+        padding-top: 44.776119403%;
+        width: 44.776119403%
+    }
+
+    .prod_lst .lst_a.-blue::after {
+        left: auto;
+        right: 0
+    }
+
+    .prod_lst .lst-a-name {
+        font-size: 1.8em
+    }
+
+    .prod_lst .lst-descr-text {
+        display: block;
+        line-height: 1.4;
+        margin-bottom: 5px;
+        padding-top: 5px
+    }
+
+    .prod_lst .lst_features {
+        margin: 8px 0
+    }
+
+    .prod_lst .lst_prc,
+    .prod_lst .lst_prc_no_price {
+        font-size: 2.3em
+    }
+
+    .prod_lst .lst_prc.-long,
+    .prod_lst .lst_prc_no_price.-long {
+        font-size: 2.1em
+    }
+
+    .prod-lst-custom-paint {
+        z-index: 4
+    }
+
+    .prod-lst-custom-paint:hover>.prod-tooltip {
+        display: block
+    }
+
+    .prod-lst-feature-image {
+        margin-bottom: 24px;
+        margin-top: 34px
+    }
+
+    .product-list-subtotal-price {
+        text-align: left
+    }
+
+    .shifter:not(.shifter-ready).-active.-ptype-shifter,
+    .shifter.enabled.-active.-ptype-shifter {
+        margin-top: 0
+    }
+
+    .shifter:not(.shifter-ready).-ptype-shifter,
+    .shifter.enabled.-ptype-shifter {
+        margin-top: 0
+    }
+
+    .shifter:not(.shifter-ready)>ul,
+    .shifter.enabled>ul {
+        overflow: hidden
+    }
+
+    .shifter-arrow {
+        display: inline-block
+    }
+
+    .shifter-pagination.-articles {
+        bottom: -32px
+    }
+
+    .prod-review-col-rating {
+        margin-left: 100px;
+        width: 450px
+    }
+
+    .prod-review {
+        flex-wrap: nowrap;
+        margin: 40px 0;
+        padding-top: 60px
+    }
+
+    .prod-review-col-head {
+        display: flex;
+        flex: 0 0 auto;
+        flex-wrap: wrap;
+        margin-right: 40px;
+        width: 360px
+    }
+
+    .prod-review-title {
+        font-size: 2em;
+        line-height: 1.2;
+        margin-top: 0;
+        order: 1;
+        width: 100%
+    }
+
+    .prod-review-message {
+        font-size: 1.4em;
+        margin-top: 0;
+        padding: 20px 24px
+    }
+
+    .prod_rvw {
+        padding: 6em 0 4em
+    }
+
+    .prod_rvw:first-child {
+        padding-top: 4em
+    }
+
+    .prod_rvw_rt_ttl_main {
+        font-size: 1.9em
+    }
+
+    .rating-percent-star-count {
+        background-position: right 4px;
+        background-size: auto 20px
+    }
+
+    .rating-percent-star-count>.percent {
+        right: 200px
+    }
+
+    .prod-rvw-cnt-ttl-descr {
+        margin-top: 8px
+    }
+
+    .f-footer {
+        min-width: 1000px;
+        padding-top: 80px
+    }
+
+    .f-strip {
+        padding: 40px 0
+    }
+
+    .f-strip-cont {
+        background-position: 5px center;
+        min-height: 38px;
+        padding-left: 60px;
+        padding-top: 0;
+        text-align: left
+    }
+
+    .f-strip-cont.-account {
+        background-position: 9px center
+    }
+
+    .f-strip-cont.-track-order {
+        background-position: left center
+    }
+
+    .f-info {
+        padding-top: 78px
+    }
+
+    .f-info-col {
+        display: inline-block;
+        padding: 0 8px 0 56px;
+        vertical-align: top;
+        width: 25%
+    }
+
+    .f-info-col:first-child {
+        padding-left: 8px;
+        padding-right: 0
+    }
+
+    .f-text {
+        color: #464646;
+        display: block;
+        font-size: 1.2em;
+        line-height: 2;
+        padding-top: 16px
+    }
+
+    .f-text.-col-2 {
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 32px 8px;
+        vertical-align: top;
+        width: 50%
+    }
+
+    .f-contact.-inspiration {
+        margin-top: 40px
+    }
+
+    .f-logos-wrap {
+        display: inline-block;
+        padding: 12px 8px 0 56px;
+        vertical-align: top;
+        width: 50%
+    }
+
+    .f-logos-list {
+        flex-wrap: nowrap;
+        margin: 0;
+        max-width: 460px
+    }
+
+    .recommended-contacts.-horizontal {
+        margin-bottom: 16px
+    }
+
+    .wishlist-popup-columns>.col,
+    .modal-wrap .footer,
+    .modal-wrap .main,
+    .modal-wrap>.header {
+        padding-left: 3em;
+        padding-right: 3em
+    }
+
+    .modal-wrap .footer.-items-4 {
+        justify-content: space-between
+    }
+
+    .modal-wrap .footer.-border {
+        margin: 3em 3em 2em;
+        padding: 3em 0 0
+    }
+
+    .modal-title {
+        font-size: 3em
+    }
+
+    .modal-title>.substring {
+        font-size: .5em
+    }
+
+    .universal-accordion.enabled .h2 {
+        font-size: 2.2em
+    }
+
+    .text-height-overflow-hidden.-desktop-show {
+        position: static
+    }
+
+    .spoiler-button-holder.-desktop-hide {
+        display: none
+    }
+
+    .prod_avail:not(.-with-deliver-text) .prod-same-day-time {
+        display: block
+    }
+
+    .prod-same-day-time>span:not(.ships-today) {
+        display: inline
+    }
+
+    .wishlist-add {
+        right: 14.5em
+    }
+
+    .wishlist-prod-name {
+        font-size: 1.6em
+    }
+
+    .main-selector>.list>li {
+        font-size: 1.3em
+    }
+
+    .ptype-grid.-col-7 {
+        margin-bottom: 16px
+    }
+
+    .ptype-grid.-col-7>.li {
+        margin-bottom: 8px;
+        width: 12.95%
+    }
+
+    .ptype-grid.-col-7>.li>.ptype-grid-a {
+        font-size: 1.4em;
+        padding-top: 90px
+    }
+
+    .ptype-grid.-small>.li>.ptype-grid-a {
+        padding-top: 80%
+    }
+
+    .ptype-lst-nav>.item.-btn-more,
+    .ptype-lst-nav>.item.-btn-less,
+    .ptype-lst-nav.-more>.item.-btn-more,
+    .ptype-lst-nav.-more>.item.-btn-less,
+    .ptype-lst-nav.-fixed.-more>.item.-btn-more,
+    .ptype-lst-nav.-fixed.-more>.item.-btn-less {
+        font-size: 1.3em;
+        padding-bottom: 8px
+    }
+
+    .ptype-lst-nav-h.-fixed {
+        background-color: #fff
+    }
+
+    .ptype-lst-nav-h.-fixed .ptype-inner-wrap {
+        margin: 0 auto -2px;
+        max-width: 1296px;
+        overflow: hidden;
+        padding-bottom: 2px
+    }
+
+    .ptype-lst-nav.-fixed {
+        width: 200%
+    }
+
+    .ptype-lst-nav.-fixed>.item {
+        height: 100%;
+        padding: 6px 0
+    }
+
+    .no-touch .ptype-lst-nav.-fixed>.item:hover {
+        background-color: #f0f0f0
+    }
+
+    .ptype-lst-nav.-fixed>.item>.link {
+        font-size: 1.3em
+    }
+
+    .ptype-lst-nav.-more>.item.-btn-more,
+    .ptype-lst-nav.-more>.item.-btn-less {
+        display: none
+    }
+
+    .no-touch .ptype-lst-nav:not(.-fixed)>.item>.link {
+        background-color: rgba(0, 0, 0, 0);
+        padding: 22px 0;
+        transition: background-color .2s linear
+    }
+
+    .no-touch .ptype-lst-nav:not(.-fixed)>.item>.link:hover {
+        text-decoration: underline
+    }
+
+    .no-touch .ptype-lst-nav:not(.-fixed)>.item>.link.active {
+        background-color: #fff;
+        border-radius: 4px;
+        font-weight: 700
+    }
+
+    .no-touch .ptype-lst-nav:not(.-fixed)>.item>.link.active::after {
+        display: none
+    }
+
+    .no-touch .ptype-lst-nav:not(.-fixed)>.item>.link.active>.ptype-lst-icon {
+        background-color: rgba(0, 0, 0, 0)
+    }
+
+    .no-touch .ptype-lst-nav:not(.-fixed)>.item>.link>.ptype-lst-icon {
+        background-color: #f0f0f0;
+        overflow: hidden;
+        transform: translateZ(0)
+    }
+}
+
+@media only screen and (min-width:1024px)and (max-width:1280.98px) {
+    .simple-btn.-fixed-toolbar-btn {
+        font-size: 1.4em;
+        padding-left: 36px;
+        padding-right: 36px
+    }
+
+    .head-stores-icon {
+        background-position: 8px 50%
+    }
+
+    .prod_grd.three_per_row .lst_prc {
+        font-size: 1.7em
+    }
+
+    .prod_grd.three_per_row .lst_prc.-long {
+        font-size: 1.7em
+    }
+
+    .prod_grd.five_per_row .lst_prc {
+        font-size: 1.5em
+    }
+
+    .prod_lst>li.-sp-child-list .lst_a::after {
+        bottom: 0
+    }
+
+    .prod_lst .lst_main {
+        display: block
+    }
+
+    .prod_lst .lst_main.-childs {
+        display: flex
+    }
+
+    .prod_lst .lst_main:not(.-childs) .simple-btn {
+        padding-left: 0;
+        padding-right: 0;
+        width: 122px
+    }
+
+    .prod_lst .lst_main .product-list-qty-form-holder {
+        display: flex;
+        flex-direction: column
+    }
+
+    .prod_lst .lst-info-right-part {
+        padding-top: 4px
+    }
+
+    .prod_lst .lst-info-right-part.-childs {
+        width: 225px
+    }
+
+    .prod_lst .lst_a::after {
+        width: 120px
+    }
+
+    .prod_lst .lst_a.-blue::after {
+        width: 120px
+    }
+
+    .prod_lst .prod-sales-info {
+        margin-top: 8px
+    }
+
+    .prod-lst-feature-images {
+        margin-bottom: 36px;
+        margin-top: 16px
+    }
+
+    .shifter:not(.shifter-ready).-active,
+    .shifter.enabled.-active {
+        margin-bottom: 48px
+    }
+
+    .shifter-arrow.-left,
+    .shifter-arrow.-right {
+        margin: 0 15px;
+        position: static
+    }
+
+    .shifter-arrow.-left {
+        background: url(https://cdn.carid.com/css/prod-images/e6ebcf0d.svg) no-repeat 50% 50%;
+        background-size: auto 12px
+    }
+
+    .shifter-arrow.-right {
+        background: url(https://cdn.carid.com/css/prod-images/0fed367f.svg) no-repeat 50% 50%;
+        background-size: auto 12px
+    }
+
+    .shifter-navigation.-articles {
+        position: relative;
+        top: 28px
+    }
+
+    .shifter-navigation.-featured-brands {
+        bottom: -38px;
+        position: absolute;
+        width: 100%
+    }
+
+    .shifter-navigation.-ptype-shifter {
+        position: relative;
+        top: 3px
+    }
+
+    .shifter-pagination {
+        display: inline-block;
+        position: static;
+        width: auto
+    }
+
+    .rebate-description {
+        width: 70%
+    }
+
+    .ptype-grid.-col-7>.li>.lazy-loading {
+        padding-top: 58%
+    }
+}
+
+@media only screen and (min-width:1024px)and (max-width:1600.98px) {
+
+    .prod_grd .lst_rating,
+    .prod_lst .lst_rating {
+        font-size: 1.2em
+    }
+
+    .prod_lst>li {
+        padding-bottom: 22px
+    }
+
+    .ptype-lst-nav>.item.-btn-more,
+    .ptype-lst-nav>.item.-btn-less,
+    .ptype-lst-nav.-more>.item.-btn-more,
+    .ptype-lst-nav.-more>.item.-btn-less,
+    .ptype-lst-nav.-fixed.-more>.item.-btn-more,
+    .ptype-lst-nav.-fixed.-more>.item.-btn-less {
+        padding-top: 46px
+    }
+
+    .ptype-lst-nav.-fixed {
+        height: 71px
+    }
+}
+
+@media only screen and (min-width:1281px) {
+    .simple-btn.-fixed-toolbar-btn {
+        font-size: 1.5em;
+        padding-bottom: 11px;
+        padding-top: 11px
+    }
+
+    .options-list-wrap.-with-reset {
+        margin-right: 110px
+    }
+
+    .prod_grd>li,
+    .prod_grd>li>.-clone {
+        margin-bottom: 16px
+    }
+
+    .prod_grd.three_per_row .lst_prc.-long {
+        font-size: 2em
+    }
+
+    .prod_lst>li::after {
+        left: 30%;
+        margin: 0 3%;
+        right: 240px
+    }
+
+    .prod_lst>li.-sp-child-list .lst_a::after {
+        bottom: auto;
+        top: 100px
+    }
+
+    .prod_lst>li.-sp-child-list .lst_a.-sale::after {
+        top: 130px
+    }
+
+    .prod_lst .lst-info-right-part {
+        padding-top: 42px
+    }
+
+    .prod_lst .lst-type-icons {
+        margin-bottom: 0;
+        margin-top: 14px
+    }
+
+    .prod_lst .prod-sales-info.-long {
+        font-size: 1.15em
+    }
+
+    .prod-lst-feature-images {
+        margin-bottom: 16px;
+        margin-top: 8px
+    }
+
+    .shifter:not(.shifter-ready).-active.-ptype-shifter,
+    .shifter.enabled.-active.-ptype-shifter {
+        padding: 0 20px
+    }
+
+    .shifter:not(.shifter-ready).-articles,
+    .shifter.enabled.-articles {
+        margin-bottom: 100px !important
+    }
+
+    .shifter:not(.shifter-ready).-articles.-inactive,
+    .shifter.enabled.-articles.-inactive {
+        margin-bottom: 60px !important
+    }
+
+    .shifter-arrow.-left {
+        background-image: url(https://cdn.carid.com/css/prod-images/ebea543f.svg)
+    }
+
+    .shifter-arrow.-right {
+        background-image: url(https://cdn.carid.com/css/prod-images/d5eb35de.svg)
+    }
+
+    .shifter-pagination.-ptype-shifter {
+        display: none
+    }
+
+    .ptype-grid.-small>.li {
+        width: 31.33%
+    }
+
+    .ptype-grid.-small>.li>.ptype-grid-img {
+        top: 4%;
+        width: 92%
+    }
+}
+
+@media only screen and (min-width:1281px)and (max-width:1600.98px) {
+    .simple-btn.-fixed-toolbar-btn {
+        padding-left: 58px;
+        padding-right: 58px
+    }
+
+    .prod_grd.three_per_row .lst_prc {
+        font-size: 2em
+    }
+
+    .prod_lst>li.-sp-child-list .lst_a::after {
+        width: 225px
+    }
+
+    .prod_lst .lst-info-right-part {
+        width: 225px
+    }
+
+    .prod_lst .lst_a::after {
+        width: 225px
+    }
+
+    .prod_lst .lst_a.-blue::after {
+        width: 225px
+    }
+
+    .shifter-arrow.-featured-brands.-left {
+        left: -38px
+    }
+
+    .shifter-arrow.-featured-brands.-right {
+        right: -38px
+    }
+}
+
+@media only screen and (min-width:1601px) {
+    .simple-btn.-fixed-toolbar-btn {
+        padding-left: 64px;
+        padding-right: 64px
+    }
+
+    .prod_grd.three_per_row .lst_prc {
+        font-size: 2.4em
+    }
+
+    .prod_grd.five_per_row .lst_prc.-long {
+        font-size: 2em
+    }
+
+    .prod_grd .lst_prc,
+    .prod_grd .lst_prc_no_price {
+        font-size: 2em
+    }
+
+    .prod_lst>li {
+        padding-bottom: 24px
+    }
+
+    .prod_lst>li.-sp-child-list .lst_a::after {
+        width: 240px
+    }
+
+    .prod_lst .lst-info-right-part {
+        width: 240px
+    }
+
+    .prod_lst .lst_a.-blue::after {
+        width: 240px
+    }
+
+    .shifter-arrow.-left {
+        left: -40px
+    }
+
+    .shifter-arrow.-right {
+        right: -40px
+    }
+
+    .spoiler-button-holder.-service-type {
+        margin-top: -16px
+    }
+
+    .ptype-grid.-additional-row>.li {
+        margin-left: 2%;
+        margin-right: 2%
+    }
+
+    .ptype-lst-nav>.item.-btn-more,
+    .ptype-lst-nav>.item.-btn-less,
+    .ptype-lst-nav.-more>.item.-btn-more,
+    .ptype-lst-nav.-more>.item.-btn-less,
+    .ptype-lst-nav.-fixed.-more>.item.-btn-more,
+    .ptype-lst-nav.-fixed.-more>.item.-btn-less {
+        padding-top: 70px
+    }
+
+    .ptype-lst-nav.-fixed {
+        height: 95px
+    }
+}
+
+@media only screen and (min-width:421px)and (max-width:1023.98px),
+only screen and (min-width:1281px) {
+
+    .shifter:not(.shifter-ready).-active,
+    .shifter.enabled.-active {
+        margin: 32px 0 72px 0
+    }
+}
+
+@media only screen and (min-width:421px)and (max-width:1023.98px),
+only screen and (min-width:1281px)and (max-width:1600.98px) {
+    .prod_grd.five_per_row .lst_prc.-long {
+        font-size: 1.8em
+    }
+}
+
+@media only screen and (min-width:741px)and (max-width:1023.98px),
+only screen and (min-width:1281px)and (max-width:1600.98px) {
+    .head-dd>.item.loading>.head-dd-main::after {
+        right: 0
+    }
+}
+
+
+.left-dd-holder {
+    position: relative;
+    text-align: left;
+    width: 100%
+}
+
+.left-dd,
+.left-dd-cont-h {
+    list-style: none
+}
+
+.left-dd-border-mini {
+    position: relative
+}
+
+.left-dd-border-mini::before {
+    background: #f0f0f0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 6%;
+    position: absolute;
+    width: 88%
+}
+
+.left-dd-border-mini.-border-top::before {
+    top: 0
+}
+
+.left-dd-border-mini.-border-bottom::before {
+    bottom: 0
+}
+
+.left-dd-border-mini.-blue::before {
+    background: #3761bf;
+    height: 2px
+}
+
+.panel-content-spacing {
+    padding-bottom: 16px
+}
+
+.panel-content-spacing.-top-spacing {
+    padding-top: 16px
+}
+
+.left-dd-heading {
+    color: #111;
+    display: block;
+    font-size: 1.7em;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 20px
+}
+
+.left-dd-heading.-spacing {
+    margin-bottom: 16px;
+    margin-top: 32px
+}
+
+.left-dd-vehicle-spacer {
+    margin-top: 4px;
+    padding: 5px 0 2px
+}
+
+.panel-page {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    transition: height 0s .2s linear;
+    width: 100%
+}
+
+.panel-page.-current {
+    height: 100%
+}
+
+.panel-page.-current .panel-header-content {
+    animation: show-from-left .6s ease -60ms
+}
+
+.panel-page.-current .panel-content {
+    animation: show-from-left .6s ease
+}
+
+.panel-page.-show-sub-menu.-current {
+    height: 0
+}
+
+.panel-page.-show-sub-menu.-current .panel-header-content,
+.panel-page.-show-sub-menu.-current .panel-content {
+    animation: none
+}
+
+.panel-page.-show-sub-menu.-next {
+    height: 100%
+}
+
+.panel-page.-show-sub-menu.-next .panel-header-content {
+    animation: show-from-right .6s ease -60ms
+}
+
+.panel-page.-show-sub-menu.-next .panel-content {
+    animation: show-from-right .6s ease
+}
+
+.panel-header {
+    border-bottom: 1px solid #f0f0f0;
+    height: 52px;
+    padding: 0 20px
+}
+
+.panel-header.-border-none {
+    border-bottom: none
+}
+
+.panel-header-content.-flex {
+    align-items: center;
+    display: flex;
+    height: 100%
+}
+
+.panel-header-content.-flex>.heading {
+    margin-left: auto
+}
+
+.panel-header-content.-flex>.heading.-garage {
+    align-items: center;
+    display: flex
+}
+
+.panel-header-content.-flex>.heading.-garage .-type-2 {
+    margin-left: 5px
+}
+
+.panel-header-title {
+    color: #111;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: capitalize
+}
+
+.panel-header-subtitle {
+    color: #464646;
+    display: block;
+    font-size: 1.2em;
+    line-height: 1.2
+}
+
+.panel-back-button {
+    background: url(https://cdn.carid.com/css/prod-images/d95b474a.svg) 0 50% no-repeat;
+    background-size: auto 16px;
+    color: #3761bf;
+    cursor: pointer;
+    font-size: 1.4em;
+    line-height: 1.2;
+    padding: 12px
+}
+
+.panel-content {
+    height: 100%;
+    position: relative
+}
+
+.panel-content>.top-content {
+    padding-bottom: 5px;
+    position: relative
+}
+
+.panel-content>.bottom-content {
+    padding-top: 10px;
+    position: relative
+}
+
+.left-panel .left-menu-hide {
+    display: none
+}
+
+.left-dd-title {
+    align-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-position: 20px 50%;
+    background-repeat: no-repeat;
+    background-size: 46px auto;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.4em;
+    font-weight: 400;
+    height: 52px;
+    line-height: 1.16;
+    padding-left: 20px;
+    padding-right: 30px;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, .06);
+    transition: background-color .1s ease;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.no-touch .left-dd-title:hover>.hover-item {
+    text-decoration: underline
+}
+
+.left-dd-title.-left-dd-title-height {
+    height: 43px
+}
+
+.left-dd-title.-arrow::after {
+    background: url(https://cdn.carid.com/css/prod-images/14baf98d.svg) 50% 50% no-repeat;
+    background-size: auto 16px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: 12px
+}
+
+.left-dd-title.-icon {
+    padding-left: 86px
+}
+
+.left-dd-title.-phone {
+    background-image: url(https://cdn.carid.com/css/prod-images/e28522a3.svg);
+    cursor: default
+}
+
+.left-dd-title.-live-chat {
+    background-image: url(https://cdn.carid.com/css/prod-images/1d37a273.svg)
+}
+
+.left-dd-title.-help-center {
+    background-image: url(https://cdn.carid.com/css/prod-images/51f0ca9a.svg)
+}
+
+.left-dd-title.-vehicle {
+    background-image: url(https://cdn.carid.com/css/prod-images/9775076e.svg)
+}
+
+.left-dd-title.-primary {
+    background-position: 34px 50%;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    font-size: 1.6em
+}
+
+.left-dd-title.-garage {
+    flex-wrap: wrap;
+    line-height: 1.4
+}
+
+.left-dd-title>.lazy-loading {
+    display: block;
+    height: 30px;
+    left: 20px;
+    margin: 0;
+    top: 11px;
+    width: 46px
+}
+
+.left-dd-title a {
+    color: #111;
+    text-decoration: none
+}
+
+.left-dd-img {
+    display: block;
+    height: auto;
+    left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px
+}
+
+.left-dd-img.-speciality {
+    top: 11px
+}
+
+.left-menu-header-close {
+    background: url(https://cdn.carid.com/css/prod-images/c3ae046f.svg) 50% 50% no-repeat;
+    background-size: 18px 18px;
+    cursor: pointer;
+    height: 18px;
+    left: 100%;
+    margin: 18px;
+    opacity: .9;
+    position: absolute;
+    width: 18px;
+    z-index: 6
+}
+
+.left-menu-header-close:hover {
+    opacity: 1
+}
+
+.left-menu-vehicles-title {
+    color: #757575;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 6px;
+    text-transform: none
+}
+
+.left-menu-vehicles-title.-garage {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    margin-left: 0;
+    width: 100%
+}
+
+.left-dd-recently-items {
+    padding: 20px 0 10px
+}
+
+.recently-viewed-items-small {
+    align-items: center;
+    display: flex;
+    margin: 20px 20px 8px;
+    overflow-x: auto
+}
+
+.recently-viewed-items-small>.item {
+    flex: 0 0 auto;
+    height: 44px;
+    margin-left: 8px;
+    overflow-y: hidden;
+    position: relative;
+    width: 44px
+}
+
+.recently-viewed-items-small>.item:first-child {
+    margin-left: 0
+}
+
+.recently-viewed-items-small>.item>.ic {
+    width: 100%
+}
+
+.recently-viewed-items-small>.item>.lazy-loading {
+    bottom: 0;
+    display: block
+}
+
+@media only screen and (min-width:741px) {
+    .left-dd-vehicle-spacer {
+        padding-top: 10px
+    }
+
+    .panel-content>.top-content {
+        padding-bottom: 10px
+    }
+
+    .left-dd-title {
+        padding-right: 38px
+    }
+
+    .left-dd-title.-arrow::after {
+        right: 25px
+    }
+
+    .left-dd-recently-items {
+        margin-top: 8px
+    }
+}
+
