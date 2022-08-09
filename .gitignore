@@ -18,7 +18,7 @@ uploads/
 .vscode/
 # ignore log files and databases
 
-index.php
+themes/index.php
 *.log
 *.sql
 *.sqlite

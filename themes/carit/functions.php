@@ -138,7 +138,7 @@ add_action( 'widgets_init', 'carit_widgets_init' );
  * Enqueue scripts and styles.
  */
 
-require_once get_template_directory() . '/inc/scripts.php';
+require get_template_directory() . '/inc/scripts.php';
 
 /**
  * Implement the Custom Header feature.

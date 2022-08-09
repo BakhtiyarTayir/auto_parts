@@ -76,3 +76,15 @@ if ( ! function_exists( 'carit_header_style' ) ) :
 		<?php
 	}
 endif;
+
+add_filter( 'language_attributes', 'add_class_html', 10, 2 );
+
+function add_class_html( $output, $doctype ) {
+    if ( 'html' !== $doctype ) {
+        return $output;
+    }
+
+    $output .= ' class="no-touch sessionStorage localStorage historyApi no-hiddenScroll desktop-large desktop"';
+
+    return $output;
+}
