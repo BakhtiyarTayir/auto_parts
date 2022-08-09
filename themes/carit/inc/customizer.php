@@ -1,8 +1,8 @@
 <?php
 /**
- * eson Theme Customizer
+ * carit Theme Customizer
  *
- * @package eson
+ * @package carit
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function eson_customize_register( $wp_customize ) {
+function carit_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -20,26 +20,26 @@ function eson_customize_register( $wp_customize ) {
 			'blogname',
 			array(
 				'selector'        => '.site-title a',
-				'render_callback' => 'eson_customize_partial_blogname',
+				'render_callback' => 'carit_customize_partial_blogname',
 			)
 		);
 		$wp_customize->selective_refresh->add_partial(
 			'blogdescription',
 			array(
 				'selector'        => '.site-description',
-				'render_callback' => 'eson_customize_partial_blogdescription',
+				'render_callback' => 'carit_customize_partial_blogdescription',
 			)
 		);
 	}
 }
-add_action( 'customize_register', 'eson_customize_register' );
+add_action( 'customize_register', 'carit_customize_register' );
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function eson_customize_partial_blogname() {
+function carit_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -48,14 +48,14 @@ function eson_customize_partial_blogname() {
  *
  * @return void
  */
-function eson_customize_partial_blogdescription() {
+function carit_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function eson_customize_preview_js() {
-	wp_enqueue_script( 'eson-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
+function carit_customize_preview_js() {
+	wp_enqueue_script( 'carit-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
 }
-add_action( 'customize_preview_init', 'eson_customize_preview_js' );
+add_action( 'customize_preview_init', 'carit_customize_preview_js' );

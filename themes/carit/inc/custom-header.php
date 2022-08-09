@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package eson
+ * @package carit
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses eson_header_style()
+ * @uses carit_header_style()
  */
-function eson_custom_header_setup() {
+function carit_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'eson_custom_header_args',
+			'carit_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'eson_header_style',
+				'wp-head-callback'   => 'carit_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'eson_custom_header_setup' );
+add_action( 'after_setup_theme', 'carit_custom_header_setup' );
 
-if ( ! function_exists( 'eson_header_style' ) ) :
+if ( ! function_exists( 'carit_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see eson_custom_header_setup().
+	 * @see carit_custom_header_setup().
 	 */
-	function eson_header_style() {
+	function carit_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

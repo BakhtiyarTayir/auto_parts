@@ -1,4 +1,4 @@
-=== eson ===
+=== carit ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -10,11 +10,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called eson.
+A starter theme called carit.
 
 == Description ==
 
-Авто запчасти
+Car Parts
 
 == Installation ==
 
@@ -26,7 +26,7 @@ A starter theme called eson.
 
 = Does this theme support any plugins? =
 
-eson includes support for WooCommerce and for Infinite Scroll in Jetpack.
+carit includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

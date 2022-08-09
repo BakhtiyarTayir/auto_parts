@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package eson
+ * @package carit
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function eson_jetpack_setup() {
+function carit_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'eson_infinite_scroll_render',
+			'render'    => 'carit_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function eson_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'eson-style',
+				'stylesheet' => 'carit-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,13 +48,13 @@ function eson_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'eson_jetpack_setup' );
+add_action( 'after_setup_theme', 'carit_jetpack_setup' );
 
-if ( ! function_exists( 'eson_infinite_scroll_render' ) ) :
+if ( ! function_exists( 'carit_infinite_scroll_render' ) ) :
 	/**
 	 * Custom render function for Infinite Scroll.
 	 */
-	function eson_infinite_scroll_render() {
+	function carit_infinite_scroll_render() {
 		while ( have_posts() ) {
 			the_post();
 			if ( is_search() ) :

@@ -4,7 +4,7 @@ plugins/*
 mu-plugins/
 themes/*
 !plugins/elementor-master/
-!themes/eson/
+!themes/carit/
 
 
 # ignore node dependency directories

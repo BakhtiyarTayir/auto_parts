@@ -6,23 +6,23 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package eson
+ * @package carit
  */
 
 ?>
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'eson' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'carit' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'eson' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'carit' ), 'WordPress' );
 				?>
 			</a>
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'eson' ), 'eson', '<a href="http://eson.uz">eson.uz</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'carit' ), 'carit', '<a href="http://eson.uz">eson.uz</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
