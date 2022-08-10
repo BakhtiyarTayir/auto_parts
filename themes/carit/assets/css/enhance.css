@@ -4419,7 +4419,7 @@ html.gbox_opened #scrollfix {
     column-width: 130px
 }
 
-.f-list>a,
+.f-list>li>a,
 .f-list>span {
     color: #111;
     font-size: 1.3em;
@@ -7486,7 +7486,7 @@ html.gbox_opened #scrollfix {
         float: right
     }
 
-    .f-links>a,
+    .f-links>li>a,
     .f-links>span {
         color: #464646;
         font-size: 1.2em;
@@ -9151,3 +9151,6 @@ only screen and (min-width:1281px)and (max-width:1600.98px) {
     }
 }
 
+.f-list {
+    list-style-type: none;
+}

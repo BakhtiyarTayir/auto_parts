@@ -50,6 +50,7 @@ function carit_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'carit' ),
+			'footer-1' => esc_html__( 'Footer menu 1', 'carit' ),
 		)
 	);
 
@@ -131,6 +132,39 @@ function carit_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer #1', 'carit' ),
+			'id'            => 'footer-1',
+			'description'   => esc_html__( 'Add widgets here.', 'carit' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title f-title footer-toggle-header">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer #3', 'carit' ),
+			'id'            => 'footer-3',
+			'description'   => esc_html__( 'Add widgets here.', 'carit' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title f-title footer-toggle-header">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer copyright', 'carit' ),
+			'id'            => 'footer-copyright',
+			'description'   => esc_html__( 'Add widgets here.', 'carit' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title f-title footer-toggle-header">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'carit_widgets_init' );
 
@@ -173,3 +207,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+// Translate
+
+// add_action('init', function() {
+//   pll_register_string('carit', 'INFORMATION');
+// });
