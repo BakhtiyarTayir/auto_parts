@@ -54,6 +54,25 @@ function carit_setup() {
 		)
 	);
 
+	// Add class to li in wp_nav_menu
+	function add_additional_class_on_li($classes, $item, $args) {
+		if(isset($args->add_li_class)) {
+			$classes[] = $args->add_li_class;
+		}
+		return $classes;
+	}
+	add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
+	// Add class to a in li wo_nav_menu
+
+	function add_menu_link_class( $atts, $item, $args ) {
+	if (property_exists($args, 'link_class')) {
+		$atts['class'] = $args->link_class;
+	}
+	return $atts;
+	}
+	add_filter( 'nav_menu_link_attributes', 'add_menu_link_class', 1, 3 );
+
 	/*
 		* Switch default core markup for search form, comment form, and comments
 		* to output valid HTML5.

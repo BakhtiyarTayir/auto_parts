@@ -127,40 +127,29 @@
 						</ul>
 
 					</div>
-					<nav class="head-dd-h">
-						<div class="header-menu-wrapper">
-							<ul class="head-dd js-head-depts">
-								<li class="item js-head-dept" data-id="407" data-vehicle-id="15" data-store-id="0"><a
-										class="head-dd-main" href="#">Interior</a>
-								</li>
-								<li class="item js-head-dept" data-id="408" data-vehicle-id="15" data-store-id="0"><a
-										class="head-dd-main" href="#">Exterior</a>
-								</li>
-								<li class="item js-head-dept" data-id="169" data-vehicle-id="15" data-store-id="0"><a
-										class="head-dd-main" href="#">Performance</a>
-								</li>
-								<li class="item js-head-dept" data-id="24" data-vehicle-id="15" data-store-id="0"><a
-										class="head-dd-main" href="#">Lighting</a></li>
-								<li class="item js-head-dept" data-id="418" data-vehicle-id="15" data-store-id="0"><span
-										class="head-dd-main"><a class="link" href="#">Wheels</a><span class="extra">
-											&amp; </span><a class="link" href="#"><span
-												class="head_dd_main_wide_show">Tires</span></a></span></li>
-								<li class="item js-head-dept" data-id="62" data-vehicle-id="15" data-store-id="0"><a
-										class="head-dd-main" href="#">Parts</a></li>
-								<li class="item js-head-dept" data-id="63" data-vehicle-id="15" data-store-id="0"><a
-										class="head-dd-main" href="#">Body Parts</a></li>
-								<li class="item js-head-dept" data-id="170" data-vehicle-id="15" data-store-id="0"><a
-										class="head-dd-main" href="#">Audio &amp;
-										Electronics</a></li>
-								<li class="item js-head-dept" data-id="29909" data-vehicle-id="15" data-store-id="0"><a
-										class="head-dd-main" href="#">Automotive
-										Tools</a></li>
-								<li class="item mobile-hide js-head-dept js-more-ignore" data-id="777"><span
-										class="head-dd-main">Specialty<span class="extra"> Shops</span></span></li>
-							</ul>
-
-						</div>
-					</nav>
+					<?php
+					wp_nav_menu( [
+						'theme_location'  => 'menu-1',
+						'menu'            => 'menu-1',
+						'container'       => 'div',
+						'container_class' => '',
+						'container_id'    => '',
+						'menu_class'      => 'menu',
+						'menu_id'         => '',
+						'echo'            => true,
+						'fallback_cb'     => 'wp_page_menu',
+						'before'          => '',
+						'after'           => '',
+						'link_before'     => '',
+						'link_after'      => '',
+						'items_wrap'      => '<ul id="%1$s" class="%2$s head-dd js-head-depts">%3$s</ul>',
+						'depth'           => 0,
+						'walker'          => '',
+						'add_li_class'    => 'item js-head-dept',
+						'link_class'      => 'head-dd-main',
+					] );
+					?>
+					
 				</div>
 				<div class="head-dd-cont-holder js-head-dd-cont-holder">
 					<div class="wrap"></div>
