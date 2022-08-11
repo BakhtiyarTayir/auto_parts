@@ -50,6 +50,7 @@ function carit_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'carit' ),
+			'phone-menu' => esc_html__( 'Phone number', 'carit' ),
 			'footer-1' => esc_html__( 'Footer menu 1', 'carit' ),
 		)
 	);
