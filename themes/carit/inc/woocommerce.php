@@ -181,16 +181,17 @@ if ( ! function_exists( 'carit_woocommerce_cart_link' ) ) {
 	 */
 	function carit_woocommerce_cart_link() {
 		?>
-		<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'carit' ); ?>">
-			<?php
-			$item_count_text = sprintf(
-				/* translators: number of items in the mini cart. */
-				_n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'carit' ),
-				WC()->cart->get_cart_contents_count()
-			);
-			?>
-			<span class="amount"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span> <span class="count"><?php echo esc_html( $item_count_text ); ?></span>
-		</a>
+            <a class=" nav-tool -icon-cart" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'carit' ); ?>">
+                <?php
+                $item_count_text = sprintf(
+                    /* translators: number of items in the mini cart. */
+                    _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'carit' ),
+                    WC()->cart->get_cart_contents_count()
+                );
+                ?>
+                <span class="amount header-access-text"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span>
+                <span class="count count-item -outline js-mini-cart-total-items"><?php echo esc_html( $item_count_text ); ?></span>
+            </a>
 		<?php
 	}
 }
@@ -205,7 +206,7 @@ if ( ! function_exists( 'carit_woocommerce_header_cart' ) ) {
 		if ( is_cart() ) {
 			$class = 'current-menu-item';
 		} else {
-			$class = '';
+			$class = 'header-dd-hover-element js-head-cart-holder';
 		}
 		?>
 		<ul id="site-header-cart" class="site-header-cart">
@@ -224,23 +225,4 @@ if ( ! function_exists( 'carit_woocommerce_header_cart' ) ) {
 		</ul>
 		<?php
 	}
-}
-
-if ( ! function_exists( 'carit_product_search' ) ) {
-    /**
-     * Display Product Search
-     *
-     * @since  1.0.0
-     * @uses  carit_is_woocommerce_activated() check if WooCommerce is activated
-     * @return void
-     */
-    function carit_product_search() {
-        if ( storefront_is_woocommerce_activated() ) {
-            ?>
-            <div class="site-search">
-                <?php the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
-            </div>
-            <?php
-        }
-    }
 }

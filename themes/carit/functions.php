@@ -226,10 +226,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
+    require 'inc/woocommerce/carit-woocommerce-template-functions.php';
 }
+
+
 
 // Translate
 
 // add_action('init', function() {
 //   pll_register_string('carit', 'INFORMATION');
 // });
+
