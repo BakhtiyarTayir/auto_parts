@@ -19,7 +19,11 @@
 		<div class="wrap">
 			<div class="footer-mobile-table">
 				<div class="f-info-col">
-				 	<?php dynamic_sidebar('footer-1'); ?>
+					<?php
+						if(is_active_sidebar('footer-1')) : 
+				 			dynamic_sidebar('footer-1'); 
+						endif; 
+					?>
 				</div>
 
 				<div class="f-info-col">
@@ -46,7 +50,11 @@
 					?>
 				</div>
 				<div class="f-info-col">
-					<?php dynamic_sidebar('footer-3'); ?>
+					<?php
+						if(is_active_sidebar('footer-3')) : 
+				 			dynamic_sidebar('footer-3'); 
+						endif; 
+					?>
 				</div>
 			</div>
 
@@ -55,7 +63,11 @@
 	</div>
 	<div class="f-other">
 		<div class="wrap">
-			<?php dynamic_sidebar('footer-copyright'); ?>
+			<?php
+				if(is_active_sidebar('footer-copyright')) : 
+					dynamic_sidebar('footer-copyright'); 
+				endif; 
+			?>
 		</div>
 	</div>
 
@@ -70,13 +82,6 @@
 <div id="js-media-query-state" class="media-query-state"></div>
 <div class="to-top-btn js-to-top" style="display: none;"></div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-	integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-	integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="<?php echo get_template_directory_uri() ?>/assets/js/scripts.js"></script>
 
 
 <?php wp_footer(); ?>
