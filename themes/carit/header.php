@@ -102,12 +102,7 @@
 								<?php endif; ?>
 							</div>
 						</div>
-						<form role="search" method="get" id="searchform" action="#" class="ec-btn-group-form">
-							<input autocomplete="off" type="text" class="form-control" name="s" id="s" value=""
-								placeholder="Search... ">
-							<button id="searchsubmit" type="submit" class="btn-submit"><i
-									class="fa fa-search"></i></button>
-						</form>
+                        <?php echo do_shortcode('[fibosearch]'); ?>
 						<ul class="home-header-nav-tool">
 							<li
 								class="header-dd-hover-element nav-tool-account-item mobile-small-hide mobile-medium-hide js-account-header-menu">
@@ -121,14 +116,12 @@
 										class="count-item -outline hidden js-wishlist-counter"></span></div>
 								<div class="js-wishlist-dd-holder"></div>
 							</li>
-							<li class="header-dd-hover-element js-head-cart-holder" aria-haspopup="true"><a href="#"
-									class="nav-tool -icon-cart"><span class="header-access-text">Shopping
-										Cart</span><span
-										class="count-item -outline js-mini-cart-total-items">4</span></a>
-								<div class="js-head-dd-cart-prods"></div>
-							</li>
+							<?php
+								if ( function_exists( 'carit_woocommerce_header_cart' ) ) {
+									carit_woocommerce_header_cart();
+								}
+							?>
 						</ul>
-
 					</div>
 					<?php
 					wp_nav_menu( [
