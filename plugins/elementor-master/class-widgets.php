@@ -69,6 +69,7 @@ class Widgets {
 		require_once 'widgets/home-categories.php';
 		require_once 'widgets/featured-brands.php';
 		require_once 'widgets/home-big-banners.php';
+		require_once 'widgets/about-us-header.php';
 	}
 
 	/**
@@ -87,6 +88,7 @@ class Widgets {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Home_Categories() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Featured_Brands() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Home_Big_Banners() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\About_Us_Header() );
 	}
 
 	/**
