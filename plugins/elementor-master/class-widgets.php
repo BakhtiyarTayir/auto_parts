@@ -73,6 +73,8 @@ class Widgets {
 		require_once 'widgets/about-us-second.php';
 		require_once 'widgets/about-us-thrid.php';
 		require_once 'widgets/about-us-fourth.php';
+		require_once 'widgets/about-us-fifth.php';
+		require_once 'widgets/about-us-sixth.php';
 	}
 
 	/**
@@ -95,6 +97,8 @@ class Widgets {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\About_Us_Second() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\About_Us_Thrid() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\About_Us_Fourth() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\About_Us_Fifth() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\About_Us_Sixth() );
 	}
 
 	/**
