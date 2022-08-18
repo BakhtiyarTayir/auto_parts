@@ -79,6 +79,7 @@ class Widgets {
 		require_once 'widgets/about-us-social.php';
 		require_once 'widgets/contact-header.php';
 		require_once 'widgets/contacts.php';
+		require_once 'widgets/contact-block-title.php';
 	}
 
 	/**
@@ -107,6 +108,7 @@ class Widgets {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\About_Us_Social() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Contact_Header() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Contacts() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Contact_Block_Title() );
 	}
 
 	/**
