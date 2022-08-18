@@ -136,7 +136,7 @@ class Home_Categories extends Widget_Base {
 		$select_categories = $settings['show_categories'];
 		// var_dump($select_categories);
 		?>
-
+		<div class="body-bg-type1">
 		<div class="wrap">
 			<section>
 				<ul class="ptype-grid -col-9 -center">
@@ -185,6 +185,9 @@ class Home_Categories extends Widget_Base {
 				</ul>
 			</section>
 		</div>
+		</div>
+
+		
 
 						
 	<?php

@@ -16,11 +16,11 @@ jQuery('.simple-slider').slick({
     autoplay: true,
     autoplaySpeed: 5000,
 });
-$('.js-nav-category-spoiler > div').click(function () { 
-    $('.js-nav-category-spoiler > div').removeClass('-active');
-    $(this).toggleClass('-active');
-    var thisID = $(this).attr('id');
+jQuery('.js-nav-category-spoiler > div').click(function () { 
+    jQuery('.js-nav-category-spoiler > div').removeClass('-active');
+    jQuery(this).toggleClass('-active');
+    var thisID = jQuery(this).attr('id');
     console.log(thisID);
-    $('.content > div').removeClass('-active');
-    $('.content > ' + '.' + thisID).addClass('-active');
+    jQuery('.content > div').removeClass('-active');
+    jQuery('.content > ' + '.' + thisID).addClass('-active');
 });

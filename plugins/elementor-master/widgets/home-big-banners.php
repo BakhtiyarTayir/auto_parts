@@ -183,8 +183,8 @@ class Home_Big_Banners extends Widget_Base {
 		$this->add_inline_editing_attributes( 'title', 'none' );
 		$this->add_inline_editing_attributes( 'description', 'basic' );
 		?>
-
-<div class="wrap">
+		<div class="body-bg-type1">
+		<div class="wrap">
 	<section>
 		<ul class="hot-ideas-wrap">
 			<li class="hot-ideas-col">
@@ -228,6 +228,9 @@ class Home_Big_Banners extends Widget_Base {
 		</ul>
 	</section>
 </div>
+		</div>
+
+
 
 <?php
 	}
