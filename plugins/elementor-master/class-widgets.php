@@ -77,6 +77,8 @@ class Widgets {
 		require_once 'widgets/about-us-sixth.php';
 		require_once 'widgets/about-us-seventh.php';
 		require_once 'widgets/about-us-social.php';
+		require_once 'widgets/contact-header.php';
+		require_once 'widgets/contacts.php';
 	}
 
 	/**
@@ -103,6 +105,8 @@ class Widgets {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\About_Us_Sixth() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\About_Us_Seventh() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\About_Us_Social() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Contact_Header() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Contacts() );
 	}
 
 	/**
