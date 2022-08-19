@@ -236,4 +236,3 @@ if ( class_exists( 'WooCommerce' ) ) {
 // add_action('init', function() {
 //   pll_register_string('carit', 'INFORMATION');
 // });
-

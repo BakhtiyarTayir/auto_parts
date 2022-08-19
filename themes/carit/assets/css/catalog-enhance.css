@@ -5102,7 +5102,7 @@
     margin-bottom: 24px
 }
 
-.pagination-btn {
+.page-numbers {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 4px;
     color: #464646;
@@ -5115,23 +5115,23 @@
     text-align: center
 }
 
-.pagination-btn:hover,
-.pagination-btn.active {
+.page-numbers:hover,
+.page-numbers.current {
     text-decoration: none
 }
 
-.pagination-btn:not(.active):hover {
+.page-numbers:not(.active):hover {
     border-color: #757575
 }
 
-.pagination-btn.active {
+.page-numbers.current {
     background: #3761bf;
     color: #fff;
     cursor: default
 }
 
-.pagination-prev,
-.pagination-next {
+.prev.page-numbers,
+.next.page-numbers {
     background-color: #fff;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -5146,25 +5146,25 @@
     width: 40px
 }
 
-.pagination-prev:not(.active):hover,
-.pagination-next:not(.active):hover {
+.prev.page-numbers:not(.active):hover,
+.next.page-numbers:not(.active):hover {
     border-color: #424242;
     color: #111;
     text-decoration: none
 }
 
-.pagination-prev.active,
-.pagination-next.active {
-    cursor: default;
+.prev.page-numbers,
+.next.page-numbers.active {
+    cursor: pointer;
     opacity: .7
 }
 
-.pagination-prev {
+.prev.page-numbers {
     background-image: url(https://cdn.carid.com/css/prod-images/e6ebcf0d.svg);
     margin-right: 4px
 }
 
-.pagination-next {
+.next.page-numbers {
     background-image: url(https://cdn.carid.com/css/prod-images/0fed367f.svg);
     margin-left: 4px
 }
@@ -5718,27 +5718,27 @@
         font-size: 1.8em
     }
 
-    .pagination-btn {
+    .page-numbers {
         height: 48px;
         line-height: 48px;
         min-width: 42px
     }
 
-    .pagination-prev,
-    .pagination-next {
+    .prev.page-numbers,
+    .next.page-numbers {
         box-sizing: border-box;
         line-height: 48px;
         overflow: visible;
         text-indent: 0;
-        width: 102px
+        width: 112px
     }
 
-    .pagination-prev {
+    .prev.page-numbers {
         background-position: 24% 50%;
         padding: 0 24px 0 42px
     }
 
-    .pagination-next {
+    .next.page-numbers {
         background-position: 76% 50%;
         padding: 0 42px 0 24px
     }
@@ -6304,3 +6304,7 @@
 }
 
 
+nav.navigation.pagination {
+    display: flex;
+    justify-content: end;
+}
