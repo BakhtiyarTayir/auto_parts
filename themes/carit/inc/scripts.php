@@ -21,7 +21,7 @@ function carit_scripts() {
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/style.css', array(), _S_VERSION );
 	wp_enqueue_style( 'hot-ideas', get_template_directory_uri() . '/assets/css/hot-ideas.css', array(), _S_VERSION );
 	wp_enqueue_style( 'product-type-shifter-block', get_template_directory_uri() . '/assets/css/product-type-shifter-block.css', array(), _S_VERSION );
-	wp_enqueue_style( 'universal-tabs-css', get_template_directory_uri() . '/assets/css/universal-tabs.css', array(), _S_VERSION );
+	wp_enqueue_style( 'universal-tabs', get_template_directory_uri() . '/assets/css/universal-tabs.css', array(), _S_VERSION );
 
 	wp_enqueue_style( 'carit-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'carit-style', 'rtl', 'replace' );

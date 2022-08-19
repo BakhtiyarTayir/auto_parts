@@ -130,6 +130,12 @@ ul.products li.product .button {
 	ul.products.columns-6 li.product {
 		width: 13.49333%;
 	}
+
+}
+.products::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 
 /**
