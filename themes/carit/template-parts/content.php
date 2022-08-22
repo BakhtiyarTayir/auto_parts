@@ -8,57 +8,36 @@
  */
 
 ?>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>'/assets/css/articles.css'">
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<h1>ishladi</h1>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				carit_posted_on();
-				carit_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php carit_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'carit' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'carit' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php carit_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+<main>
+	<div class="wrap">
+		<div class="breadcrumbs-holder -static">
+			<nav class="breadcrumbs-ov">
+				<?php yoast_breadcrumb( '<ol class="breadcrumbs">','</ol>' ); ?>
+			</nav>
+		</div>
+		<div class="article-reading-time"><?php echo get_the_date( 'Y-m-d' ); ?></div>
+		<h1 class="article-h1 -center"><?php the_title(); ?></h1>
+	</div>
+	<div class="head-img-holder">
+		<div class="head_img head_img_minh">
+			<div class="head_img_aligner">
+				<picture class="head-img-overlay"><img
+						src="<?php echo get_the_post_thumbnail_url(); ?>"
+						alt="<?php the_title(); ?>"></picture>
+			</div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="article-content _clear-modern">
+			<nav class="article-annotation"></nav>
+			<section class="article-body">
+				<?php the_content(); ?>
+			</section>
+			<aside class="article-sidebar">
+				<?php get_sidebar(); ?>
+			</aside>
+		</div>
+	</div>
+</main>
