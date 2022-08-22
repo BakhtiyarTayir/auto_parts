@@ -24,7 +24,7 @@
 		<div class="head_img head_img_minh">
 			<div class="head_img_aligner">
 				<picture class="head-img-overlay"><img
-						src="<?php echo get_the_post_thumbnail_url(); ?>"
+						src="<?php if(has_post_thumbnail()){echo get_the_post_thumbnail_url();}else{echo get_template_directory_uri() . '/assets/images/not-found.png';?>"
 						alt="<?php the_title(); ?>"></picture>
 			</div>
 		</div>
