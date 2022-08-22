@@ -21,14 +21,6 @@ function end_container_row_div_classes() {
 add_action( 'woocommerce_before_shop_loop', 'end_container_row_div_classes', 5 );
 
 
-
-// function change_breadcrumb_delimiter( $defaults ) {
-// 	$defaults['delimiter']   = '<span class="breadcrumb-separator"> / </span>';
-// 	$defaults['wrap_before'] = '<div class="carit-breadcrumb"><div class="col-full"><nav class="woocommerce-breadcrumb" aria-label="' . esc_attr__( 'breadcrumbs', 'carit' ) . '">';
-// 	$defaults['wrap_after']  = '</nav></div></div>';
-// 	return $defaults;
-// }
-// add_filter( 'woocommerce_breadcrumb_defaults' 'change_breadcrumb_delimiter' );
            
 
 add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs' );
@@ -49,6 +41,9 @@ add_action( 'template_redirect', 'load_template_layout' );
 function load_template_layout() {
     if ( is_shop() ) {          
         add_action( 'woocommerce_before_main_content', 'woocommerce_get_sidebar', 10 );
+    }
+    if(is_product_category()){
+        remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
     }
 }
 
@@ -84,17 +79,6 @@ remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
 remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
 
 
-// add_action( 'woocommerce_before_shop_loop', 'carit_section_wrap_open', 10);
-// function carit_section_wrap_open() {
-//     echo '<section>';
-// }
-
-// add_action( 'woocommerce_after_shop_loop', 'carit_section_wrap_end', 10);
-
-// function carit_section_wrap_end() {
-//     echo '</section>';
-// }
-
 
 // Отделяем категории от товаров
 function tutsplus_product_subcategories( $args = array() ) {
@@ -106,32 +90,43 @@ function tutsplus_product_subcategories( $args = array() ) {
     );
 
     $terms = get_terms( 'product_cat', $args );
+    if ( !is_shop() ) {
+        if ( $terms ) {
 
-    if ( $terms ) {
-        
-        echo '<div class="body-bg-type1 mt-minus-block"><div class="wrap"><section><ul class="ptype-grid -col-5 -tile">';
+            echo '<div class="body-bg-type1 mt-minus-block"><div class="wrap"><section><ul class="ptype-grid -col-5 -tile">';
 
-        foreach ( $terms as $term ) {
+            foreach ( $terms as $term ) {
 
-            echo '<li class="category">';
-            echo '<a href="' . esc_url( get_term_link( $term ) ) . '" class="' . $term->slug . '">';
-            woocommerce_subcategory_thumbnail( $term );
+                echo '<li class="li cat-item" data-qty="(' . $term->count . ')">';
+                $thumbnail_id = get_woocommerce_term_meta( $term->term_id, 'thumbnail_id', true );
+                $image = wp_get_attachment_url( $thumbnail_id );
+                echo '<img src="'. $image .'" class="ptype-grid-img lazy-loaded -no-touch" alt="">';
+                echo '<a href="' . esc_url( get_term_link( $term ) ) . '" class="ptype-grid-a -descr-outer">';
 
-            echo '<h3>'.$term->name.'</h3>';
-            echo '</a>';
+
+                echo '<b class="ptype-grid-title">'.$term->name.'</b>';
+                echo '</a>';
+            }
+
+            echo '</ul></section></div></div>';
+
         }
-
-        echo '</ul></section></div></div>';
-
     }
+
 
 }
 
+
 add_action( 'woocommerce_before_shop_loop', 'tutsplus_product_subcategories', 50 );
 
-// remove_action( 'woocommerce_shop_loop_item_title','woocommerce_template_loop_product_title', 10 );
-// add_action('woocommerce_shop_loop_item_title', 'woocommerce_custom_page_title', 10 );
 
-// function woocommerce_custom_page_title() {
-//     echo '<h1 class="' . esc_attr( apply_filters( 'woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title' ) ) . '">' . get_the_title() . '</h1>';
-// }
+
+
+remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
+add_action('woocommerce_shop_loop_item_title', 'woocommerce_custom_page_title', 10 );
+
+function woocommerce_custom_page_title() {
+    echo '<span class="lst-a-name">' . get_the_title() . '</span>';
+}
+
+
