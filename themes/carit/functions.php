@@ -143,6 +143,17 @@ add_action( 'after_setup_theme', 'carit_content_width', 0 );
 function carit_widgets_init() {
 	register_sidebar(
 		array(
+			'name'          => esc_html__( 'Header #1', 'carit' ),
+			'id'            => 'header_1',
+			'description'   => esc_html__( 'Add widgets here.', 'carit' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
 			'name'          => esc_html__( 'Sidebar', 'carit' ),
 			'id'            => 'sidebar-1',
 			'description'   => esc_html__( 'Add widgets here.', 'carit' ),
@@ -229,6 +240,20 @@ if ( class_exists( 'WooCommerce' ) ) {
     require 'inc/woocommerce/carit-woocommerce-template-hooks.php';
 }
 
+
+add_filter('woocommerce_currency_symbol', 'add_my_currency_symbol', 10, 2);
+
+function add_my_currency_symbol( $currency_symbol, $currency ) {
+
+    switch( $currency ) {
+
+        case 'UZS': $currency_symbol = 'сум'; break;
+
+    }
+
+    return $currency_symbol;
+
+}
 
 
 // Translate

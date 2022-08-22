@@ -110,12 +110,9 @@
 										Account</span>
 								</div>
 							</li>
-							<li class="header-dd-hover-element mobile-small-hide mobile-medium-hide js-wishlist-header-menu"
-								aria-haspopup="true">
-								<div class="nav-tool -icon-wishlist"><span
-										class="count-item -outline hidden js-wishlist-counter"></span></div>
-								<div class="js-wishlist-dd-holder"></div>
-							</li>
+							<?php if (is_dynamic_sidebar('header_1')) : ?>
+								<?php dynamic_sidebar('header_1'); ?>
+							<?php endif; ?>
 							<?php
 								if ( function_exists( 'carit_woocommerce_header_cart' ) ) {
 									carit_woocommerce_header_cart();
