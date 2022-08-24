@@ -6743,3 +6743,16 @@ span.select2-dropdown.select2-dropdown--above {
         margin-bottom: 0px;
     }
 }
+.entry-content {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.type-page {
+    text-align: left;
+    margin: 15px;
+}
+
+h1.entry-title {
+    font-size: 26px;
+}
