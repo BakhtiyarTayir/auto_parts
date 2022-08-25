@@ -6756,3 +6756,8 @@ span.select2-dropdown.select2-dropdown--above {
 h1.entry-title {
     font-size: 26px;
 }
+
+.cart_prod_each_prc span.woocommerce-Price-amount {
+    color: #000;
+    font-size: 18px;
+}
