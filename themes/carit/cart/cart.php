@@ -122,12 +122,17 @@ do_action( 'woocommerce_before_cart' ); ?>
 							?>
 						</div>
 
-								<?php do_action( 'woocommerce_cart_contents' ); ?>
-								<?php do_action( 'woocommerce_after_cart_contents' ); ?>
-						<?php do_action( 'woocommerce_after_cart_table' ); ?>
-						<button id="submitButton" type="submit" class="button btn btn-primary" name="update_cart"
-					value="<?php esc_attr_e( 'Update cart', 'bazarplus' ); ?>"><?php esc_html_e( 'Update cart', 'bazarplus' ); ?></button>
+						<?php do_action( 'woocommerce_cart_contents' ); ?>
+								<!-- update cart -->
+								<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+
+				<!-- end update cart -->
+
 				<?php do_action( 'woocommerce_cart_actions' ); ?>
+
+<?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
+						
+				
 					</form>
 					
 				</div>
