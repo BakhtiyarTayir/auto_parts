@@ -292,3 +292,17 @@ function wc_remove_checkout_fields( $fields ) {
 	return $fields;
 	}
 	add_filter( 'woocommerce_checkout_fields', 'wc_remove_checkout_fields' );
+
+add_filter( 'woocommerce_billing_fields' , 'custom_override_woocommerce_billing_fields' );
+// Our hooked in function - $address_fields is passed via the filter!
+function custom_override_woocommerce_billing_fields( $address_fields ) {
+	$address_fields['billing_last_name']['required'] = false;
+	$address_fields['billing_address_1']['required'] = false;
+	$address_fields['billing_address_2']['required'] = false;
+	$address_fields['billing_city']['required'] = false;
+	$address_fields['billing_postcode']['required'] = false;
+	$address_fields['billing_company']['required'] = false;
+
+	
+	return $address_fields;
+};

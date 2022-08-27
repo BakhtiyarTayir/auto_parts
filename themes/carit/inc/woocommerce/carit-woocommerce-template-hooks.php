@@ -45,6 +45,10 @@ function load_template_layout() {
     if(is_product_category()){
         remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
     }
+    if (is_product()){
+        remove_action( 'woocommerce_breadcrumb', 'open_container_row_div_classes', 5 );
+        remove_action( 'woocommerce_before_shop_loop', 'end_container_row_div_classes', 5 );
+    }
 }
 
 
