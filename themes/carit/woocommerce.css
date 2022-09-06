@@ -645,3 +645,15 @@ p.no-comments {
 	height: 100%;
 }
 
+/* categories banner */
+.wbm_banner_image {
+	overflow: hidden;
+    height: 380px;
+}
+.wbm_banner_image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
