@@ -6565,6 +6565,15 @@ only screen and (min-width:1281px) {
     top: 0;
     width: 100%;
 }
+.wbm_banner_image::after {
+    background: url(https://cdn.carid.com/css/prod-images/66c63f14.svg) repeat 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 
 nav.woocommerce-pagination {
     width: 100%;
