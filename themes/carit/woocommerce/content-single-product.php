@@ -51,8 +51,7 @@ $imageUrl = get_the_post_thumbnail_url();
                                     <span
                                         class="prod-rating stars-<?php echo $product->get_average_rating() * 2; ?>"></span>
                                     <a class="prod-rating-a js-scroll-to" href="#reviews">
-                                        <?php echo $product->get_average_rating(); ?>
-                                        reviews</a><i>|</i><i>|</i>Item #<?php the_ID(); ?></span></div>
+                                        <?php echo ' ' . $product->get_average_rating() . ' ' . _e('reviews', 'carit') ?></a><i>|</i>Item #<?php the_ID(); ?></span></div>
                 </div>
                 <div id="prodLeftSide" class="prod-media">
                     <div id="main-product-gallery" class="main-product-gallery-wrap">
@@ -99,7 +98,7 @@ $imageUrl = get_the_post_thumbnail_url();
                         </div>
                         <div class="prod_avail -green js-prod-avail">
                             <span class="js-deliver-text">
-                                <?php echo $product->is_in_stock() ? 'In stock' . '(' . $product->stock_quantity . ')' : 'not'; ?>
+                                <?php echo $product->is_in_stock() ? __('In stock', 'carit') . '(' . $product->stock_quantity . ')' : __('not'); ?>
                             </span>
                         </div>
                     </div>
@@ -116,7 +115,7 @@ $imageUrl = get_the_post_thumbnail_url();
                             </div>
                             <button type="submit" value="<?php the_ID() ?>"
                                 class="prod_addtocart simple-btn -success -large -wide" name="add-to-cart"
-                                style="width: max-content;">Add To Cart</button>
+                                style="width: max-content;"><?php _e('Add To Cart', 'carit') ?></button>
                         </form>
                     </div>
                 </div>
@@ -126,10 +125,10 @@ $imageUrl = get_the_post_thumbnail_url();
             <nav class="product-navigation-wrap js-product-navigation-wrap">
                 <div class="product-navigation">
                     <span class="item">
-                        <a class="js-scroll-to -active" href="#product-details">Product Details</a>
+                        <a class="js-scroll-to -active" href="#product-details"><?php _e('Product Details' , 'carit') ?></a>
                     </span>
                     <span class="item">
-                        <a class="js-scroll-to prod-toolbar-rating stars-10" href="#reviews">Reviews
+                        <a class="js-scroll-to prod-toolbar-rating stars-10" href="#reviews"><?php _e('reviews', 'carit') ?>
                             (<?php echo $product->get_average_rating(); ?>)</a>
                         </span>
                     </div>
@@ -148,7 +147,7 @@ $imageUrl = get_the_post_thumbnail_url();
             <section class="prod-review-block js-review-holder">
                 <div class="prod-review-section-title prod-section-title prod-content-minus prod-content-plus js-prod-content-toggle"
                     id="reviews">
-                    <h2 class="heading">Reviews</h2> (<?php echo $product->get_average_rating(); ?>)
+                    <h2 class="heading"><?php _e('reviews', 'carit') ?></h2> (<?php echo $product->get_average_rating(); ?>)
                 </div>
                 <?php
                    comments_template();

@@ -2158,7 +2158,7 @@ html.gbox_opened #scrollfix {
 }
 
 .nav-tool.-icon-cart {
-    background-image: url(https://cdn.carid.com/css/prod-images/f495cd84.svg);
+    background-image: url(../images/prod-images/cart.svg);
     background-size: 26px 23px
 }
 

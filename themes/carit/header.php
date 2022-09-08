@@ -70,10 +70,13 @@
 						</div>
 						<div class="bottom-content left-dd-border-mini -border-top">
 							<ul class="left-dd">
-								<li><span class="js-account-left-menu left-dd-title -arrow"><span class="hover-item">My
-											Account</span><span class="left-menu-vehicles-title js-user-greetings">
-											Hello. Sign In</span></span></li>
-								<li><span class="js-account-left-menu left-dd-title -arrow"><span class="hover-item">Contact Us</span></span></li>
+								<li><span class="js-account-left-menu left-dd-title -arrow">
+									<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" class="hover-item">
+										<?php _e('My Account', 'carit') ?>
+									</a>
+									</span>
+								</li>
+								
 							</ul>
 						</div>
 					</div>
@@ -106,8 +109,10 @@
 						<ul class="home-header-nav-tool">
 							<li
 								class="header-dd-hover-element nav-tool-account-item mobile-small-hide mobile-medium-hide js-account-header-menu">
-								<div class="nav-tool -account -icon-account"><span class="title mobile-large-hide">My
-										Account</span>
+								<div class="nav-tool -account -icon-account">
+									<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" class="title mobile-large-hide">
+										<?php _e('My Account', 'carit') ?>
+									</a>
 								</div>
 							</li>
 							<?php if (is_dynamic_sidebar('header_1')) : ?>

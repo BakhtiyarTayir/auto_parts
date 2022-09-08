@@ -21,7 +21,6 @@ function end_container_row_div_classes() {
 add_action( 'woocommerce_before_shop_loop', 'end_container_row_div_classes', 5 );
 
 
-           
 
 add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs' );
 function jk_woocommerce_breadcrumbs() {
@@ -36,20 +35,55 @@ function jk_woocommerce_breadcrumbs() {
 }
 
 
-add_action( 'template_redirect', 'load_template_layout' );
+// product-list-with-filter-holder
+
+// categories page
+function open_section_wrap() {
+	echo '<div class="wrap products-wrap"><section class="universal-tabs">';
+}
+
+function end_section_wrap() {
+		echo '</section></div>';
+}
+
+// shop page
+
+function open_section_wrap_shop_page() {
+	echo '<div class="wrap"><section class="js-products-panel-mobile-group products-list-wrap products-panel-group-ajax">';
+}
+
+function end_section_wrap_shop_page() {
+		echo '</section></div>';
+}
+
+
+function filter_shortcode() {
+    echo do_shortcode('[wpf-filters id=2]');
+}
+
 
 function load_template_layout() {
-    if ( is_shop() ) {          
-        add_action( 'woocommerce_before_main_content', 'woocommerce_get_sidebar', 10 );
+    if ( is_shop() ) {         
+        add_action( 'woocommerce_before_shop_loop', 'woocommerce_get_sidebar', 11 ); 
+        add_action( 'woocommerce_before_shop_loop', 'open_section_wrap_shop_page', 10 );
+        add_action( 'woocommerce_after_shop_loop', 'end_section_wrap_shop_page', 10 );
     }
     if(is_product_category()){
         remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+        add_action( 'woocommerce_before_main_content', 'filter_shortcode', 9 );
+        add_action( 'woocommerce_before_shop_loop', 'open_section_wrap', 10 );
+        add_action( 'woocommerce_after_shop_loop', 'end_section_wrap', 10 );
+
     }
     if (is_product()){
         remove_action( 'woocommerce_breadcrumb', 'open_container_row_div_classes', 5 );
         remove_action( 'woocommerce_before_shop_loop', 'end_container_row_div_classes', 5 );
+
     }
 }
+
+add_action( 'template_redirect', 'load_template_layout' );
+
 
 
 add_filter( 'woocommerce_show_page_title', 'toggle_page_title' );
@@ -121,7 +155,7 @@ function tutsplus_product_subcategories( $args = array() ) {
 }
 
 
-add_action( 'woocommerce_before_shop_loop', 'tutsplus_product_subcategories', 50 );
+add_action( 'woocommerce_before_shop_loop', 'tutsplus_product_subcategories', 4 );
 
 
 
@@ -132,5 +166,4 @@ add_action('woocommerce_shop_loop_item_title', 'woocommerce_custom_page_title', 
 function woocommerce_custom_page_title() {
     echo '<span class="lst-a-name">' . get_the_title() . '</span>';
 }
-
 

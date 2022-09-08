@@ -40,7 +40,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                                 <div class="cart-table-data -item"><?php esc_html_e( 'Product', 'woocommerce' ); ?></div>
                                 <div class="cart-table-data -quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></div>
                                 <div class="cart-table-data -price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></div>
-                                <div class="cart-table-data -delete">Remove</div>
+                                <div class="cart-table-data -delete"><?php _e('Remove', 'carit') ?></div>
                             </div>
                         </div>
 						<div class="cart-body-wrap">
@@ -98,7 +98,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								</div>
 									<div class="cart-table-data -price">
 										<div class="cart-product-total-price -with-each"><?php echo apply_filters( 'woocommerce_cart_item_subtotal', WC() ->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok. ?></div>
-										<div class="cart_prod_each_prc"><?php echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); ?><span> / each</span></div>
+										<div class="cart_prod_each_prc"><?php echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); ?><span> / <?php  _e('each', 'carit') ?></span></div>
 									</div>
 									<div class="cart-table-data -delete">
 										<?php
@@ -137,7 +137,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 				<?php do_action( 'woocommerce_cart_actions' ); ?>
 
-<?php do_action( 'woocommerce_after_cart_table' ); ?>
+				<?php do_action( 'woocommerce_after_cart_table' ); ?>
 
 						
 				

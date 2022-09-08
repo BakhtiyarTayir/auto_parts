@@ -657,3 +657,158 @@ p.no-comments {
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
+/* products */
+ul.products li.product .button,
+a.added_to_cart {
+    border: 1px solid #111;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 3.35;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-bottom: 8px;
+}
+
+.products-list-wrap {
+	display: flex;
+}
+
+.products-list-wrap ul.products li.product{
+	width: 32.5%!important;
+	float: unset;
+    margin-right: unset;
+}
+
+aside#secondary {
+    width: 24%;
+	box-sizing: border-box;
+    padding-right: 22px;
+}
+
+.products-list-wrap ul.products {
+    width: 69%;
+}
+
+section.js-products-panel-mobile-group.products-list-wrap{
+    margin-top: 60px;
+}
+
+/* top filter */
+
+.main-wrap>.wpfMainWrapper  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #363d47;
+    padding-right: 13px;
+    padding-left: 13px;
+    position: absolute!important;
+    z-index: 99;
+    max-width: 1280px;
+    top: 451px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-wrap>.wpfMainWrapper .wpfCheckboxHier select {
+    padding: 18px 10px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.main-wrap>.wpfMainWrapper button.wpfFilterButton.wpfButton {
+    border: none;
+    background: #be2126;
+    padding: 19px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: auto;
+    border-radius: 8px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* filter sidebar */
+
+#secondary .wpfMainWrapper select {
+    padding: 10px 4px;
+    border: 1px solid #ccc;
+    background: none;
+    border-radius: 9px;
+}
+#secondary .wpfMainWrapper select {
+    padding: 10px 4px;
+    border: 1px solid #ccc;
+    background: none;
+    border-radius: 9px;
+}
+
+
+.wpfMainWrapper li label {
+	line-height: 1.6666;
+    padding: 0 0 0 34px;
+	color: #464646;
+	display: inline-block;
+    font-size: 1.5em;
+    font-weight: 400;
+	position: relative;
+}
+.wpfMainWrapper li label input[type=checkbox] {
+	display: none;
+	left: 0;
+    opacity: 0;
+    position: absolute;
+}
+.wpfMainWrapper li label .wpfDisplay::after {
+	position: absolute;
+	content: "";
+	left: 0;
+    top: 1px;
+	background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/59b7dbc5.svg);
+}
+.wpfMainWrapper li label .wpfDisplay.selected::after {
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.carid.com/css/prod-images/25396e61.svg);
+}
+.wpfSearchWrapper .wpfSearchFieldsFilter {
+    padding: 10px 4px!important;
+    margin: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 272px;
+}
+
+.wpfSearchWrapper {
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: center;
+    max-width: 100%;
+}
+span.wpfCheckbox {
+    display: none;
+}
+#secondary .wpfFilterButtons {
+    display: flex;
+    justify-content: center;
+}
+
+#secondary .wpfFilterButtons button {
+    padding: 10px 20px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

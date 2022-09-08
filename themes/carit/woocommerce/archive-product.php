@@ -19,13 +19,6 @@ defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
 ?>
-<!--    <div class="head_img head_img_minh">-->
-<!--        <div class="head_img_aligner -has-mobile-src">-->
-<!--            <picture class="head-img-overlay">-->
-<!--                <img src="" alt="Wheels Tires">-->
-<!--            </picture>-->
-<!--        </div>-->
-<!--    </div>-->
 <?php
 /**
  * Hook: woocommerce_before_main_content.
@@ -67,8 +60,7 @@ do_action( 'woocommerce_before_main_content' );
 			 */
 			do_action( 'woocommerce_before_shop_loop' );
             ?>
-            <div class="wrap products-wrap">
-                <section class="universal-tabs">
+            
             <?php
 			woocommerce_product_loop_start();
 
@@ -87,8 +79,6 @@ do_action( 'woocommerce_before_main_content' );
 
 			woocommerce_product_loop_end();
             ?>
-                </section>
-            </div>
             <?php
 
 			/**

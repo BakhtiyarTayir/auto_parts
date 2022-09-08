@@ -123,6 +123,21 @@ function carit_setup() {
 }
 add_action( 'after_setup_theme', 'carit_setup' );
 
+
+// add_theme_support( 'woocommerce', array(
+// 	'thumbnail_image_width' => 500,
+// 	'gallery_thumbnail_image_width' => 55,
+// 	'single_image_width' => 1000,
+// ) );
+
+add_filter('woocommerce_get_image_size_thumbnail', function ($size_options) {
+    return array(
+        'width'  => 330,
+        'height' => 330,
+        'crop' => 1,
+    );
+});
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
